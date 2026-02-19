@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-22 11:00:23.482153",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_project_status",
+  "select_prog_name",
+  "column_break_qkdi",
+  "enter_project_ref_no",
+  "enter_pd_staff_no",
+  "status",
+  "work_flow_status",
+  "section_break_zoym",
+  "description",
+  "section_break_kija",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "SELECT PROJECT",
+   "link_filters": "[[\"PROJECT_MASTER\",\"status\",\"=\",\"Active\"]]",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fetch_from": "select_project.select_project_status",
+   "fieldname": "select_project_status",
+   "fieldtype": "Data",
+   "label": "SELECT PROJECT STATUS "
+  },
+  {
+   "fetch_from": "select_project.select_prog_name",
+   "fieldname": "select_prog_name",
+   "fieldtype": "Data",
+   "label": "SELECT PROGRAM NAME"
+  },
+  {
+   "fieldname": "column_break_qkdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "select_project.enter_project_ref_no",
+   "fieldname": "enter_project_ref_no",
+   "fieldtype": "Data",
+   "label": "ENTER PROJECT REF NO "
+  },
+  {
+   "fetch_from": "select_project.enter_pd_staff_no",
+   "fieldname": "enter_pd_staff_no",
+   "fieldtype": "Data",
+   "label": "ENTER PD Staff No"
+  },
+  {
+   "fieldname": "section_break_zoym",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "select_project.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_kija",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "REMARKS"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "default": "Approve",
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "WORK FLOW STATUS ",
+   "options": "Approve\nReject",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-25 16:53:58.162440",
+ "modified": "2025-08-29 13:49:14.179972",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PROJECT MASTER APPROVE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PROJECT",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SRV-POST-{MM}-{DD}-{####}",
+ "creation": "2025-07-31 17:12:28.502902",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srv_no",
+  "inword_no",
+  "srv_date",
+  "project_name",
+  "project",
+  "srv_status",
+  "column_break_wuys",
+  "po_no",
+  "po_date",
+  "supplier",
+  "store",
+  "srv_original",
+  "status",
+  "section_break_hjxl",
+  "table_kyqc",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hjxl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_kyqc",
+   "fieldtype": "Table",
+   "label": "SRV POST DETAILS",
+   "options": "SRV POST RE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Link",
+   "label": "SELECT SRV NO",
+   "link_filters": "[[\"SRV ENTRY\",\"status\",\"=\",\"Active\"],[\"SRV ENTRY\",\"srv_status\",\"like\",\"%0%\"]]",
+   "options": "SRV ENTRY",
+   "placeholder": "Select SRV Number",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srv_no.srv_date",
+   "fieldname": "srv_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": " SRV DATE",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "srv_no.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[[\"PROJECT_MASTER\",\"status\",\"=\",\"Active\"]]",
+   "options": "PROJECT_MASTER",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inword_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " INWORD NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "srv_no.po_no",
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": " PURCHASE ORDER NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "srv_no.po_date",
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PURCHASE ORDER DATE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": " SUPPLIER",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wuys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV_POST",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "srv_no.store",
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": " SELECT STORE",
+   "link_filters": "[[\"Warehouse\",\"custom_status\",\"=\",\"Active\"]]",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "srv_status",
+   "fieldtype": "Data",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "srv_status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "srv_no.srv_no",
+   "fieldname": "srv_original",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SRV NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.proj_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PROJECT NAME",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-29 12:42:16.987191",
+ "modified": "2025-08-29 12:55:26.300973",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV_POST",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_original"
+}

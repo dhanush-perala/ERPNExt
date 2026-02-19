@@ -1,0 +1,310 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-10 12:46:03.618036",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_lzbs",
+  "for",
+  "request_no",
+  "stock",
+  "destination",
+  "subsystem",
+  "request_type",
+  "remark",
+  "column_break_pdyt",
+  "program",
+  "request_date",
+  "store",
+  "project",
+  "card",
+  "siv_no",
+  "siv_date",
+  "section_break_fcmj",
+  "project_1",
+  "package",
+  "as_per",
+  "column_break_teqy",
+  "subsystem_1",
+  "card_1",
+  "comp_type",
+  "section_break_rvwm",
+  "program_1",
+  "from",
+  "to",
+  "stores",
+  "column_break_dwmg",
+  "destination_1",
+  "stock_1",
+  "project_2",
+  "comp_type1",
+  "partno_to_match",
+  "section_break_heau",
+  "table_yyvy",
+  "section_break_ohxl",
+  "table_ayjk",
+  "section_break_ykwb",
+  "table_xudk",
+  "section_break_opzr",
+  "table_kwxk",
+  "section_break_vtgk",
+  "table_lhko",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lzbs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "for",
+   "fieldtype": "Select",
+   "label": "FOR ",
+   "options": "SELECT\nFOR A PERIOD"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "REQUEST No"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Data",
+   "label": "STOCK"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "DESTINATION"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "SUBSYSTEM"
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Data",
+   "label": "REQUEST TYPE "
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "REMARK"
+  },
+  {
+   "fieldname": "column_break_pdyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "PROGRAM"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Data",
+   "label": "REQUEST DATE"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Data",
+   "label": "STORE"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "PROJECT"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Data",
+   "label": "CARD"
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Data",
+   "label": "SIV No"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Data",
+   "label": "SIV DATE "
+  },
+  {
+   "fieldname": "section_break_fcmj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_1",
+   "fieldtype": "Data",
+   "label": " PROJECT"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "PACKAGE"
+  },
+  {
+   "fieldname": "as_per",
+   "fieldtype": "Data",
+   "label": "AS PER "
+  },
+  {
+   "fieldname": "column_break_teqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subsystem_1",
+   "fieldtype": "Data",
+   "label": "SUBSYSTEM"
+  },
+  {
+   "fieldname": "card_1",
+   "fieldtype": "Data",
+   "label": " CARD"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "label": "COMP TYPE"
+  },
+  {
+   "fieldname": "section_break_rvwm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "program_1",
+   "fieldtype": "Data",
+   "label": "PROGRAM"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "FROM"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "TO"
+  },
+  {
+   "fieldname": "stores",
+   "fieldtype": "Data",
+   "label": "STORES"
+  },
+  {
+   "fieldname": "column_break_dwmg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination_1",
+   "fieldtype": "Data",
+   "label": "DESTINATION"
+  },
+  {
+   "fieldname": "stock_1",
+   "fieldtype": "Data",
+   "label": "STOCK"
+  },
+  {
+   "fieldname": "project_2",
+   "fieldtype": "Data",
+   "label": "PROJECT"
+  },
+  {
+   "fieldname": "comp_type1",
+   "fieldtype": "Data",
+   "label": "COMP TYPE "
+  },
+  {
+   "fieldname": "partno_to_match",
+   "fieldtype": "Data",
+   "label": "PARTNO TO MATCH"
+  },
+  {
+   "fieldname": "section_break_heau",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_yyvy",
+   "fieldtype": "Table",
+   "options": "BLOCKED REQUEST SIV-VIEW TABLE"
+  },
+  {
+   "fieldname": "section_break_ohxl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ayjk",
+   "fieldtype": "Table",
+   "options": "BLOCKED REQUEST SIV-VIEW TABLE 1"
+  },
+  {
+   "fieldname": "section_break_ykwb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_xudk",
+   "fieldtype": "Table",
+   "options": "BLOCKED REQUEST SIV-VIEW TABLE 2"
+  },
+  {
+   "fieldname": "section_break_opzr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_kwxk",
+   "fieldtype": "Table",
+   "options": "BLOCKED REQUEST SIV-VIEW TABLE 3"
+  },
+  {
+   "fieldname": "section_break_vtgk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_lhko",
+   "fieldtype": "Table",
+   "options": "BLOCKED REQUEST SIV-VIEW TABLE 4"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BLOCKED REQUEST SIV-VIEW",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-10 13:09:00.982520",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "BLOCKED REQUEST SIV-VIEW",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

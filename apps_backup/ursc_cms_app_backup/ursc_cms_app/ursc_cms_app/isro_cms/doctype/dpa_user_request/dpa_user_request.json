@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 12:01:16.564596",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_details_section",
+  "request_no",
+  "request_date",
+  "user",
+  "column_break_erbl",
+  "program",
+  "dpa_stage",
+  "submitted_dpa_during_incoming_inspection",
+  "section_break_myvn",
+  "project",
+  "component_type",
+  "package_style",
+  "date_code",
+  "manufacturer",
+  "column_break_agbt",
+  "quality",
+  "sr_no",
+  "procurement_spec",
+  "source_screened"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Int",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fieldname": "column_break_erbl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "dpa_stage",
+   "fieldtype": "Data",
+   "label": "DPA Stage"
+  },
+  {
+   "fieldname": "submitted_dpa_during_incoming_inspection",
+   "fieldtype": "Data",
+   "label": "Submitted DPA DURING INCOMING INSPECTION"
+  },
+  {
+   "fieldname": "section_break_myvn",
+   "fieldtype": "Section Break",
+   "label": "COMPONENT DETAILS"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Data",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Int",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Int",
+   "label": "SR NO"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Data",
+   "label": "PROCUREMENT SPEC"
+  },
+  {
+   "fieldname": "source_screened",
+   "fieldtype": "Data",
+   "label": "Source Screened"
+  },
+  {
+   "fieldname": "column_break_agbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_details_section",
+   "fieldtype": "Section Break",
+   "label": "REQUEST DETAILS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-14 12:32:22.873422",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "DPA_User_Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

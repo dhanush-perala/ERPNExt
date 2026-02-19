@@ -1,0 +1,384 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:29.969173",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pack_code",
+  "card_code",
+  "card_name",
+  "card_status",
+  "card_upd_by",
+  "card_upd_date",
+  "copy_type",
+  "copy_card_code",
+  "remarks",
+  "comp_staff",
+  "comp_start_date",
+  "comp_end_date",
+  "appr_by",
+  "appr_date",
+  "submit_to_ecad_by",
+  "submit_to_ecad_date",
+  "ecad_recd_by",
+  "ecad_recd_date",
+  "ecad_approve_by",
+  "ecad_approve_date",
+  "ecad_reject_by",
+  "ecad_reject_date",
+  "ceff_rec_by",
+  "ceff_rec_date",
+  "reject_status",
+  "ceff_folder_no",
+  "ecad_card_name",
+  "copy_same_card",
+  "pmo_approve_by",
+  "pmo_approve_date",
+  "pmo_reject_by",
+  "pmo_reject_date",
+  "jumper_upd_by",
+  "jumper_approve_by",
+  "prod_card",
+  "ddrc_status",
+  "ddrc_date",
+  "gd_approve_by",
+  "gd_approve_date",
+  "gd_upd_status",
+  "dpd_upd_status",
+  "dpd_approve_by",
+  "dpd_approve_date",
+  "ddrc_upd_by",
+  "version_no",
+  "card_rad_shield_status",
+  "card_rad_shield_status_date",
+  "card_rad_shield_status_by",
+  "card_function",
+  "card_req_status",
+  "stores_id",
+  "dest_id",
+  "card_type",
+  "ceff_folder_no_new",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Int",
+   "label": "PACK_CODE"
+  },
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Int",
+   "label": "CARD_CODE"
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "label": "CARD_NAME"
+  },
+  {
+   "fieldname": "card_status",
+   "fieldtype": "Select",
+   "label": "CARD_STATUS",
+   "options": "Initial\nComp entry started\napproved by designer\nCPD Approval\nECAD Receipt\nApprove For Fabrication\nCEFF Received Comp List"
+  },
+  {
+   "fieldname": "card_upd_by",
+   "fieldtype": "Int",
+   "label": "CARD_UPD_BY"
+  },
+  {
+   "fieldname": "card_upd_date",
+   "fieldtype": "Date",
+   "label": "CARD_UPD_DATE"
+  },
+  {
+   "fieldname": "copy_type",
+   "fieldtype": "Select",
+   "label": "COPY_TYPE",
+   "options": "Different ECAD Card\nSame ECAD Card"
+  },
+  {
+   "fieldname": "copy_card_code",
+   "fieldtype": "Int",
+   "label": "COPY_CARD_CODE"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "comp_staff",
+   "fieldtype": "Int",
+   "label": "COMP_STAFF"
+  },
+  {
+   "fieldname": "comp_start_date",
+   "fieldtype": "Date",
+   "label": "COMP_START_DATE"
+  },
+  {
+   "fieldname": "comp_end_date",
+   "fieldtype": "Date",
+   "label": "COMP_END_DATE"
+  },
+  {
+   "fieldname": "appr_by",
+   "fieldtype": "Int",
+   "label": "APPR_BY"
+  },
+  {
+   "fieldname": "appr_date",
+   "fieldtype": "Date",
+   "label": "APPR_DATE"
+  },
+  {
+   "fieldname": "submit_to_ecad_by",
+   "fieldtype": "Int",
+   "label": "SUBMIT_TO_ECAD_BY"
+  },
+  {
+   "fieldname": "submit_to_ecad_date",
+   "fieldtype": "Date",
+   "label": "SUBMIT_TO_ECAD_DATE"
+  },
+  {
+   "fieldname": "ecad_recd_by",
+   "fieldtype": "Int",
+   "label": "ECAD_RECD_BY"
+  },
+  {
+   "fieldname": "ecad_recd_date",
+   "fieldtype": "Date",
+   "label": "ECAD_RECD_DATE"
+  },
+  {
+   "fieldname": "ecad_approve_by",
+   "fieldtype": "Int",
+   "label": "ECAD_APPROVE_BY"
+  },
+  {
+   "fieldname": "ecad_approve_date",
+   "fieldtype": "Date",
+   "label": "ECAD_APPROVE_DATE"
+  },
+  {
+   "fieldname": "ecad_reject_by",
+   "fieldtype": "Int",
+   "label": "ECAD_REJECT_BY"
+  },
+  {
+   "fieldname": "ecad_reject_date",
+   "fieldtype": "Date",
+   "label": "ECAD_REJECT_DATE"
+  },
+  {
+   "fieldname": "ceff_rec_by",
+   "fieldtype": "Int",
+   "label": "CEFF_REC_BY"
+  },
+  {
+   "fieldname": "ceff_rec_date",
+   "fieldtype": "Date",
+   "label": "CEFF_REC_DATE"
+  },
+  {
+   "fieldname": "reject_status",
+   "fieldtype": "Int",
+   "label": "REJECT_STATUS"
+  },
+  {
+   "fieldname": "ceff_folder_no",
+   "fieldtype": "Int",
+   "label": "CEFF_FOLDER_NO"
+  },
+  {
+   "fieldname": "ecad_card_name",
+   "fieldtype": "Data",
+   "label": "ECAD_CARD_NAME"
+  },
+  {
+   "fieldname": "copy_same_card",
+   "fieldtype": "Int",
+   "label": "COPY_SAME_CARD"
+  },
+  {
+   "fieldname": "pmo_approve_by",
+   "fieldtype": "Int",
+   "label": "PMO_APPROVE_BY"
+  },
+  {
+   "fieldname": "pmo_approve_date",
+   "fieldtype": "Date",
+   "label": "PMO_APPROVE_DATE"
+  },
+  {
+   "fieldname": "pmo_reject_by",
+   "fieldtype": "Int",
+   "label": "PMO_REJECT_BY"
+  },
+  {
+   "fieldname": "pmo_reject_date",
+   "fieldtype": "Date",
+   "label": "PMO_REJECT_DATE"
+  },
+  {
+   "fieldname": "jumper_upd_by",
+   "fieldtype": "Int",
+   "label": "JUMPER_UPD_BY"
+  },
+  {
+   "fieldname": "jumper_approve_by",
+   "fieldtype": "Int",
+   "label": "JUMPER_APPROVE_BY"
+  },
+  {
+   "fieldname": "prod_card",
+   "fieldtype": "Int",
+   "label": "PROD_CARD"
+  },
+  {
+   "fieldname": "ddrc_status",
+   "fieldtype": "Int",
+   "label": "DDRC_STATUS"
+  },
+  {
+   "fieldname": "ddrc_date",
+   "fieldtype": "Date",
+   "label": "DDRC_DATE"
+  },
+  {
+   "fieldname": "gd_approve_by",
+   "fieldtype": "Int",
+   "label": "GD_APPROVE_BY"
+  },
+  {
+   "fieldname": "gd_approve_date",
+   "fieldtype": "Date",
+   "label": "GD_APPROVE_DATE"
+  },
+  {
+   "fieldname": "gd_upd_status",
+   "fieldtype": "Int",
+   "label": "GD_UPD_STATUS"
+  },
+  {
+   "fieldname": "dpd_upd_status",
+   "fieldtype": "Int",
+   "label": "DPD_UPD_STATUS"
+  },
+  {
+   "fieldname": "dpd_approve_by",
+   "fieldtype": "Int",
+   "label": "DPD_APPROVE_BY"
+  },
+  {
+   "fieldname": "dpd_approve_date",
+   "fieldtype": "Date",
+   "label": "DPD_APPROVE_DATE"
+  },
+  {
+   "fieldname": "ddrc_upd_by",
+   "fieldtype": "Int",
+   "label": "DDRC_UPD_BY"
+  },
+  {
+   "fieldname": "version_no",
+   "fieldtype": "Int",
+   "label": "VERSION_NO"
+  },
+  {
+   "fieldname": "card_rad_shield_status",
+   "fieldtype": "Int",
+   "label": "CARD_RAD_SHIELD_STATUS"
+  },
+  {
+   "fieldname": "card_rad_shield_status_date",
+   "fieldtype": "Date",
+   "label": "CARD_RAD_SHIELD_STATUS_DATE"
+  },
+  {
+   "fieldname": "card_rad_shield_status_by",
+   "fieldtype": "Int",
+   "label": "CARD_RAD_SHIELD_STATUS_BY"
+  },
+  {
+   "fieldname": "card_function",
+   "fieldtype": "Data",
+   "label": "CARD_FUNCTION"
+  },
+  {
+   "fieldname": "card_req_status",
+   "fieldtype": "Int",
+   "label": "CARD_REQ_STATUS"
+  },
+  {
+   "fieldname": "stores_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "STORES_ID"
+  },
+  {
+   "fieldname": "dest_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "DEST_ID"
+  },
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Int",
+   "label": "CARD_TYPE"
+  },
+  {
+   "fieldname": "ceff_folder_no_new",
+   "fieldtype": "Data",
+   "label": "CEFF_FOLDER_NO_NEW"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PRJ_CARDS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:30:57.001778",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PRJ_CARDS",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

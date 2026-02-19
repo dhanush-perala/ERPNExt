@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-23 16:14:58.571516",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_knlo",
+  "select_project",
+  "project_copy",
+  "pack_name",
+  "select_package_copy",
+  "action_buttons",
+  "work_flow_status",
+  "linked_siv",
+  "column_break_kzfn",
+  "select_sub_system",
+  "select_subsytem_copy",
+  "status",
+  "select_card",
+  "select_card_copy",
+  "add_html",
+  "reference_doc",
+  "fetched_card",
+  "section_break_bvfk",
+  "items",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_kzfn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bvfk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_knlo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_copy",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "Project"
+  },
+  {
+   "fieldname": "select_package_copy",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select Package Copy",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "action_buttons",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Action Buttons",
+   "options": "    <div class=\"mb-4\">\n      \n        <button id=\"btn_approve\" class=\"btn btn-success\" style=\"width:47%;\">\n            APPROVE\n        </button>\n <button id=\"btn_print\" class=\"btn btn-info\" style=\"width:45%;  margin-left:2%;\">\n            PRINT\n        </button>\n    </div>"
+  },
+  {
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Work Flow Status",
+   "options": "Initial\nApproved\nReject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_subsytem_copy",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select SubSytem Copy",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "Select SubSytem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Package",
+   "options": "PRJ_PACK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "Add Button",
+   "options": "\n\n   <div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "SIV Request Item"
+  },
+  {
+   "fieldname": "reference_doc",
+   "fieldtype": "Data",
+   "label": "data",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_card.card_name",
+   "fieldname": "select_card_copy",
+   "fieldtype": "Data",
+   "label": "Select Card Copy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fetched_card",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV Request Approval",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "linked_siv",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "siv_name",
+   "options": "SIV",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-09 10:58:59.982629",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Request Approval",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

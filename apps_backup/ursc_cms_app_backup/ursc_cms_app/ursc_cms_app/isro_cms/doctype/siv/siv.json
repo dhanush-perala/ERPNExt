@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:31.547840",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "siv_id",
+  "siv_no",
+  "siv_date",
+  "prog_id",
+  "card_id",
+  "qty",
+  "datecode",
+  "exp_date",
+  "mfr_id",
+  "batch_no",
+  "siv_type",
+  "req_no",
+  "workflow_status",
+  "status",
+  "column_break_ymot",
+  "dest_id",
+  "subsystem",
+  "cardname",
+  "remarks",
+  "sat_id",
+  "entry_by",
+  "dest_prj",
+  "ret_qty",
+  "pcb_id",
+  "stores_id",
+  "link_id",
+  "ceff_link_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "siv_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SIV_ID"
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Int",
+   "label": "SIV_NO"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Int",
+   "label": "SIV_DATE"
+  },
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "CARD_ID"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "datecode",
+   "fieldtype": "Data",
+   "label": "DATECODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "EXP_DATE"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "BATCH_NO"
+  },
+  {
+   "fieldname": "siv_type",
+   "fieldtype": "Select",
+   "label": "SIV_TYPE",
+   "options": "MANUAL\nAUTO"
+  },
+  {
+   "fieldname": "req_no",
+   "fieldtype": "Int",
+   "label": "REQ_NO"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "column_break_ymot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dest_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "DEST_ID"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "SUBSYSTEM"
+  },
+  {
+   "fieldname": "cardname",
+   "fieldtype": "Data",
+   "label": "CARDNAME"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "sat_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SAT_ID"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "dest_prj",
+   "fieldtype": "Int",
+   "label": "DEST_PRJ"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "label": "RET_QTY"
+  },
+  {
+   "fieldname": "pcb_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PCB_ID"
+  },
+  {
+   "fieldname": "stores_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "STORES_ID"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "ceff_link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "CEFF_LINK_ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:25:17.963923",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

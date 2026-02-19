@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-10-21 20:34:34.481121",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "stock_project",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "stock_project",
+   "fieldtype": "Data",
+   "label": "Enter Project Name"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-21 20:42:24.540342",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Project_name_master",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "stock_project",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "stock_project"
+}

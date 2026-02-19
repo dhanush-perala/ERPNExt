@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 12:39:16.049487",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tuem",
+  "amended_from",
+  "for",
+  "request_no",
+  "request_date",
+  "program",
+  "select_request",
+  "destination",
+  "project",
+  "subsystem",
+  "card",
+  "remarks",
+  "section_break_orvh",
+  "table_mviw",
+  "section_break_wotp",
+  "table_yder"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tuem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "for",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "For",
+   "options": "Select a Request\nFor a Period\nFor a User\nProject"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "select_request",
+   "fieldtype": "Select",
+   "label": "Select Request",
+   "options": "Select Request\nNormal Request\nSpecific Request\nPCB Request\nKit Request"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Destination"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fetch_from": "project.sales_order",
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "ADD PROJECT_CARD11"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.select_request==\"Normal Request\"",
+   "fieldname": "section_break_orvh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_mviw",
+   "fieldtype": "Table",
+   "options": "Normal Request"
+  },
+  {
+   "depends_on": "eval:doc.select_request==\"Specific Request\"",
+   "fieldname": "section_break_wotp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_yder",
+   "fieldtype": "Table",
+   "options": "SpecificRequest"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-06 13:02:13.624181",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

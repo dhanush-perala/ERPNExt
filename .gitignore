@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+pip-selfcheck.json
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+logs/
+*.log
+*.sqlite3
+dump.rdb
+
+# Frappe/bench artifacts
+sites/*/private/files
+sites/*/public/files
+sites/*/private/backups
+sites/*/private/backups/*
+sites/*/private/files/*
+sites/*/assets/*
+pids/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives and backups
+archived/
+sites/*/private/backups/
+sites/*/private/files/
+sites/*/public/files/
+nohup.out
+
+# Secrets and keys
+*.pem
+*.key
+
+# Other large/runtime artifacts
+env/
+.venv/
+logs/
+dump.rdb

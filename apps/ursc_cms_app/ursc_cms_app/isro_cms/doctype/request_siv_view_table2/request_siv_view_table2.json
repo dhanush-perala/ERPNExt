@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 16:08:04.976369",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rdc_ref_no",
+  "program",
+  "request_no",
+  "request_date",
+  "stock",
+  "stores",
+  "destination",
+  "request_by",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "rdc_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RDC REF NO"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PROGRAM"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST NO."
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST DATE"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STOCK"
+  },
+  {
+   "fieldname": "stores",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STORES"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESTINATION"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST BY"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REMARKS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 16:10:31.151551",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "REQUEST SIV-VIEW table2",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

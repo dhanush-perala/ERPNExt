@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-11-05 12:39:05.233717",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "project",
+  "prj_card_ref",
+  "sub_code",
+  "proj_code",
+  "column_break_tjte",
+  "select_sub_system",
+  "centre",
+  "status",
+  "section_break_qkyc",
+  "table_uodw",
+  "saved_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "centre",
+   "fieldtype": "Data",
+   "label": "Select Center",
+   "options": "ISRO CENTER",
+   "placeholder": "SELECT CENTRE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prj_card_ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "project save Copy",
+   "options": "PRJ_SUB"
+  },
+  {
+   "fieldname": "column_break_tjte",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Enter Subsystem",
+   "placeholder": "ENTER SUB SYSTEM",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "section_break_qkyc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "select_project.project_name",
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[]",
+   "options": "PROJECT_MASTER",
+   "placeholder": "SELECT PROJECT"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Project",
+   "link_filters": "[]",
+   "options": "Project",
+   "placeholder": "SELECT PROJECT",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_uodw",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "ADD PROJECT SUBSYSTEM Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saved_records",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "sub_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "sub_code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_project.proj_code",
+   "fieldname": "proj_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "proj_code",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-02 11:08:59.716374",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ADD PROJECT SUBSYSTEM",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "select_sub_system"
+}

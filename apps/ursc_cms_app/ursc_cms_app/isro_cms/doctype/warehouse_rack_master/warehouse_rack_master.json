@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{enter_shelfrack}-{#}",
+ "creation": "2025-10-01 12:30:14.429228",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_warehouse",
+  "select_location",
+  "select_block",
+  "enter_shelfrack",
+  "column_break_pcnp",
+  "description",
+  "warehouse_name_save",
+  "warhouse_block_save"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_warehouse",
+   "fieldtype": "Link",
+   "label": "Select Warehouse",
+   "link_filters": "[[\"Warehouse\",\"is_group\",\"=\",0]]",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enter_shelfrack",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Enter Rack",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pcnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_block",
+   "fieldtype": "Link",
+   "label": "Select Block",
+   "options": "Warehouse Block Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "select_warehouse.warehouse_name",
+   "fieldname": "warehouse_name_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Warehouse name save",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_block.enter_block",
+   "fieldname": "warhouse_block_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "warhouse block save",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_location",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select Location",
+   "options": "Warehouse Location Master"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-30 15:13:28.734934",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Warehouse Rack Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "enter_shelfrack"
+}

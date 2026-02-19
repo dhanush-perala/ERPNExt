@@ -1,0 +1,16 @@
+[
+ {
+  "allow_edit": 0,
+  "disable_auto_refresh": 0,
+  "disable_automatic_recency_filters": 0,
+  "disable_comment_count": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"label\":\"Component Name\",\"fieldname\":\"item_name\"},{\"type\":\"Status\",\"label\":\"Status\",\"fieldname\":\"status_field\"},{\"label\":\"Component Category Name\",\"fieldname\":\"item_group\"},{\"label\":\"Component Code\",\"fieldname\":\"item_code\"}]",
+  "modified": "2025-08-22 11:25:16.832911",
+  "name": "Item",
+  "total_fields": "4"
+ }
+]

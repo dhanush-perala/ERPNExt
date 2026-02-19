@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-17 17:03:55.739528",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "search_by",
+  "requested_by",
+  "dpa_stage",
+  "column_break_bzpg",
+  "from_date",
+  "to_date",
+  "dpa_req_no",
+  "section_break_fipt",
+  "results_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "search_by",
+   "fieldtype": "Select",
+   "label": "search_by",
+   "options": "\nDPA STAGE\nUSER\nREQUEST DATE\nDPA REQUEST NUMBER"
+  },
+  {
+   "depends_on": "eval:doc.search_by == \"DPA STAGE\"",
+   "fieldname": "dpa_stage",
+   "fieldtype": "Select",
+   "label": "dpa_stage",
+   "options": "\nFIRST RELIFING\nINCOMING INSPECTION\nOTHERS\nSCREENING\nSECOND RELIFING\nTHIRD RELIFING"
+  },
+  {
+   "depends_on": "eval:doc.search_by==\"USER\"",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "requested_by",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_bzpg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.search_by==\"REQUEST DATE\"",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "from_date"
+  },
+  {
+   "depends_on": "eval:doc.search_by==\"REQUEST DATE\"",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "to_date"
+  },
+  {
+   "depends_on": "eval:doc.search_by==\"DPA REQUEST NUMBER\"",
+   "fieldname": "dpa_req_no",
+   "fieldtype": "Data",
+   "label": "dpa_req_no"
+  },
+  {
+   "fieldname": "section_break_fipt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "results_html",
+   "fieldtype": "HTML",
+   "label": "results_html"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-17 17:16:36.251379",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "DPA Request View",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-02 12:25:38.980570",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "store",
+  "selection_order",
+  "column_break_juyt",
+  "program",
+  "stock"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "selection_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Selection Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_juyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Selection Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-03 16:37:16.925854",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Project Stock Grade Priority Card Wise",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:32.734648",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_afqf",
+  "collecting_staff",
+  "irs",
+  "select_project",
+  "pack_name",
+  "fetched_card",
+  "workflow_state",
+  "column_break_hsbg",
+  "insat",
+  "gaganyaan",
+  "select_sub_system",
+  "select_card",
+  "add_html",
+  "section_break_yoiz",
+  "staff_no",
+  "column_break_auxv",
+  "staff_name",
+  "column_break_rzec",
+  "phone_no",
+  "amended_from",
+  "section_break_bjfr",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "collecting_staff",
+   "fieldtype": "Select",
+   "label": "Collecting Staff"
+  },
+  {
+   "fieldname": "irs",
+   "fieldtype": "Link",
+   "label": "IRS",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "insat",
+   "fieldtype": "Link",
+   "label": "INSAT",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "gaganyaan",
+   "fieldtype": "Link",
+   "label": "GAGANYAAN",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_yoiz",
+   "fieldtype": "Section Break",
+   "label": "ADD STAFF DETAILS"
+  },
+  {
+   "fieldname": "staff_no",
+   "fieldtype": "Data",
+   "label": "Staff No"
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Staff Name"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "column_break_auxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rzec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_afqf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hsbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "Select Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "Select Sub System",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV Dispatch",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "label": "Select Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "section_break_bjfr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "ADD Button",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "SIV Dispatch Items"
+  },
+  {
+   "fieldname": "fetched_card",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "fetched_card"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "label": "Work Flow Status",
+   "options": "Pending Approval\nApproved\nRejected"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-02 12:36:21.651111",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Dispatch",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

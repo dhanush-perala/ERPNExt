@@ -1,0 +1,10 @@
+"filters": [
+    {
+        "fieldname": "status",
+        "label": "Status",
+        "fieldtype": "Select",
+        "options": "Open\nClosed\nPending",
+        "default": "Open"
+    }
+]
+

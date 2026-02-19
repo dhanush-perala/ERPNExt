@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:sub_code",
+ "creation": "2025-10-23 17:57:09.276014",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mat9",
+  "project",
+  "project_save",
+  "sub_code",
+  "proj_code",
+  "hold_and_release",
+  "column_break_tjte",
+  "select_sub_system",
+  "centre",
+  "center_save",
+  "status",
+  "add_button_html",
+  "section_break_aqly",
+  "table_rgfe",
+  "section_break_bqwu",
+  "saved_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mat9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "options": "Project",
+   "placeholder": "SELECT PROJECT",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "centre.center",
+   "fieldname": "center_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Center"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project"
+  },
+  {
+   "fieldname": "column_break_tjte",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Link",
+   "label": "SELECT CENTER",
+   "options": "ISRO CENTER",
+   "placeholder": "SELECT CENTRE"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER SUB SYSTEM",
+   "placeholder": "ENTER SUB SYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bqwu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "saved_records",
+   "fieldtype": "HTML",
+   "label": "Saved Records"
+  },
+  {
+   "fieldname": "add_button_html",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Add Button"
+  },
+  {
+   "fieldname": "section_break_aqly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_rgfe",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "PRJ_SUB table"
+  },
+  {
+   "fieldname": "sub_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SUB_CODE",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "project.custom_proj_code",
+   "fieldname": "proj_code",
+   "fieldtype": "Int",
+   "label": "PROJ_CODE",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "hold_and_release",
+   "fieldtype": "Check",
+   "label": "Hold & Release"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-05 18:16:59.519880",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PRJ_SUB",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECAD Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "select_sub_system"
+}

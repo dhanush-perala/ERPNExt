@@ -1,0 +1,10 @@
+{
+ "doctype": "DocType",
+ "name": "ADD PROJECT CARD",
+ "module": "ISRO CMS",
+ "custom": 1,
+ "fields": [],
+ "permissions": [],
+ "document_type": "Master",
+ "istable": 0
+}

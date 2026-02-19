@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-27 15:31:55.254611",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "store",
+  "program",
+  "column_break_juyt",
+  "stock",
+  "selection_order"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Selection Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_juyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "selection_order",
+   "fieldtype": "Int",
+   "label": "Selection Order",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-06 10:18:38.908852",
+ "modified_by": "goutham.krishna@neemus.com",
+ "module": "ISRO CMS",
+ "name": "Project warhouse",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

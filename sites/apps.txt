@@ -1,0 +1,9 @@
+frappe
+erpnext
+sample_git_app
+sample_app
+client_app
+chat_assistant
+healthcare
+isro
+ursc_cms_app

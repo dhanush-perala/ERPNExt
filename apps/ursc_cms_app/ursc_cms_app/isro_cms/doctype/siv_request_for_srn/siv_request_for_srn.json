@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 13:24:00.488739",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_no",
+  "request_date",
+  "request_type",
+  "card",
+  "card_copy",
+  "stock_copy",
+  "status",
+  "project",
+  "column_break_pued",
+  "project_copy",
+  "subsystem",
+  "sub_system_copy",
+  "store",
+  "store_copy",
+  "program",
+  "program_copy",
+  "stock",
+  "section_break_epgj",
+  "table_hxvq",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Request Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "PROJECT_MASTER",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": " Request Type ",
+   "options": "Select\nTO-SCR\nFlight-G1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pued",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sub_system.select_sub_system",
+   "fieldname": "sub_system_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sub System Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Card",
+   "options": "CARD_1C",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "card.cardno",
+   "fieldname": "card_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Card Copy",
+   "options": "CARD_1C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "store.warehouse_name",
+   "fieldname": "store_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Store Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "store.warehouse_name",
+   "fieldname": "program_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Program Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "program.warehouse_name",
+   "fieldname": "stock_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Stock Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_epgj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_hxvq",
+   "fieldtype": "Table",
+   "options": "SIV req for SRN Table"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request Number",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-01 19:00:16.773667",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Request for SRN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

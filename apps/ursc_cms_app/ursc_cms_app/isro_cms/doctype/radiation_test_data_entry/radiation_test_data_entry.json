@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:rad_test_id",
+ "creation": "2025-11-05 17:35:44.174445",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sxqy",
+  "amended_from",
+  "rad_test_id",
+  "project",
+  "subsystem",
+  "package",
+  "card",
+  "test_date",
+  "column_break_rsfd",
+  "test_engineer",
+  "test_lab",
+  "radiation_source",
+  "dose_rate_kradhr",
+  "comments",
+  "section_break_hubq",
+  "table_fnlz"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sxqy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Radiation_Test_Data_Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Add Project Card"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "column_break_rsfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_engineer",
+   "fieldtype": "Link",
+   "label": "Test Engineer",
+   "options": "User"
+  },
+  {
+   "fieldname": "test_lab",
+   "fieldtype": "Data",
+   "label": "Test Lab"
+  },
+  {
+   "fieldname": "radiation_source",
+   "fieldtype": "Data",
+   "label": "Radiation Source"
+  },
+  {
+   "fieldname": "dose_rate_kradhr",
+   "fieldtype": "Float",
+   "label": "Dose Rate (krad/hr)"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "section_break_hubq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_fnlz",
+   "fieldtype": "Table",
+   "options": "Radiation_Test_Data_Item"
+  },
+  {
+   "fieldname": "rad_test_id",
+   "fieldtype": "Data",
+   "label": "RAD Test ID",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-06 13:18:59.888821",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation_Test_Data_Entry",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

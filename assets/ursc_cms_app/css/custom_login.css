@@ -1,0 +1,21 @@
+body {
+    background: url("/assets/ursc_cms_app/logo1.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
+@media (min-width: 576px) {
+    body {
+        background: url("/assets/ursc_cms_app/logo1.png") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+.page-content-wrapper {
+    min-height: calc(100vh - 220px);
+}
+
+.web-footer {
+    display: none;
+}

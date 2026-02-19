@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:32.153749",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "scr_at_id",
+  "scr_at_name",
+  "div_code",
+  "agency_type",
+  "status",
+  "workflow_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "scr_at_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SCR_AT_ID"
+  },
+  {
+   "fieldname": "scr_at_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SCR_AT_NAME",
+   "reqd": 1
+  },
+  {
+   "fieldname": "div_code",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "DIV_CODE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agency_type",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "AGENCY_TYPE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SCR_AT",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-28 16:49:31.426190",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SCR_AT",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "scr_at_name"
+}

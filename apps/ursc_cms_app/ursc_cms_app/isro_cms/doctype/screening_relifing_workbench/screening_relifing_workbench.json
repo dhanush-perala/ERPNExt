@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-29 12:24:15.864986",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "component_type",
+  "keyword",
+  "section_break_ydnv",
+  "analyse_stock",
+  "requested_qty",
+  "issued_qty",
+  "pending_qty",
+  "section_break_hmih",
+  "fg1_stock_qty",
+  "toscreen_stock_qty",
+  "screening_lab_qty",
+  "section_break_rmif",
+  "selected_batch",
+  "selected_date_code",
+  "expiry_date",
+  "section_break_gnya",
+  "derived_stock_grade",
+  "action",
+  "decision_reason",
+  "section_break_iujz",
+  "proceed",
+  "create_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "keyword",
+   "fieldtype": "Data",
+   "label": "Keyword"
+  },
+  {
+   "fieldname": "section_break_ydnv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_hmih",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fg1_stock_qty",
+   "fieldtype": "Float",
+   "label": "FG1 Available Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "toscreen_stock_qty",
+   "fieldtype": "Float",
+   "label": "To-Screen Available Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "screening_lab_qty",
+   "fieldtype": "Float",
+   "label": "Screening Lab Quantity"
+  },
+  {
+   "fieldname": "section_break_rmif",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "selected_batch",
+   "fieldtype": "Link",
+   "label": "Selected Batch",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "selected_date_code",
+   "fieldtype": "Date",
+   "label": "Selected Date Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "section_break_gnya",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "derived_stock_grade",
+   "fieldtype": "Data",
+   "label": "Derived Stock Grade",
+   "read_only": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "label": "Action",
+   "options": "\nNone\nScreening\nRelifing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "decision_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "section_break_iujz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "proceed",
+   "fieldtype": "Check",
+   "label": "Proceed"
+  },
+  {
+   "fieldname": "create_request",
+   "fieldtype": "Button",
+   "label": "Create Request"
+  },
+  {
+   "fieldname": "requested_qty",
+   "fieldtype": "Float",
+   "label": "Requested Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Float",
+   "label": "Issued Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending_qty",
+   "fieldtype": "Float",
+   "label": "Pending Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "analyse_stock",
+   "fieldtype": "Button",
+   "label": "Analyse Stock"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-29 13:58:54.703149",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Screening Relifing Workbench",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

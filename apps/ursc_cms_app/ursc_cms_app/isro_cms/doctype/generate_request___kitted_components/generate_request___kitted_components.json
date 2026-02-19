@@ -1,0 +1,257 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-12-04 12:53:03.729941",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oldo",
+  "kit_type",
+  "date_code",
+  "select_project",
+  "component_type",
+  "request_id",
+  "program",
+  "source_warehouse",
+  "kitting_warehouse",
+  "sales_order",
+  "selected_stock_json",
+  "column_break_rdng",
+  "kitted_for",
+  "expiry_date",
+  "mdb_number",
+  "project__card",
+  "status",
+  "requested_by",
+  "approved_by",
+  "html_stock_picker",
+  "section_break_hhln",
+  "available_stock_html",
+  "fetch_btn",
+  "available_stock_html_card",
+  "section_break_pwsl",
+  "table_reas",
+  "section_break_aogk",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.kit_type == \"Specific Part\"",
+   "fieldname": "kitted_for",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Kit Type Based on",
+   "options": "select\nDate Code\nExpiry Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_oldo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rdng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pwsl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "table_reas",
+   "fieldtype": "Table",
+   "options": "REQ KIT COMP TABLE"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "section_break_aogk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mdb_number",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "MDB Number"
+  },
+  {
+   "fieldname": "section_break_hhln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fetch_btn",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Fetch Components from Stock Entry",
+   "options": "<button class=\"btn btn-dark\">\n        Fetch Components from Stock Entry\n</button>"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "GENERATE REQUEST - KITTED COMPONENTS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Request ID"
+  },
+  {
+   "fieldname": "kit_type",
+   "fieldtype": "Select",
+   "label": "Kit Type",
+   "options": "Select Kit type\nSpecific Part\nProject Card"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Program",
+   "options": "Project"
+  },
+  {
+   "depends_on": "eval:doc.kit_type == \"Project Card\"",
+   "fieldname": "project__card",
+   "fieldtype": "Link",
+   "label": "Project Card",
+   "link_filters": "[[\"Cardwise Component List Update and Approve - Designer\",\"status\",\"=\",\"Active\"],[\"Cardwise Component List Update and Approve - Designer\",\"docstatus\",\"=\",\"1\"]]",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "notSource Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "kitting_warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "notKitting Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Draft\nReserved\nReleased\nCancelled"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Requested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "sales_order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.kitted_for == \"Date Code\"\n",
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "label": "Date Code",
+   "length": 4
+  },
+  {
+   "depends_on": "eval:doc.kitted_for == \"Expiry Date\"",
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "html_stock_picker",
+   "fieldtype": "HTML",
+   "label": "Select Link Part number/Stock"
+  },
+  {
+   "fieldname": "selected_stock_json",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "selected_stock_json"
+  },
+  {
+   "depends_on": "eval:doc.kit_type == \"Specific Part\"",
+   "fieldname": "available_stock_html",
+   "fieldtype": "HTML",
+   "label": "available_stock_html"
+  },
+  {
+   "depends_on": "eval:doc.kit_type != \"Specific Part\"",
+   "fieldname": "available_stock_html_card",
+   "fieldtype": "HTML",
+   "label": "available_stock_html_card"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-29 15:23:01.756434",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "GENERATE REQUEST - KITTED COMPONENTS",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager"
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "URSC ADMIN",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

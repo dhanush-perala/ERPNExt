@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 12:45:56.318215",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "part_no",
+  "mount_on",
+  "tid_hardness",
+  "radiation_sheilding",
+  "column_break_gqof",
+  "tid_level",
+  "rdm",
+  "component_id",
+  "link_id",
+  "rad_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Part No"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mount On"
+  },
+  {
+   "fieldname": "tid_hardness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TID Hardness"
+  },
+  {
+   "fieldname": "radiation_sheilding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Radiation Sheilding"
+  },
+  {
+   "fieldname": "column_break_gqof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tid_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TID Level"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RDM"
+  },
+  {
+   "fieldname": "component_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Component_Id"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link_Id"
+  },
+  {
+   "fieldname": "rad_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RAD_Id"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 12:49:47.259747",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "RAD_SHIELD_COPY_TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

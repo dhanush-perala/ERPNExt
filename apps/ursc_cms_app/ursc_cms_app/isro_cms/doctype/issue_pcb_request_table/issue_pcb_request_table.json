@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-28 11:25:08.941596",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_req_no",
+  "project",
+  "data_pipq",
+  "data_jftx",
+  "data_keol",
+  "data_efcm",
+  "data_zhzu",
+  "data_ppdn",
+  "data_fkcq"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_req_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "JOB REQ NO"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PROJECT"
+  },
+  {
+   "fieldname": "data_pipq",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PACKAGE"
+  },
+  {
+   "fieldname": "data_jftx",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD NAME"
+  },
+  {
+   "fieldname": "data_keol",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUED TO"
+  },
+  {
+   "fieldname": "data_efcm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QA CODE"
+  },
+  {
+   "fieldname": "data_zhzu",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD CODE"
+  },
+  {
+   "fieldname": "data_ppdn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ECAD REF NO"
+  },
+  {
+   "fieldname": "data_fkcq",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ecad_card_name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-28 12:31:23.700506",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ISSUE PCB REQUEST TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

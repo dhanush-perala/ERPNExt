@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-09 13:44:45.950641",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card",
+  "ecad_card",
+  "updated_by",
+  "updated_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "card",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card"
+  },
+  {
+   "fieldname": "ecad_card",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ECAD Card"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Updated By"
+  },
+  {
+   "fieldname": "updated_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Updated Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-09 14:01:10.126515",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Copy Project Package Source Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

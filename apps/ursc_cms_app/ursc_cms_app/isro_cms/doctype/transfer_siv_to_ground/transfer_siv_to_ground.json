@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 12:35:15.348372",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o5ik",
+  "amended_from",
+  "project",
+  "request_no",
+  "request_date",
+  "source_section",
+  "source_project",
+  "source_stock",
+  "siv_no",
+  "siv_date",
+  "destination_section",
+  "destination_project",
+  "destination_stock",
+  "srn_no",
+  "srn_date",
+  "section_break_nkmf",
+  "table_yhpg"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o5ik",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TRANSFER SIV TO GROUND",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "REQUEST NO"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Data",
+   "label": "REQUEST Date"
+  },
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "source_project",
+   "fieldtype": "Data",
+   "label": "Source PROJECT"
+  },
+  {
+   "fieldname": "source_stock",
+   "fieldtype": "Data",
+   "label": "Source Stock"
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Data",
+   "label": "SIV NO"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Data",
+   "label": "SIV Date "
+  },
+  {
+   "fieldname": "destination_section",
+   "fieldtype": "Section Break",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "destination_project",
+   "fieldtype": "Data",
+   "label": "Destination PROJECT"
+  },
+  {
+   "fieldname": "destination_stock",
+   "fieldtype": "Data",
+   "label": "Destination Stock"
+  },
+  {
+   "fieldname": "srn_no",
+   "fieldtype": "Data",
+   "label": "SRN NO"
+  },
+  {
+   "fieldname": "srn_date",
+   "fieldtype": "Data",
+   "label": "SRN Date "
+  },
+  {
+   "fieldname": "section_break_nkmf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_yhpg",
+   "fieldtype": "Table",
+   "options": "TRANSFER SIV TO GROUND Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-07 12:47:23.830759",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "TRANSFER SIV TO GROUND",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

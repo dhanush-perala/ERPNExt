@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-08 13:39:20.852899",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_type",
+  "req_part_no",
+  "oldest_valid_dc",
+  "relife_qtydc__oldest",
+  "screening_qty_dc__oldest",
+  "column_break_uemh",
+  "to_relife_qty_total",
+  "to_screening_qty_total",
+  "req_pipeline_qty",
+  "consumption",
+  "drawn_qty",
+  "link_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp Type"
+  },
+  {
+   "fieldname": "req_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Part No"
+  },
+  {
+   "fieldname": "oldest_valid_dc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Oldest Valid DC"
+  },
+  {
+   "fieldname": "relife_qtydc__oldest",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relife Qty(DC < Oldest) "
+  },
+  {
+   "fieldname": "screening_qty_dc__oldest",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Screening Qty (DC < Oldest)"
+  },
+  {
+   "fieldname": "to_relife_qty_total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Relife Qty Total"
+  },
+  {
+   "fieldname": "to_screening_qty_total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Screening Qty Total"
+  },
+  {
+   "fieldname": "req_pipeline_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Pipeline Qty"
+  },
+  {
+   "fieldname": "consumption",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consumption"
+  },
+  {
+   "fieldname": "drawn_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawn Qty"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link ID"
+  },
+  {
+   "fieldname": "column_break_uemh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-09 13:49:13.528276",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Components Due For Screening Relifing FIFO Analysis table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

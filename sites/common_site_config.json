@@ -1,0 +1,13 @@
+{
+ "db_host": "127.0.0.1",
+ "default_site": "URSC_CMS",
+ "developer_mode": 1,
+ "file_watcher_port": 6787,
+ "maintenance_mode": 1,
+ "pause_scheduler": 1,
+ "redis_cache": "redis://127.0.0.1:13002",
+ "redis_queue": "redis://127.0.0.1:12002",
+ "redis_socketio": "redis://127.0.0.1:11002",
+ "server_script_enabled": 1,
+ "socketio_port": 9000
+}

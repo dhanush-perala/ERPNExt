@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SRV ENTRY FORMS-{MM}-{DD}-{YYYY}-{####}",
+ "creation": "2025-08-13 16:48:31.809363",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "inward_no",
+  "srv_no",
+  "srv_date",
+  "project",
+  "srv_status",
+  "column_break_brrq",
+  "po_no",
+  "po_date",
+  "store",
+  "enter_supplier",
+  "status",
+  "source_doc",
+  "section_break_ydvb",
+  "table_child",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "inward_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER INWARD NO"
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRV NO",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "srv_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "SELECT SRV DATE"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "default": "0",
+   "fieldname": "srv_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "srv_status"
+  },
+  {
+   "fieldname": "column_break_brrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "ENTER PURCHASE ORDERNO"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "SELECT PURCHASE ORDER DATE"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "SELECT STORE",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "enter_supplier",
+   "fieldtype": "Link",
+   "label": "SELECT SUPPLIER",
+   "options": "Supplier"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ydvb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV ENTRY",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "table_child",
+   "fieldtype": "Table",
+   "label": "SRV_ENT",
+   "options": "SRV ENTRY CHILD TABLE DUPLICATE"
+  },
+  {
+   "fieldname": "source_doc",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "source_doc",
+   "options": "SRV ENTRY"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [
+  {
+   "link_doctype": "SRV_POST",
+   "link_fieldname": "srv_no"
+  }
+ ],
+ "modified": "2025-08-14 14:12:44.647296",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV ENTRY DUPLICATE FOR CHILD TABLE FETCHING",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_no"
+}

@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-10-15 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mdb_part_no",
+  "qty",
+  "stock_name",
+  "date_code",
+  "exp_date",
+  "mfr_name",
+  "column_break_wwif",
+  "card_no",
+  "location",
+  "packet_no",
+  "binned_by",
+  "binned_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MDB PART NO",
+   "options": "MDB_ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "QTY",
+   "precision": "3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STOCK",
+   "options": "STOCK_ID"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "EXP DATE"
+  },
+  {
+   "fieldname": "mfr_name",
+   "fieldtype": "Data",
+   "label": "MFR NAME"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "label": "CARD NO",
+   "options": "CARD_1C"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Int",
+   "label": "PACKET NO"
+  },
+  {
+   "fieldname": "binned_by",
+   "fieldtype": "Data",
+   "label": "BINNED BY",
+   "read_only": 1
+  },
+  {
+   "fieldname": "binned_on",
+   "fieldtype": "Datetime",
+   "label": "BINNED ON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wwif",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-18 18:05:24.315156",
+ "modified_by": "Administrator",
+ "module": "isro_cms",
+ "name": "Cardex",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

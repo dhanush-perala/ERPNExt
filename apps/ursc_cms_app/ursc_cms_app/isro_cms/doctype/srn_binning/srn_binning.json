@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 15:55:56.986680",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srn_ref_no",
+  "siv_request_type",
+  "srn_date",
+  "posted_from",
+  "screened_at",
+  "column_break_jnsl",
+  "project",
+  "siv_no",
+  "siv_date",
+  "batch_no",
+  "section_break_fflc",
+  "table_gfgm",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "srn_ref_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SRN Ref No",
+   "options": "SRN_POST",
+   "reqd": 1
+  },
+  {
+   "fieldname": "srn_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "SRN Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srn_ref_no.posted_from",
+   "fieldname": "posted_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Posted From",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srn_ref_no.screened_at",
+   "fieldname": "screened_at",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Screened At",
+   "options": "SCR_AT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jnsl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "srn_ref_no.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PROJECT_MASTER",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srn_ref_no.siv_no",
+   "fieldname": "siv_no",
+   "fieldtype": "Int",
+   "label": "SIV No",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srn_ref_no.siv_date",
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srn_ref_no.batch_no",
+   "fieldname": "batch_no",
+   "fieldtype": "Int",
+   "label": "Batch No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fflc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_gfgm",
+   "fieldtype": "Table",
+   "options": "SRN BIN TABLE"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRN BINNING",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "siv_request_type",
+   "fieldtype": "Select",
+   "label": "SIV Request Type",
+   "options": "Select\nNormal Request\nSpecific Request"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-02 13:15:47.966731",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRN BINNING",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

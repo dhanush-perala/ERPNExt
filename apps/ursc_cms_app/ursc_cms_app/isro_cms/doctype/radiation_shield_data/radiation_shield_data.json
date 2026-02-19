@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-12-24 15:25:35.628182",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_id",
+  "rad_shield_id",
+  "column_break_yfee",
+  "rad_shield_data",
+  "component_save",
+  "section_break_fbnc",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Link",
+   "label": "select component",
+   "options": "Item"
+  },
+  {
+   "fieldname": "rad_shield_data",
+   "fieldtype": "Data",
+   "label": "Radiation Shield Data"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "remarks"
+  },
+  {
+   "fieldname": "rad_shield_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "RAD_SHIELD_ID"
+  },
+  {
+   "fieldname": "column_break_yfee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fbnc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "comp_id.item_name",
+   "fieldname": "component_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "component save"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-25 10:44:09.275282",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation Shield Data",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rad_shield_data"
+}

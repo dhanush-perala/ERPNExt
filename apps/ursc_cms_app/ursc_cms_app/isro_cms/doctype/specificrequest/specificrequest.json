@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-23 18:00:19.011081",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zriu",
+  "amended_from",
+  "component_type",
+  "date_code",
+  "expiry_date",
+  "mfr_no",
+  "mdb_partno",
+  "required_quantity",
+  "available_quantity",
+  "card_no",
+  "function"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zriu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SpecificRequest",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date code"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "mfr_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR No"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MDB partNo",
+   "options": "MDB_ID"
+  },
+  {
+   "fieldname": "required_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Required Quantity"
+  },
+  {
+   "fieldname": "available_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available Quantity"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Card No",
+   "options": "Card"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "options": "COMPONENT CATEGORY"
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Small Text",
+   "label": "Function"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-23 18:25:13.387327",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SpecificRequest",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

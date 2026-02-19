@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-11-10 11:40:48.541592",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_project_copy",
+  "pack_code",
+  "select_package_copy",
+  "ecad_card_name",
+  "status",
+  "work_flow_status",
+  "prj_card_ref",
+  "column_break_iimq",
+  "select_sub_system",
+  "select_sub_system_copy",
+  "select_card",
+  "card_names",
+  "card_name",
+  "card_count_suffix",
+  "section_break_usrb",
+  "table_dbla",
+  "remarks",
+  "add_card_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Data",
+   "label": "Select Project",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Data",
+   "label": "Select Package",
+   "options": "PROJECT_PACKAGE"
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fieldname": "ecad_card_name",
+   "fieldtype": "Data",
+   "label": "Enter ECARD Number"
+  },
+  {
+   "default": "Initial",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Initial\nActive\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iimq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Data",
+   "label": "Select Sub System",
+   "options": "PRJ_SUB"
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Select",
+   "label": "Select Card ",
+   "options": "Select\nSelect From ECard\nNew"
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"New\"",
+   "fieldname": "card_names",
+   "fieldtype": "Data",
+   "label": "Enter Card Name"
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fetch_from": "pack_code.card_count",
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "label": "Card Count",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fieldname": "card_count_suffix",
+   "fieldtype": "Data",
+   "label": "Suffix"
+  },
+  {
+   "fieldname": "section_break_usrb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_card_html",
+   "fieldtype": "HTML",
+   "label": "ADD CARD Button",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fetch_from": "amended_from.ecad_card_name",
+   "fieldname": "prj_card_ref",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "prj_card_ref",
+   "options": "PRJ_CARDS",
+   "read_only": 1
+  },
+  {
+   "default": "Initial",
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "work flow status",
+   "options": "Initial\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_dbla",
+   "fieldtype": "Table",
+   "options": "APPROVED PROJECT CARD Table"
+  },
+  {
+   "fieldname": "select_project_copy",
+   "fieldtype": "Link",
+   "label": "Select Project Copy",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "select_package_copy",
+   "fieldtype": "Link",
+   "label": "Select Package Copy",
+   "options": "PROJECT_PACKAGE"
+  },
+  {
+   "fieldname": "select_sub_system_copy",
+   "fieldtype": "Link",
+   "label": "Select Sub System Copy",
+   "options": "PRJ_SUB"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-20 13:37:51.643844",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "APPROVED PROJECT CARD",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

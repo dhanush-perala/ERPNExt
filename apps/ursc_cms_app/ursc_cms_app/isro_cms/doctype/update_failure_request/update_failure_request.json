@@ -1,0 +1,308 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-05 16:56:55.675153",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_details_section",
+  "request_no",
+  "request_date",
+  "status",
+  "requested_by",
+  "column_break_brnu",
+  "fa_reference_no",
+  "failure_category",
+  "failure_conclusion",
+  "section_break_lplc",
+  "column_break_caiy",
+  "component_type",
+  "mdb_part_no",
+  "package_style",
+  "date_code",
+  "column_break_bnis",
+  "manufacturer",
+  "quality",
+  "sr_no",
+  "procurement_spec",
+  "specify_quality",
+  "specify_procurement_specification",
+  "failure_details_section",
+  "project",
+  "subsystem",
+  "package",
+  "card",
+  "data_cmte",
+  "failure_type",
+  "specify_failure_type",
+  "column_break_szgs",
+  "failure_mode",
+  "failed_at",
+  "environmental_test_condition",
+  "project_model",
+  "reported_failure",
+  "specify_failure_mode",
+  "section_break_ybln",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_details_section",
+   "fieldtype": "Section Break",
+   "label": "REQUEST DETAILS"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Link",
+   "label": "Request No",
+   "options": "Failure Request"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Initial",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_brnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fa_reference_no",
+   "fieldtype": "Int",
+   "label": "FA Reference No"
+  },
+  {
+   "fieldname": "failure_category",
+   "fieldtype": "Data",
+   "label": "Failure Category"
+  },
+  {
+   "fieldname": "failure_conclusion",
+   "fieldtype": "Small Text",
+   "label": "Failure Conclusion"
+  },
+  {
+   "fieldname": "section_break_lplc",
+   "fieldtype": "Section Break",
+   "label": "COMPONENT DETAILS"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "label": "Component Type",
+   "options": "Item Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Select",
+   "label": "MDB Part No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Link",
+   "label": "Package Style",
+   "options": "PSTYLE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "label": "Date Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bnis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "label": "Manufacturer",
+   "options": "Manufacturer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "label": "Quality",
+   "options": "QUALITY_ISRO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Int",
+   "label": "SR No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Select",
+   "label": "Procurement Spec",
+   "options": "Select\nESA\nMIL\nOthers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failure_details_section",
+   "fieldtype": "Section Break",
+   "label": "FAILURE DETAILS"
+  },
+  {
+   "fieldname": "data_cmte",
+   "fieldtype": "Select",
+   "label": "Failed During",
+   "options": "Select\nScreening Level\nSubsystem Level\nOthers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failure_type",
+   "fieldtype": "Select",
+   "label": "Failure Type",
+   "options": "Select\nFinal Electrical Measurement\nInitial Electrical Measurement\nOthers\nPRC/ POST BUR-IN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_model",
+   "fieldtype": "Select",
+   "label": "Project Model",
+   "options": "Select\nEngineering\nFlight\nIISU Cards\nLeos Cards\nProduction\nProto",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_szgs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Cardwise Component List Update and Approve - Designer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failed_at",
+   "fieldtype": "Data",
+   "label": "Failed At",
+   "options": "Select\nADIN/ADIN\nADIN/CEFF-ISITE\nADIN/CEFF-URSC\nATL/ATL\nATL/CEFF-ISITE\nATL/CEFF-URSC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failure_mode",
+   "fieldtype": "Select",
+   "label": "Failure Mode",
+   "options": "Select\nIntermittent\nOpen\nParametric\nOthers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "environmental_test_condition",
+   "fieldtype": "Data",
+   "label": "Environmental Test Condition",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reported_failure",
+   "fieldtype": "Data",
+   "label": "Reported Failure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "specify_quality",
+   "fieldtype": "Data",
+   "label": "Specify Quality",
+   "read_only": 1
+  },
+  {
+   "fieldname": "specify_procurement_specification",
+   "fieldtype": "Data",
+   "label": "Specify Procurement Specification",
+   "read_only": 1
+  },
+  {
+   "fieldname": "specify_failure_type",
+   "fieldtype": "Data",
+   "label": "Specify Failure Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "specify_failure_mode",
+   "fieldtype": "Data",
+   "label": "Specify Failure Mode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ybln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_caiy",
+   "fieldtype": "Column Break",
+   "options": "\nPending Analysis\nApproved\nIn Progress\nClosed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-11 17:20:37.492219",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Update Failure Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

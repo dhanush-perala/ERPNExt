@@ -1,0 +1,261 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2026-01-27 16:04:28.316048",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_project_copy",
+  "pack_name",
+  "select_package_copy",
+  "reference_doc",
+  "fetched_card",
+  "item_group",
+  "workflow_state",
+  "split_processed",
+  "status",
+  "column_break_ymot",
+  "select_sub_system",
+  "select_sub_system_copy",
+  "card_type",
+  "select_card",
+  "select_card_copy",
+  "category",
+  "add_html",
+  "work_flow_status",
+  "timer_html",
+  "approved_on",
+  "section_break_qfot",
+  "mdb_preview_html",
+  "section_break_bkkx",
+  "component_list",
+  "section_break_jhqe",
+  "table_bnpa",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_ymot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "select_card.card_type",
+   "fieldname": "card_type",
+   "fieldtype": "Select",
+   "label": "Select Card Type",
+   "options": "Select\nOn Box\nOn System\nProject Card Wise"
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "section_break_jhqe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "ADD",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "depends_on": "eval:doc.card_type == \"On Box\"",
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Category",
+   "options": "Select\nMDB List\nNew\nNo-Connection\nNo-Provision\nSelectable\nShort"
+  },
+  {
+   "depends_on": "eval:doc.card_type == \"On Box\"",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "section_break_qfot",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.category == \"MDB List\"",
+   "fieldname": "mdb_preview_html",
+   "fieldtype": "HTML",
+   "label": "mdb_preview_html"
+  },
+  {
+   "fieldname": "section_break_bkkx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.category == \"MDB List\"",
+   "fieldname": "component_list",
+   "fieldtype": "Table",
+   "label": "Component List",
+   "options": "Component List Item"
+  },
+  {
+   "fieldname": "table_bnpa",
+   "fieldtype": "Table",
+   "options": "SIV Normal Request"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "Select Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "Select Sub System",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "reference_doc",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_doc"
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "label": "Select Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "fetched_card",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_doc Copy"
+  },
+  {
+   "fetch_from": "select_card.card_name",
+   "fieldname": "select_card_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Card Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_project.project_name",
+   "fieldname": "select_project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Project Copy",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "select_sub_system.select_sub_system",
+   "fieldname": "select_sub_system_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Sub System Copy",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fetch_from": "pack_name.pack_name",
+   "fieldname": "select_package_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Package Copy",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "workflow_state"
+  },
+  {
+   "default": "0",
+   "fieldname": "split_processed",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "split_processed"
+  },
+  {
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "work_flow_status",
+   "options": "Initial\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "timer_html",
+   "fieldtype": "HTML",
+   "label": "Timer"
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Approved On",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-18 19:23:54.507676",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Designer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

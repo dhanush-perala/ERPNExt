@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:PACKAGE STYLE-{####}",
+ "creation": "2025-08-20 13:06:34.397814",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_component",
+  "smt_status",
+  "column_break_yvwk",
+  "pstyle",
+  "component_code",
+  "component_name",
+  "status",
+  "amended_from",
+  "pstyle_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_component",
+   "fieldtype": "Link",
+   "label": "Select Component Type",
+   "options": "Item Group",
+   "placeholder": "Select Component"
+  },
+  {
+   "fieldname": "smt_status",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SMT_STATUS"
+  },
+  {
+   "fieldname": "column_break_yvwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pstyle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Enter Package STYLE",
+   "placeholder": "Package Style"
+  },
+  {
+   "fieldname": "component_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "component code"
+  },
+  {
+   "fetch_from": "select_component.item_group_name",
+   "fieldname": "component_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Component category"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PSTYLE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pstyle_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "PSTYLE_ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-06 10:42:20.685255",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PSTYLE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

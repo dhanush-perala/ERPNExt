@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 15:01:44.581783",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "package",
+  "card_name",
+  "ecad_status",
+  "card_shielding_status",
+  "column_break_rhty",
+  "crad_status",
+  "card_id",
+  "rad_status",
+  "rad_status_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Name"
+  },
+  {
+   "fieldname": "ecad_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ECAD Status"
+  },
+  {
+   "fieldname": "card_shielding_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card shielding status"
+  },
+  {
+   "fieldname": "crad_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crad Status"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Id"
+  },
+  {
+   "fieldname": "rad_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RAD Status"
+  },
+  {
+   "fieldname": "rad_status_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RAD Status Name"
+  },
+  {
+   "fieldname": "column_break_rhty",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 15:07:54.481796",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "RAD_HIS-Table2",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

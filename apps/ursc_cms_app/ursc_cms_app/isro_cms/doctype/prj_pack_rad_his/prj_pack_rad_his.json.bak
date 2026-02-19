@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:34.900033",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pack_code",
+  "card_code",
+  "pack_process",
+  "upd_by",
+  "upd_date",
+  "link_id",
+  "rad_shield_id",
+  "mount_on",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Int",
+   "label": "PACK_CODE"
+  },
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Int",
+   "label": "CARD_CODE"
+  },
+  {
+   "fieldname": "pack_process",
+   "fieldtype": "Data",
+   "label": "PACK_PROCESS"
+  },
+  {
+   "fieldname": "upd_by",
+   "fieldtype": "Int",
+   "label": "UPD_BY"
+  },
+  {
+   "fieldname": "upd_date",
+   "fieldtype": "Date",
+   "label": "UPD_DATE"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "rad_shield_id",
+   "fieldtype": "Int",
+   "label": "RAD_SHIELD_ID"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "label": "MOUNT_ON"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PRJ_PACK_RAD_HIS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-10 11:22:32.871329",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PRJ_PACK_RAD_HIS",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

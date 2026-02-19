@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-20 11:42:58.034808",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mdb_partno",
+  "alert_type",
+  "column_break_zkwu",
+  "alert_date",
+  "alert_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "label": "MDB PartNo"
+  },
+  {
+   "fieldname": "alert_type",
+   "fieldtype": "Select",
+   "label": "Alert Type"
+  },
+  {
+   "fieldname": "column_break_zkwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alert_date",
+   "fieldtype": "Date",
+   "label": "Alert Date"
+  },
+  {
+   "fieldname": "alert_message",
+   "fieldtype": "Data",
+   "label": "Alert Message"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-20 11:44:01.532441",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "Update_MDB_PartNo_with_Alerts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

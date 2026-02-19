@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-07-22 12:00:52.991296",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jcfg",
+  "project",
+  "select_package",
+  "enter_card_countsuffix",
+  "column_break_ahsx",
+  "enter_ecad_card_name",
+  "select_sub_system",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jcfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[[\"PROJECT_MASTER\",\"status\",\"=\",\"Active\"]]",
+   "options": "PROJECT_MASTER",
+   "placeholder": "SELECT PROJECT",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ahsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "SELECT SUB SYSTEM",
+   "link_filters": "[[\"ADD PROJECT SUBSYSTEM\",\"status\",\"=\",\"Active\"]]",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "placeholder": "SELECT SUB SYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enter_ecad_card_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER ECAD Card Name",
+   "placeholder": "ENTER ECAD Card Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PACKAGE",
+   "link_filters": "[[\"PRJ_PACK\",\"status\",\"=\",\"Active\"]]",
+   "options": "PRJ_PACK",
+   "placeholder": "SELECT PACKAGE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enter_card_countsuffix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER CARD COUNT:SUFFIX",
+   "placeholder": "ENTER CARD COUNT:SUFFIX",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ADD PROJECT CARD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-22 12:34:35.581512",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "ADD PROJECT CARD",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

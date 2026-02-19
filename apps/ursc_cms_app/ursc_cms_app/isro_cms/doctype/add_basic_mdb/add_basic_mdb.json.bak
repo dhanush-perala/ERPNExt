@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-20 10:50:53.943742",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "component_type",
+  "pstyle",
+  "link_part_no",
+  "basic_mdb",
+  "column_break_wwng",
+  "add_count",
+  "partno_description",
+  "section_break_jhml",
+  "table_nwya"
+ ],
+ "fields": [
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "pstyle",
+   "fieldtype": "Select",
+   "label": "Pstyle"
+  },
+  {
+   "fieldname": "link_part_no",
+   "fieldtype": "Data",
+   "label": "Link Part No"
+  },
+  {
+   "fieldname": "basic_mdb",
+   "fieldtype": "Data",
+   "label": "Basic MDB"
+  },
+  {
+   "fieldname": "add_count",
+   "fieldtype": "Data",
+   "label": "Add Count"
+  },
+  {
+   "fieldname": "partno_description",
+   "fieldtype": "Small Text",
+   "label": "Partno Description"
+  },
+  {
+   "fieldname": "column_break_wwng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jhml",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_nwya",
+   "fieldtype": "Table",
+   "options": "Add_Basic_MDB_Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-20 10:59:03.010745",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "Add_Basic_MDB",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

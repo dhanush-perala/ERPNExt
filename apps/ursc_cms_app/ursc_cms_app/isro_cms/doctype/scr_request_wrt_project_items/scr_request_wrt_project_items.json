@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-29 17:08:29.181693",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "component_type",
+  "link_part_number",
+  "requested_quantity",
+  "issued",
+  "issual_in_progress",
+  "valid_available_stock",
+  "balance_requried",
+  "screening_labpending",
+  "column_break_kxar",
+  "store_pending",
+  "to_relife",
+  "to_screen",
+  "total_pending_scr_lab_store",
+  "relifing_pipe_2years",
+  "screening_pipe_2years",
+  "status",
+  "link_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Link Part Number",
+   "options": "Item"
+  },
+  {
+   "fieldname": "requested_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested Quantity"
+  },
+  {
+   "fieldname": "issued",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issued"
+  },
+  {
+   "fieldname": "issual_in_progress",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issual In Progress"
+  },
+  {
+   "fieldname": "valid_available_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Valid Available Stock"
+  },
+  {
+   "fieldname": "balance_requried",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Balance Requried"
+  },
+  {
+   "fieldname": "screening_labpending",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Screening Lab(Pending)"
+  },
+  {
+   "fieldname": "store_pending",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Store (Pending)"
+  },
+  {
+   "fieldname": "to_relife",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Relife"
+  },
+  {
+   "fieldname": "to_screen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Screen"
+  },
+  {
+   "fieldname": "total_pending_scr_lab_store",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Pending (Scr Lab Store)"
+  },
+  {
+   "fieldname": "relifing_pipe_2years",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relifing Pipe 2years"
+  },
+  {
+   "fieldname": "screening_pipe_2years",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Screening Pipe 2years"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link Id"
+  },
+  {
+   "fieldname": "column_break_kxar",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-30 11:06:58.161895",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SCR Request wrt Project Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

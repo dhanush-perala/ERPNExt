@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-11-05 15:34:04.913299",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prog_code",
+  "prog_id",
+  "amended_from",
+  "status",
+  "column_break_esds",
+  "prog_name",
+  "cefd_prog_name",
+  "prog_enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "prog_code",
+   "fieldtype": "Data",
+   "label": "Program Code"
+  },
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Program",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "prog_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "column_break_esds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cefd_prog_name",
+   "fieldtype": "Data",
+   "label": "CEFD Program Name"
+  },
+  {
+   "fieldname": "prog_enable",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Program enable",
+   "options": "0\n1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-12 15:20:03.468403",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Program",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "prog_name"
+}

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-31 17:12:32.860500",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "siv_id",
+  "recd_by",
+  "entry_by",
+  "workflow_status",
+  "column_break_fwxp",
+  "entry_date",
+  "action",
+  "dispatch_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "siv_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SIV_ID"
+  },
+  {
+   "fieldname": "recd_by",
+   "fieldtype": "Data",
+   "label": "RECD_BY"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "column_break_fwxp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Data",
+   "label": "ENTRY_DATE"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "label": "ACTION"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "DISPATCH_DATE"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV_DISPATCH_LOG",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:24:21.465079",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SIV_DISPATCH_LOG",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

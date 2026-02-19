@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:return_reference_number",
+ "creation": "2025-11-07 10:47:12.367500",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5zxi",
+  "return_reference_number",
+  "program",
+  "posted_to_stock",
+  "project",
+  "card",
+  "column_break_nfbh",
+  "srn_reference_number",
+  "siv_issued_to",
+  "stock",
+  "subsystem",
+  "column_break_axng",
+  "from",
+  "siv_no",
+  "siv_date",
+  "package",
+  "section_break_rphi",
+  "table_nojh",
+  "section_break_teqg",
+  "qty",
+  "column_break_aavj",
+  "expiry_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5zxi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Link",
+   "label": "SIV Number",
+   "options": "SIV",
+   "reqd": 1
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "siv_issued_to",
+   "fieldtype": "Select",
+   "label": "SIV Issued To"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "label": "Stock",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posted_to_stock",
+   "fieldtype": "Link",
+   "label": "Posted To Stock",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_axng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rphi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_nojh",
+   "fieldtype": "Table",
+   "options": "SIV RETURNED COMPONENTS POST URSC TABLE"
+  },
+  {
+   "fieldname": "section_break_teqg",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_nfbh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV RETURNED COMPONENTS POST URSC",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_aavj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Add Project Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package",
+   "options": "PRJ_PACK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "return_reference_number",
+   "fieldtype": "Data",
+   "label": "Return Reference Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "srn_reference_number",
+   "fieldtype": "Data",
+   "label": "SRN Reference Number",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-16 18:31:12.440701",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV RETURNED COMPONENTS POST URSC",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,14 @@
+Core
+Website
+Workflow
+Email
+Custom
+Geo
+Desk
+Integrations
+Printing
+Contacts
+Social
+Automation
+isro_cms_app
+Destructive Physical Analysis

@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "autoname": "format:Project_Master-{####}",
+ "creation": "2025-08-25 17:09:44.578896",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "proj_name",
+  "select_project_status",
+  "select_prog_name",
+  "column_break_yrwl",
+  "enter_project_ref_no",
+  "select_select_project_priority",
+  "enter_pd_staff_no",
+  "status",
+  "section_break_dsjs",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_project_status",
+   "fieldtype": "Select",
+   "label": "SELECT PROJECT STATUS",
+   "options": "SELECT\nON GOING\nLUNCHED"
+  },
+  {
+   "fieldname": "select_prog_name",
+   "fieldtype": "Select",
+   "label": "SELECT PROGRAM NAME",
+   "options": "SELECT\nGEOSAT\nIRS\nALL"
+  },
+  {
+   "fieldname": "column_break_yrwl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enter_project_ref_no",
+   "fieldtype": "Data",
+   "label": "ENTER PROJECT REF NO",
+   "placeholder": "ENTER PROJECT REF NO"
+  },
+  {
+   "fieldname": "enter_pd_staff_no",
+   "fieldtype": "Data",
+   "label": "PD Staff No"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dsjs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "proj_name",
+   "fieldtype": "Data",
+   "label": "ENTER PROJECT",
+   "placeholder": "ENTER PROJECT"
+  },
+  {
+   "fieldname": "select_select_project_priority",
+   "fieldtype": "Link",
+   "label": "SELECT PROJECT PRIORITY",
+   "link_filters": "[[\"PRJ_PRIORITY\",\"status\",\"=\",\"Active\"]]",
+   "options": "PRJ_PRIORITY",
+   "placeholder": "SELECT PROJECT PRIORITY"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-19 19:16:52.699653",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PROJECT_MASTER",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PROJECT",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "proj_name"
+}

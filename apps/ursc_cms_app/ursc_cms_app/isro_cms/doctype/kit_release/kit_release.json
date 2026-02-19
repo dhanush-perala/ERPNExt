@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 17:16:03.547028",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kit_for",
+  "project",
+  "column_break_okht",
+  "stock",
+  "comp_type",
+  "section_break_sokp",
+  "table_xipk"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "kit_for",
+   "fieldtype": "Link",
+   "label": "Kit For",
+   "options": "GENERATE REQUEST - KITTED COMPONENTS"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "Comp Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "label": "Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_okht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sokp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_xipk",
+   "fieldtype": "Table",
+   "options": "KIT RELEASE TABLE"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-14 11:39:36.536212",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "KIT RELEASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-18 12:51:18.621250",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_details_section",
+  "request_no",
+  "requested_by",
+  "request_date",
+  "part_no",
+  "dc_code",
+  "dpa_stage",
+  "column_break_vvev",
+  "status",
+  "dpa_reference_no",
+  "dpa_result",
+  "dpa_conclusion",
+  "section_break_xayr",
+  "component_type",
+  "mdb_part_no",
+  "package_style",
+  "date_code",
+  "manufacturer",
+  "quality",
+  "column_break_gkla",
+  "sr_no",
+  "procurement_spec",
+  "source_screened",
+  "screened_at_isac",
+  "precap_report_supplied"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Int",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "label": "Part No"
+  },
+  {
+   "fieldname": "dc_code",
+   "fieldtype": "Data",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "dpa_stage",
+   "fieldtype": "Data",
+   "label": "DPA Stage"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "dpa_reference_no",
+   "fieldtype": "Data",
+   "label": "DPA Reference No"
+  },
+  {
+   "fieldname": "dpa_result",
+   "fieldtype": "Data",
+   "label": "DPA Result"
+  },
+  {
+   "fieldname": "column_break_vvev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dpa_conclusion",
+   "fieldtype": "Small Text",
+   "label": "DPA Conclusion"
+  },
+  {
+   "fieldname": "section_break_xayr",
+   "fieldtype": "Section Break",
+   "label": "Component Details"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Data",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Data",
+   "label": "MDB Part No"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Data",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Int",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Data",
+   "label": "SR NO"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Data",
+   "label": "Procurement Spec"
+  },
+  {
+   "fieldname": "source_screened",
+   "fieldtype": "Data",
+   "label": "Source Screened"
+  },
+  {
+   "fieldname": "screened_at_isac",
+   "fieldtype": "Data",
+   "label": "Screened at ISAC"
+  },
+  {
+   "fieldname": "precap_report_supplied",
+   "fieldtype": "Select",
+   "label": "Precap Report Supplied"
+  },
+  {
+   "fieldname": "column_break_gkla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_details_section",
+   "fieldtype": "Section Break",
+   "label": "Request Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-18 16:54:27.649741",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Update_DPA_Failure_result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

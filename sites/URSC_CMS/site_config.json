@@ -1,0 +1,18 @@
+{
+ "db_host": "localhost",
+ "db_name": "_e32446983ec7985d",
+ "db_password": "123",
+ "db_port": 3306,
+ "db_socket": "/var/run/mysqld/mysqld.sock",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "encryption_key": "optUBJZvLAZQsN4VsOWuPl3w9hJf7Zgv3rEU-LesGww=",
+ "installed_apps": [
+  "frappe",
+  "erpnext",
+  "ursc_cms_app",
+  "healthcare"
+ ],
+ "maintenance_mode": 0,
+ "pause_scheduler": false
+}

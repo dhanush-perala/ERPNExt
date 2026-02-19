@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SSP-{####}",
+ "creation": "2025-11-04 12:36:04.954146",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ou8c",
+  "amended_from",
+  "srn_ref_no",
+  "column_break_ibga",
+  "html_click",
+  "section_break_inep",
+  "project",
+  "program",
+  "posted_date",
+  "column_break_sdqf",
+  "posted_from",
+  "screened_at",
+  "section_break_yjel",
+  "table_wvxq",
+  "section_break_znmu",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ou8c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRN SPECIAL POSTING",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "srn_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRN Ref. No",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posted_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Posted From",
+   "options": "SELECT\nURSC\nISITE\nOTHERS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "screened_at",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Screened At",
+   "options": "SCR_AT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_yjel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_wvxq",
+   "fieldtype": "Table",
+   "options": "SRN SPECIAL POST TABLE"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posted_date",
+   "fieldtype": "Date",
+   "label": "Posted Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_znmu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "html_click",
+   "fieldtype": "HTML",
+   "label": "Click",
+   "options": "<div style=\"display: flex; align-items: center; margin-top: 12px;\">\n    <button id=\"btn_click\" style=\"padding: 8px 28px;\n            background-color: #6c757d;\n            color: white;\n            border: none;\n            border-radius: 4px;\n            font-size: 14px;\n            cursor: pointer;\n            width: 120px;\">\n        Click\n    </button>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_inep",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_sdqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ibga",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-02 12:20:15.795084",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRN SPECIAL POSTING",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

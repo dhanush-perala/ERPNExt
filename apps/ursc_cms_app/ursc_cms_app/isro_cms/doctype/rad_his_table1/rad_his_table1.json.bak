@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 13:49:28.043917",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "package",
+  "total_cards",
+  "total_ecad_approved",
+  "column_break_khgs",
+  "total_radiation_shield_approved",
+  "pack_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "total_cards",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Cards"
+  },
+  {
+   "fieldname": "total_ecad_approved",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total ECAD Approved"
+  },
+  {
+   "fieldname": "column_break_khgs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_radiation_shield_approved",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Radiation shield Approved"
+  },
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pack code"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 14:57:52.240507",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "RAD_HIS_Table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

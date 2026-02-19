@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-06 17:51:28.807217",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_section",
+  "project",
+  "project_copy",
+  "column_break_wbad",
+  "subsystem",
+  "subsystem_copy",
+  "column_break_hqzz",
+  "package",
+  "package_copy",
+  "column_break_dshe",
+  "card",
+  "card_copy",
+  "section_break_xttw",
+  "table_lvjt",
+  "section_break_fqoy",
+  "d_project",
+  "d_project_copy",
+  "column_break_ivzu",
+  "d_subsystem",
+  "d_subsystem_copy",
+  "column_break_ctcb",
+  "d_package",
+  "copy_pack",
+  "column_break_lzvt",
+  "all",
+  "column_break_jbtk",
+  "copy",
+  "section_break_odds",
+  "table_hkbw"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "d_project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "d_subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "d_package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "subsystem.select_sub_system",
+   "fieldname": "subsystem_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Subsystem Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "package.pack_name",
+   "fieldname": "package_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Package Copy",
+   "options": "PRJ_PACK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xttw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_lvjt",
+   "fieldtype": "Table",
+   "options": "Production Cards Component List Table"
+  },
+  {
+   "fieldname": "section_break_fqoy",
+   "fieldtype": "Section Break",
+   "label": "Destination"
+  },
+  {
+   "fetch_from": "d_project.project_name",
+   "fieldname": "d_project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ctcb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "d_subsystem.select_sub_system",
+   "fieldname": "d_subsystem_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Subsystem Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wbad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hqzz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dshe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ivzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lzvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "copy",
+   "fieldtype": "HTML",
+   "label": "COPY",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"copy_btn\">\n      COPY\n  </button>\n</div>\n"
+  },
+  {
+   "default": "0",
+   "fieldname": "all",
+   "fieldtype": "Check",
+   "label": "All"
+  },
+  {
+   "fieldname": "column_break_jbtk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_odds",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_hkbw",
+   "fieldtype": "Table",
+   "options": "Production Cards Copy Table"
+  },
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fetch_from": "card.card_name",
+   "fieldname": "card_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Card Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "d_package.pack_name",
+   "fieldname": "copy_pack",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Package Copy",
+   "options": "PRJ_PACK",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-23 11:10:38.604417",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Production Cards Copy Components List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:31.901240",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "siv_id",
+  "card_id",
+  "issued_qty",
+  "ret_qty",
+  "bin_qty",
+  "workflow_status",
+  "column_break_yjpg",
+  "siv_no",
+  "siv_date",
+  "prog_id",
+  "batch_no",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "siv_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SIV_ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "CARD_ID"
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Int",
+   "label": "ISSUED_QTY"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "label": "RET_QTY"
+  },
+  {
+   "fieldname": "bin_qty",
+   "fieldtype": "Int",
+   "label": "BIN_QTY"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "column_break_yjpg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Int",
+   "label": "SIV_NO"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV_DATE"
+  },
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "BATCH_NO"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV_ICG",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:24:55.858488",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV_ICG",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

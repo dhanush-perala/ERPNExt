@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-10 12:40:01.398274",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "mdb_partno",
+  "qty",
+  "issued_qty",
+  "column_break_suiy",
+  "link_id",
+  "request_by",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TYPE"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PARTNO"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY"
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUED QTY"
+  },
+  {
+   "fieldname": "column_break_suiy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LINK ID"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST BY"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-10 12:42:25.222646",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "BLOCKED REQUEST SIV-VIEW TABLE 3",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

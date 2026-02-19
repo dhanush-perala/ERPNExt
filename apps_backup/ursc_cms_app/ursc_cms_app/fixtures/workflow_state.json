@@ -1,0 +1,146 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-23 17:34:18.594602",
+  "name": "Issued",
+  "style": "",
+  "workflow_state_name": "Issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-23 17:36:41.072811",
+  "name": "Pending Approval",
+  "style": "",
+  "workflow_state_name": "Pending Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2025-07-14 11:25:49.263048",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-28 18:23:41.494888",
+  "name": "return Verified",
+  "style": "",
+  "workflow_state_name": "return Verified"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-28 18:18:35.282662",
+  "name": "Dispatched",
+  "style": "",
+  "workflow_state_name": "Dispatched"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-28 18:19:20.798663",
+  "name": "Dispatch Logged",
+  "style": "",
+  "workflow_state_name": "Dispatch Logged"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-28 18:24:44.226881",
+  "name": "cleared",
+  "style": "",
+  "workflow_state_name": "cleared"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-23 17:34:28.863242",
+  "name": "Returned",
+  "style": "",
+  "workflow_state_name": "Returned"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-28 18:17:28.580689",
+  "name": "Submitted",
+  "style": "",
+  "workflow_state_name": "Submitted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-01 10:53:03.059014",
+  "name": "Inactive",
+  "style": "",
+  "workflow_state_name": "Inactive"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-23 17:33:39.155228",
+  "name": "Draft",
+  "style": "",
+  "workflow_state_name": "Draft"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-07-14 11:25:49.266149",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2025-07-14 11:25:49.264657",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-22 11:12:27.487253",
+  "name": "STOCK BINNED",
+  "style": "",
+  "workflow_state_name": "STOCK BINNED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-22 11:11:51.547023",
+  "name": "STOCK POSTED",
+  "style": "",
+  "workflow_state_name": "STOCK POSTED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-09-22 11:11:34.594484",
+  "name": "STOCK ENTRED",
+  "style": "Primary",
+  "workflow_state_name": "STOCK ENTRED"
+ }
+]

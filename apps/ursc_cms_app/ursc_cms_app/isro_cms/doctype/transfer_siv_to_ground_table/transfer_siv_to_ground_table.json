@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 12:41:23.578826",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "sel",
+  "mdb_partno",
+  "qty",
+  "date_code",
+  "exp_date",
+  "manufacturer",
+  "from_cardno",
+  "s_card_id",
+  "column_break_xtvr",
+  "mfr_id",
+  "mdb_id",
+  "status",
+  "updated_by",
+  "d_card_id",
+  "to_cardno",
+  "location",
+  "packet_no",
+  "quality"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TYPE"
+  },
+  {
+   "fieldname": "sel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SEL"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PARTNO"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXP DATE"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MANUFACTURER"
+  },
+  {
+   "fieldname": "from_cardno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FROM CARDNO"
+  },
+  {
+   "fieldname": "s_card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "S_CARD_ID"
+  },
+  {
+   "fieldname": "column_break_xtvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR ID"
+  },
+  {
+   "fieldname": "mdb_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UPDATED BY"
+  },
+  {
+   "fieldname": "d_card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "D_CARD_ID"
+  },
+  {
+   "fieldname": "to_cardno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TO CARDNO"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Packet No"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quality"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-07 12:57:10.448243",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "TRANSFER SIV TO GROUND Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

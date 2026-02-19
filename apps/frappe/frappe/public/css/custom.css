@@ -1,0 +1,106 @@
+/* Background */
+.page-body, .layout-main-section {
+    background-color: rgb(242, 249, 254) !important; 
+    color: #000 !important;
+}
+
+/* Navbar */
+.navbar {
+    background: rgb(242, 249, 254) !important; 
+    color: #fff !important;
+}
+
+/* Sidebar (Modules) */
+.layout-side-section {
+    background-color: #F0F8FF !important;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Sidebar item normal state */
+.standard-sidebar-item {
+    background-color: #F0F8FF !important; 
+    color: #000 !important;
+    border-radius: 6px;
+    margin: 3px 8px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar item on hover */
+.standard-sidebar-item:hover {
+    background-color: #B0E0E6 !important; 
+    color: #000 !important;
+}
+
+/* Active/Selected sidebar item */
+.standard-sidebar-item.selected,
+.standard-sidebar-item.active {
+    background-color: #B0E0E6 !important; 
+    color: #fff !important;
+}
+
+/* Sidebar item text gradient fix */
+.sidebar-item,
+.module-sidebar-item {
+    color: #9c27b0 !important; /* fallback solid color */
+}
+
+/* Active sidebar item */
+.sidebar-item.active,
+.module-sidebar-item.active {
+    color: #e91e63 !important; 
+    font-weight: bold;
+}
+
+/* Workspace cards */
+.workspace-card {
+    background-color: #E0FFFF !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    color: #E0FFFF !important;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.workspace-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Card titles / headings */
+h1, h2, h3, .workspace-title, .widget-title {
+    color: #000 !important;
+}
+
+/* Links */
+a {
+    color: #000 !important;
+}
+
+a:hover {
+    color: #001F54 !important;
+}
+
+
+/* Supplier List Header */
+.list-row-head {
+    background-color: #F8FCFF !important;  /* solid ISRO Blue header */
+    color: #fff !important;
+    font-weight: bold;
+}
+/* Remove main white wrapper background */
+.page-container {
+  background: 
+    radial-gradient(circle at top left, #B0C4DE 0%, transparent 60%),
+    radial-gradient(circle at bottom right, #B0C4DE 0%, transparent 60%),
+    #F8FCFF;  /* base light background */
+  min-height: 100vh;
+  padding: 16px;
+}
+
+/* Main desk content wrapper */
+.layout-main-section, 
+.page-head, 
+.page-body {
+  background: transparent !important;   /* no white */
+  box-shadow: none !important;
+}

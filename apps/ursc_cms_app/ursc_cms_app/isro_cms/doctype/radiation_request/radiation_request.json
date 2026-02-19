@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-12-24 17:09:19.350600",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card_code",
+  "mount_dir",
+  "column_break_oozg",
+  "pack_code",
+  "heritage_pack_code",
+  "rad_req_by",
+  "rad_req_date",
+  "rad_req_no",
+  "section_break_wgtv",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Link",
+   "label": "select card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "rad_req_no",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "RAD_REQ_NO"
+  },
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Link",
+   "label": "select package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "heritage_pack_code",
+   "fieldtype": "Data",
+   "label": "Enter Heritage Package code"
+  },
+  {
+   "fieldname": "mount_dir",
+   "fieldtype": "Data",
+   "label": "enter mount dir"
+  },
+  {
+   "fieldname": "rad_req_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "RAD_REQ_BY"
+  },
+  {
+   "fieldname": "rad_req_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "RAD_REQ_DATE"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "column_break_oozg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wgtv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Radiation Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-13 15:10:55.701035",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation Request",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

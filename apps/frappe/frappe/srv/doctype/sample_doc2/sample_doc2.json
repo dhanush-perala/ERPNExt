@@ -1,0 +1,63 @@
+{
+ "actions": [
+  {
+   "action": "Draft",
+   "action_type": "Server Action",
+   "label": "Draft"
+  }
+ ],
+ "allow_rename": 1,
+ "creation": "2025-07-25 11:52:09.244722",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "test_text"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_text",
+   "fieldtype": "Small Text",
+   "label": "test_text"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "sample_doc",
+   "link_fieldname": "age"
+  }
+ ],
+ "modified": "2025-07-25 12:34:29.163417",
+ "modified_by": "Administrator",
+ "module": "SRV",
+ "name": "sample_doc2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Approved"
+  },
+  {
+   "color": "Yellow",
+   "title": "Rejected"
+  }
+ ]
+}

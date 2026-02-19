@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:pack_code",
+ "creation": "2025-11-05 12:39:20.701983",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_project_copy",
+  "select_project_copy_copy",
+  "subsystem_save",
+  "sub_code",
+  "hold_and_release",
+  "prod_card",
+  "column_break_qjvx",
+  "select_sub_system",
+  "pack_name",
+  "pack_code",
+  "card_count",
+  "work_flow_status",
+  "section_break_ugnx",
+  "saved_records"
+ ],
+ "fields": [
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "pack_code",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_qjvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select SubSystem",
+   "options": "PRJ_SUB",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_sub_system.select_sub_system",
+   "fieldname": "subsystem_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select SubSystem Copy"
+  },
+  {
+   "fieldname": "card_count",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "work Flow status"
+  },
+  {
+   "fieldname": "section_break_ugnx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "saved_records",
+   "fieldtype": "HTML",
+   "label": "Saved Records"
+  },
+  {
+   "fetch_from": "select_sub_system.sub_code",
+   "fieldname": "sub_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SUB_CODE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "default": "0",
+   "fieldname": "hold_and_release",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Hold & Release"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_project.project_name",
+   "fieldname": "select_project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Select Project Copy"
+  },
+  {
+   "fetch_from": "select_project.custom_proj_code",
+   "fieldname": "select_project_copy_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Select Project Copy Copy"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_card",
+   "fieldtype": "Check",
+   "label": "Is Production Package"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-05 18:13:39.811948",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PROJECT_PACKAGE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECAD Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "pack_name"
+}

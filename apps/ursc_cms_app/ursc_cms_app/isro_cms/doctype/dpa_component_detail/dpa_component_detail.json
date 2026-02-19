@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 16:24:31.571051",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_type",
+  "package_style",
+  "quality",
+  "specify_quality",
+  "column_break_dnye",
+  "basic_part_no",
+  "dpa_dc",
+  "dpa_status_flag",
+  "column_break_aiah",
+  "manufacturer",
+  "sr_no",
+  "procurement_spec",
+  "dpa_procurement_specify",
+  "section_break_kiqv",
+  "test_package_supplied",
+  "source_screened",
+  "column_break_ddvh",
+  "screened_at_isac",
+  "precap_report_supplied",
+  "section_break_uxdr",
+  "dpa_conclusion",
+  "component_type_save"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "length": 999,
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Manufacturer",
+   "length": 999
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Quality"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Procurement Specification",
+   "options": "\nESA\nMIL\nOthers"
+  },
+  {
+   "fieldname": "source_screened",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source Screened",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_aiah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.quality == \"Others\"",
+   "fieldname": "specify_quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specify Quality",
+   "length": 999,
+   "mandatory_depends_on": "eval:doc.quality == \"Others\""
+  },
+  {
+   "fieldname": "screened_at_isac",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Screened at ISAC",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "precap_report_supplied",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Precap Report Supplied",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "dpa_conclusion",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "DPA Conclusion"
+  },
+  {
+   "fieldname": "test_package_supplied",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Test Package Supplied",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "basic_part_no",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Basic Part No",
+   "length": 999
+  },
+  {
+   "fieldname": "section_break_uxdr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "comp_type.item_group_name",
+   "fieldname": "component_type_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Component type save",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dnye",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kiqv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ddvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Data",
+   "label": "SR no"
+  },
+  {
+   "fieldname": "dpa_status_flag",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "DPA status Flag",
+   "options": "0\n1\n2"
+  },
+  {
+   "depends_on": "eval:doc.procurement_spec=='Others'\n",
+   "fieldname": "dpa_procurement_specify",
+   "fieldtype": "Data",
+   "label": "specify procurement_specification",
+   "mandatory_depends_on": "eval:doc.procurement_spec=='Others'\n"
+  },
+  {
+   "fieldname": "dpa_dc",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Date Code",
+   "length": 999
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-19 10:25:28.588539",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "DPA Component Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

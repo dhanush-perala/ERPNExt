@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:32.582012",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card_code",
+  "comp_id",
+  "link_part",
+  "link_id",
+  "pstyle_id",
+  "cc1",
+  "cc2",
+  "mount_on",
+  "functionality",
+  "remarks",
+  "comp_type",
+  "entry_by",
+  "entry_date",
+  "stack",
+  "old_pid",
+  "rdc_type",
+  "rdc_ref",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Data",
+   "label": "CARD_CODE"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "COMP_ID"
+  },
+  {
+   "fieldname": "link_part",
+   "fieldtype": "Data",
+   "label": "LINK_PART"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "pstyle_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PSTYLE_ID"
+  },
+  {
+   "fieldname": "cc1",
+   "fieldtype": "Data",
+   "label": "CC1"
+  },
+  {
+   "fieldname": "cc2",
+   "fieldtype": "Int",
+   "label": "CC2"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "label": "MOUNT_ON"
+  },
+  {
+   "fieldname": "functionality",
+   "fieldtype": "Data",
+   "label": "FUNCTIONALITY"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "label": "COMP_TYPE"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "ENTRY_DATE"
+  },
+  {
+   "fieldname": "stack",
+   "fieldtype": "Data",
+   "label": "STACK"
+  },
+  {
+   "fieldname": "old_pid",
+   "fieldtype": "Int",
+   "label": "OLD_PID"
+  },
+  {
+   "fieldname": "rdc_type",
+   "fieldtype": "Int",
+   "label": "RDC_TYPE"
+  },
+  {
+   "fieldname": "rdc_ref",
+   "fieldtype": "Int",
+   "label": "RDC_REF"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PRJ_COMP_TMP",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-06 18:55:16.062560",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PRJ_COMP_TMP",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "card_code"
+}

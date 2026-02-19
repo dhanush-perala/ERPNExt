@@ -1,0 +1,32 @@
+{
+ "allow_roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "creation": "2025-07-23 15:11:12.112797",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "/test",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2025-07-23 15:27:25.652700",
+ "modified_by": "Administrator",
+ "module": "SRV",
+ "name": "frappe srv module",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Web Page Tour"
+  },
+  {
+   "step": "Custom Doctype"
+  },
+  {
+   "step": "Print Format"
+  }
+ ],
+ "subtitle": "srv module",
+ "success_message": "you are in srv module",
+ "title": "test srv"
+}

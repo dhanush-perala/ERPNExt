@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-23 11:52:26.950142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "component",
+  "quantity",
+  "acquisition_date",
+  "manufacture_date",
+  "component_age",
+  "requires_testing",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "component",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "acquisition_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Acquisition Date"
+  },
+  {
+   "fieldname": "component_age",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Component Age",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_testing",
+   "fieldtype": "Check",
+   "label": "Requires Testing"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "manufacture_date",
+   "fieldtype": "Date",
+   "label": "Manufacture Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-23 11:58:09.825474",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRN Request Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

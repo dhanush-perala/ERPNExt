@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:34.480293",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fa_request_no",
+  "request_date",
+  "failure_mode",
+  "amended_from",
+  "requested_by",
+  "location",
+  "fa_reference_no",
+  "column_break_jafk",
+  "failure_type",
+  "status",
+  "user",
+  "from_date",
+  "to_date",
+  "conclusion"
+ ],
+ "fields": [
+  {
+   "fieldname": "fa_request_no",
+   "fieldtype": "Int",
+   "label": "FA Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "failure_mode",
+   "fieldtype": "Data",
+   "label": "Failure Mode"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FA_REQUEST",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "fa_reference_no",
+   "fieldtype": "Data",
+   "label": "FA Reference No"
+  },
+  {
+   "fieldname": "failure_type",
+   "fieldtype": "Select",
+   "label": "Failure Type"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "conclusion",
+   "fieldtype": "Small Text",
+   "label": "Conclusion"
+  },
+  {
+   "fieldname": "column_break_jafk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-18 16:57:17.465438",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "FA_REQUEST",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

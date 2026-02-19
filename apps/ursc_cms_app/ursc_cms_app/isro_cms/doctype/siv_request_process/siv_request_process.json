@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 11:32:05.063196",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dhbe",
+  "select_project",
+  "pack_name",
+  "status",
+  "reference_doc",
+  "fetched_card",
+  "column_break_plyo",
+  "select_sub_system",
+  "select_card",
+  "select_card_copy",
+  "add_html",
+  "linked_siv",
+  "section_break_fzyx",
+  "items",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dhbe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_plyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fzyx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "Select Sub System",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "default": "Initial",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Initial\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "Add Button",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV Request Process",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "label": "Select Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "SIV Request Process Items"
+  },
+  {
+   "fetch_from": "select_card.card_name",
+   "fieldname": "select_card_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Card Copy"
+  },
+  {
+   "fieldname": "reference_doc",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reference_doc"
+  },
+  {
+   "fieldname": "linked_siv",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "fetched_card",
+   "options": "SIV Request Approval"
+  },
+  {
+   "fieldname": "fetched_card",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "workflow_state"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-09 12:48:48.433965",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Request Process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Designer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

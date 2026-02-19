@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 17:22:57.893551",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_bmww",
+  "link_part_number",
+  "date_code",
+  "stock_grade",
+  "stock_qty",
+  "request_qty",
+  "remaining_qty",
+  "column_break_jqvu",
+  "expiry_date",
+  "mfr_id",
+  "function",
+  "manufacturer",
+  "mdb_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_bmww",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Function"
+  },
+  {
+   "fieldname": "column_break_jqvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "stock_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stock Grade"
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Stock Qty"
+  },
+  {
+   "fieldname": "request_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Request Qty"
+  },
+  {
+   "fieldname": "remaining_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Remaining Qty"
+  },
+  {
+   "fieldname": "mdb_number",
+   "fieldtype": "Data",
+   "label": "MDB Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-14 11:59:24.358590",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "KIT RELEASE TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

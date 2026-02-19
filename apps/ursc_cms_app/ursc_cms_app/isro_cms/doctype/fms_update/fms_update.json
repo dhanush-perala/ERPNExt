@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-12 13:47:53.080233",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "section_break_yfww",
+  "project",
+  "subsystem",
+  "package",
+  "card",
+  "column_break_rjpz",
+  "change_type",
+  "component_type",
+  "link_part_no",
+  "section_break_rtme",
+  "table_glor"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "Item"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Card"
+  },
+  {
+   "fieldname": "change_type",
+   "fieldtype": "Data",
+   "label": "Change Type",
+   "options": "Select\nChange Of Part\nAdditional Part Request"
+  },
+  {
+   "fieldname": "section_break_rtme",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_glor",
+   "fieldtype": "Table",
+   "options": "FMS Update table"
+  },
+  {
+   "fieldname": "section_break_yfww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rjpz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "FMS Request Number",
+   "options": "Input Request"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Data",
+   "label": "Change Of Part",
+   "options": "Select\nNo Connection\nTest Select\nPackage Style"
+  },
+  {
+   "fieldname": "link_part_no",
+   "fieldtype": "Data",
+   "label": "Additional Part Request",
+   "options": "Select\nabc\ndef\nghi"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-18 12:02:28.322594",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "FMS Update",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

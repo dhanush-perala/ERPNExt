@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-09 13:31:30.875039",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_section",
+  "project",
+  "project_copy",
+  "column_break_hrnr",
+  "subsystem",
+  "subsystem_copy",
+  "column_break_dndk",
+  "package",
+  "package_copy",
+  "section_break_mcmu",
+  "table_wpqx",
+  "destination_section",
+  "d_project",
+  "d_project_copy",
+  "column_break_medd",
+  "d_subsystem",
+  "d_susystem_copy",
+  "column_break_rovz",
+  "d_package",
+  "column_break_nexe",
+  "html_htbk",
+  "section_break_muwy",
+  "table_hvnr"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hrnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "subsystem.select_sub_system",
+   "fieldname": "subsystem_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Subsystem Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dndk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "package.pack_name",
+   "fieldname": "package_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Package Copy",
+   "options": "PRJ_PACK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "destination_section",
+   "fieldtype": "Section Break",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "d_project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_medd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fetch_from": "d_project.project_name",
+   "fieldname": "d_project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "d_subsystem.select_sub_system",
+   "fieldname": "d_susystem_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Subsystem Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mcmu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_wpqx",
+   "fieldtype": "Table",
+   "options": "Copy Project Package Source Table"
+  },
+  {
+   "fieldname": "column_break_rovz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nexe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_htbk",
+   "fieldtype": "HTML",
+   "options": "<div style=\"text-align:right; padding-right:67px;\">\n    <div style=\"display:inline-block;\">\n        <button class=\"btn btn-primary\" id=\"add_pack_btn\" style=\"display:block; margin-bottom:14px; width:130px;\">\n            Add Pack\n        </button>\n\n        <button class=\"btn btn-primary\" id=\"copy_pack_btn\" style=\"display:block; width:130px;\">\n            Copy Pack\n        </button>\n    </div>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_muwy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_hvnr",
+   "fieldtype": "Table",
+   "options": "Copy Project Package Destination Table"
+  },
+  {
+   "fetch_from": "package.pack_name",
+   "fieldname": "d_package",
+   "fieldtype": "Data",
+   "label": "Package"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-23 13:45:14.316309",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Copy Project Package",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

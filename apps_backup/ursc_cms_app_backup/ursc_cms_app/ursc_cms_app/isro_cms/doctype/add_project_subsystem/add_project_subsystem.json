@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-23 15:21:48.820261",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mat9",
+  "project",
+  "center_save",
+  "project_save",
+  "column_break_tjte",
+  "sub_system",
+  "column_break_szgl",
+  "centre",
+  "status",
+  "sub_system",
+  "centre",
+  "work_flow_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mat9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[]",
+   "options": "add_project_card",
+   "placeholder": "SELECT PROJECT",
+   "reqd": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[]",
+   "options": "PROJECT_MASTER",
+   "placeholder": "SELECT PROJECT"
+  },
+  {
+   "fieldname": "sub_system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER SUB SYSTEM",
+   "placeholder": "ENTER SUB SYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Link",
+   "label": "SELECT CENTRE",
+   "options": "ISRO CENTER",
+   "placeholder": "SELECT CENTRE"
+  },
+  {
+   "fieldname": "column_break_tjte",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive"
+  },
+  {
+   "fetch_from": "centre.center",
+   "fieldname": "center_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "center save"
+  },
+  {
+   "fetch_from": "project.project_save",
+   "fieldname": "project_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "project save"
+  },
+  {
+   "fieldname": "column_break_szgl",
+   "fieldtype": "Column Break",
+   "label": "ENTER SUB SYSTEM",
+   "placeholder": "ENTER SUB SYSTEM"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Select",
+   "label": "SELECT CENTRE",
+   "placeholder": "SELECT CENTRE"
+  },
+  {
+   "default": "Active",
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "WORK FLOW STATUS",
+   "options": "Active\nInactive",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-25 21:51:47.695776",
+ "modified": "2025-09-11 17:41:24.882272",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ADD PROJECT SUBSYSTEM",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "sub_system"
+}

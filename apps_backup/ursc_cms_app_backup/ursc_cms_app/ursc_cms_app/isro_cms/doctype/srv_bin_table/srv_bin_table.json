@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 13:22:45.769362",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "manufacturer",
+  "type",
+  "pack_no",
+  "mdb_part_no",
+  "card_no",
+  "project_name",
+  "card_no_od",
+  "column_break_girp",
+  "stock",
+  "expiry",
+  "bin_by",
+  "posted_quantity",
+  "location",
+  "dc_code"
+ ],
+ "fields": [
+  {
+   "fetch_from": "manufacturer.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " COMPONENT TYPE",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manufacturer.mdb_part_no",
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PART NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manufacturer.card_no",
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "CARD NO",
+   "options": "CARD_1C",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manufacturer.stock",
+   "fieldname": "stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STOCK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_girp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "manufacturer.expiry",
+   "fieldname": "expiry",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXPIRY",
+   "read_only": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " SELECT MANUFACTURER",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bin_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": " BIN BY"
+  },
+  {
+   "fetch_from": "manufacturer.packet_no",
+   "fieldname": "pack_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PACK NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manufacturer.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "card_no.cardno",
+   "fieldname": "card_no_od",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "card number original"
+  },
+  {
+   "fetch_from": "project.proj_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "PROJECT NAME"
+  },
+  {
+   "fetch_from": "manufacturer.quality",
+   "fieldname": "posted_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-29 17:58:14.284518",
+ "modified": "2025-08-22 14:34:25.550127",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV BIN TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

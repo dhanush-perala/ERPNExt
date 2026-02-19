@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 12:45:59.661321",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_buy1",
+  "amended_from",
+  "component_type",
+  "project",
+  "package_style",
+  "column_break_gftq",
+  "subsystem",
+  "package",
+  "section_break_hcly",
+  "table_qnoa"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_buy1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Radiation Shielding Summary",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Link",
+   "label": "Package Style",
+   "options": "Package"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "ADD PROJECT_CARD11"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "Package"
+  },
+  {
+   "fieldname": "section_break_hcly",
+   "fieldtype": "Section Break",
+   "label": "Radiation Shielding Summary Item"
+  },
+  {
+   "fieldname": "table_qnoa",
+   "fieldtype": "Table",
+   "options": "Radiation Shielding Summary Item"
+  },
+  {
+   "fieldname": "column_break_gftq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-04 13:02:38.495994",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation Shielding Summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

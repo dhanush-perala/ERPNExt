@@ -1,0 +1,30 @@
+// Copyright (c) 2025, neemus and contributors
+// For license information, please see license.txt
+
+// frappe.ui.form.on("DPA Request for Multiple Components", {
+// 	refresh(frm) {
+
+// 	},
+// });
+
+frappe.listview_settings['DPA REQUEST FOR MUTIPLE COMPONENTS'] = {
+    onload: function(listview) {
+        // Store flag so we only set the filter once per page load
+        if (!listview.active_filter_applied) {
+            listview.active_filter_applied = true;
+
+            const hasFilter = listview.filter_area.get().some(f =>
+                f[0] === 'DPA REQUEST FOR MUTIPLE COMPONENTS' &&
+                f[1] === 'status' &&
+                f[2] === '=' &&
+                f[3] === 'Active'
+            );
+
+            if (!hasFilter) {
+                listview.filter_area.add([
+                    ['DPA REQUEST FOR MUTIPLE COMPONENTS', 'status', '=', 'Active']
+                ]);
+            }
+        }
+    }
+};

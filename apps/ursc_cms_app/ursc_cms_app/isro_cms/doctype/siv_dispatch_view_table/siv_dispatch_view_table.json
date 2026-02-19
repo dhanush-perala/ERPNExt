@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 15:18:13.404117",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "req_no",
+  "prog_name",
+  "siv_no",
+  "siv_date",
+  "req_line_items",
+  "status",
+  "column_break_dobl",
+  "rec_by",
+  "req_type",
+  "destination",
+  "project",
+  "subsystem",
+  "packagecard",
+  "store"
+ ],
+ "fields": [
+  {
+   "fieldname": "req_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQ No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prog_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PROG NAME\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SIV NO\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SIV DATE\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "req_line_items",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQ LINE ITEMS\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dobl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rec_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REC BY\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "req_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQ TYPE\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESTINATION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PROJECT",
+   "options": "PROJECT_MASTER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "SUBSYSTEM",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "packagecard",
+   "fieldtype": "Data",
+   "label": "PACKAGE/CARD\t"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STORE",
+   "options": "Warehouse",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 13:02:45.185289",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV DISPATCH VIEW TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

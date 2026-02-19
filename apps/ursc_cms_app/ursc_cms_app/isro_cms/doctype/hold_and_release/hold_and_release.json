@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-19 16:06:01.980561",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "section_break_fzgu",
+  "table_jzmy",
+  "section_break_qmdk",
+  "select_subsystem",
+  "section_break_qeoy",
+  "table_ywxx",
+  "section_break_adug",
+  "select_package",
+  "section_break_bphz",
+  "table_vxcd",
+  "section_break_kivu",
+  "select_card",
+  "section_break_idsi",
+  "table_gyry"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Select",
+   "label": "Select Project",
+   "options": "Select\nOngoing Projects\nCompleted Projects"
+  },
+  {
+   "fieldname": "section_break_fzgu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_jzmy",
+   "fieldtype": "Table",
+   "options": "Select Project item"
+  },
+  {
+   "fieldname": "section_break_qmdk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_subsystem",
+   "fieldtype": "Select",
+   "label": "Select Subsystem",
+   "options": "Select\nOngoing Projects\nCompleted Projects"
+  },
+  {
+   "fieldname": "section_break_qeoy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ywxx",
+   "fieldtype": "Table",
+   "options": "Select Subsystem item"
+  },
+  {
+   "fieldname": "section_break_adug",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Select",
+   "label": "Select Package",
+   "options": "Select\nOngoing Projects\nCompleted Projects"
+  },
+  {
+   "fieldname": "section_break_bphz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_vxcd",
+   "fieldtype": "Table",
+   "options": "Select Package item"
+  },
+  {
+   "fieldname": "section_break_kivu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Select",
+   "label": "Select Card",
+   "options": "Select\nOngoing Projects\nCompleted Projects"
+  },
+  {
+   "fieldname": "section_break_idsi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_gyry",
+   "fieldtype": "Table",
+   "options": "Select Card item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-19 17:38:08.220097",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Hold and Release",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

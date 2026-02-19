@@ -1,0 +1,13 @@
+{
+  "db_name": "_97b0c0ef0c16928f",
+  "db_password": "4DFfMB4Y3wnyUDkd",
+  "db_type": "mariadb",
+  "db_host": "127.0.0.1",
+  "installed_apps": [
+    "frappe",
+    "erpnext",
+    "ursc_cms_app",
+    "healthcare"
+  ],
+  "developer_mode": 1
+}

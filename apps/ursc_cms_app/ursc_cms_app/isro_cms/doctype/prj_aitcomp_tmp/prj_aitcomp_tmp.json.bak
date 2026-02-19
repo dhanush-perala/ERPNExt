@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:33.876679",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card_code",
+  "comp_id",
+  "link_part",
+  "link_id",
+  "pstyle_id",
+  "qty",
+  "remarks",
+  "entry_by",
+  "entry_date",
+  "comp_type",
+  "cc2",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Int",
+   "label": "CARD_CODE"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "COMP_ID"
+  },
+  {
+   "fieldname": "link_part",
+   "fieldtype": "Data",
+   "label": "LINK_PART"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "pstyle_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PSTYLE_ID"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "ENTRY_DATE"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "label": "COMP_TYPE"
+  },
+  {
+   "fieldname": "cc2",
+   "fieldtype": "Int",
+   "label": "CC2"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PRJ_AITCOMP_tmp",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:29:01.114775",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PRJ_AITCOMP_tmp",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

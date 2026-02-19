@@ -1,0 +1,263 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:card_code",
+ "creation": "2025-11-05 12:39:07.275201",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_project_copy",
+  "proj_code",
+  "project_ref_name",
+  "pack_name",
+  "select_package_copy",
+  "pack_code",
+  "package_card_count",
+  "card_names",
+  "card_count_suffix",
+  "status",
+  "column_break_iimq",
+  "select_sub_system",
+  "select_sub_system_copy",
+  "sub_code",
+  "card_type",
+  "select_card",
+  "card_code",
+  "ecad_card_name",
+  "card_name",
+  "add_card_html",
+  "workflow_state",
+  "projectmaster_link",
+  "section_break_usrb",
+  "table_aahd"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "label": "Card Count"
+  },
+  {
+   "default": "Initial",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Initial"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Projects",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_project.project_name",
+   "fieldname": "select_project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Project Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pack_name.pack_name",
+   "fieldname": "select_package_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Package Copy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iimq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Sub System",
+   "options": "PRJ_SUB",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_sub_system.select_sub_system",
+   "fieldname": "select_sub_system_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Sub System Copy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Select",
+   "label": "Select Card ",
+   "options": "Select\nSelect From ECard\nNew",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"New\"",
+   "fieldname": "card_names",
+   "fieldtype": "Data",
+   "label": "Enter Card Name"
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fieldname": "card_count_suffix",
+   "fieldtype": "Data",
+   "label": "Suffix"
+  },
+  {
+   "fieldname": "section_break_usrb",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "add_card_html",
+   "fieldtype": "HTML",
+   "label": "ADD CARD Button",
+   "read_only": 1
+  },
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Card Type",
+   "options": "Select\nOn Box\nOn System\nProject Card Wise\nFMS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_aahd",
+   "fieldtype": "Table",
+   "options": "PRJ_CARDS Table"
+  },
+  {
+   "depends_on": "eval:doc.select_card == \"Select From ECard\"",
+   "fieldname": "ecad_card_name",
+   "fieldtype": "Select",
+   "label": "Ecard Name"
+  },
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Data",
+   "label": "CARD_CODE",
+   "unique": 1
+  },
+  {
+   "fetch_from": "select_project.custom_proj_code",
+   "fieldname": "proj_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Select Project Copy Copy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Package",
+   "options": "PROJECT_PACKAGE"
+  },
+  {
+   "fetch_from": "select_sub_system.sub_code",
+   "fieldname": "sub_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Select Sub System Copy Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pack_name.pack_code",
+   "fieldname": "pack_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": " Package_code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pack_name.card_count",
+   "fieldname": "package_card_count",
+   "fieldtype": "Data",
+   "label": "Package Card Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_ref_name",
+   "fieldtype": "Select",
+   "label": "Project REF Number"
+  },
+  {
+   "default": "Initial",
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "workflow_status",
+   "options": "Initial\nApproved\nRejected\nPending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "projectmaster_link",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "projectmaster_link",
+   "options": "PP Approval Cards",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-19 15:25:26.351387",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PRJ_CARDS",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECAD Approver",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "URSC ADMIN",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "card_names"
+}

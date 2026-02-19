@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:27.395227",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mdb_id",
+  "mdb_partno",
+  "comp_id",
+  "basic_mdb_id",
+  "link_id",
+  "qual_id",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "mdb_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "MDB_ID"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "label": "MDB_PARTNO"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Int",
+   "label": "COMP_ID"
+  },
+  {
+   "fieldname": "basic_mdb_id",
+   "fieldtype": "Int",
+   "label": "BASIC_MDB_ID"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "qual_id",
+   "fieldtype": "Int",
+   "label": "QUAL_ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-06 11:05:31.772431",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "MDB_ID",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "mdb_partno"
+}

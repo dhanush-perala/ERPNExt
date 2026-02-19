@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-08 13:31:27.188702",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_type",
+  "column_break_fuhw",
+  "part_no_to_match",
+  "section_break_uoko",
+  "html_eezn",
+  "column_break_gwsf",
+  "html_oxlp",
+  "request_numbers_section",
+  "insat_fg_1__ursc",
+  "insat_fg_1__isite",
+  "column_break_brem",
+  "insat_to_scr__ursc",
+  "insat_to_scr_isite",
+  "column_break_ncfc",
+  "irs_fg_1__ursc",
+  "irs_fg_1__isite",
+  "column_break_krts",
+  "irs_to_scr_ursc",
+  "irs_to_scr_isite",
+  "section_break_dhxa",
+  "table_lrgw"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "Comp Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "part_no_to_match",
+   "fieldtype": "Data",
+   "label": "Part No To Match"
+  },
+  {
+   "fieldname": "section_break_uoko",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_eezn",
+   "fieldtype": "HTML",
+   "options": "<button id=\"fetch_stock_btn\" style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Submit\n</button>\n"
+  },
+  {
+   "fieldname": "html_oxlp",
+   "fieldtype": "HTML",
+   "options": "<!-- Submit for Approval Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    cursor: pointer;\">\n    Submit for Approval\n</button>"
+  },
+  {
+   "fieldname": "column_break_gwsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fuhw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_numbers_section",
+   "fieldtype": "Section Break",
+   "label": "REQUEST NUMBERS"
+  },
+  {
+   "fieldname": "column_break_brem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ncfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_krts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dhxa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_lrgw",
+   "fieldtype": "Table",
+   "options": "Components Due For Screening Relifing FIFO Analysis table"
+  },
+  {
+   "fieldname": "insat_fg_1__ursc",
+   "fieldtype": "Float",
+   "label": "INSAT FG 1  URSC"
+  },
+  {
+   "fieldname": "insat_fg_1__isite",
+   "fieldtype": "Float",
+   "label": "INSAT FG 1  ISITE"
+  },
+  {
+   "fieldname": "insat_to_scr__ursc",
+   "fieldtype": "Float",
+   "label": "INSAT TO SCR  URSC"
+  },
+  {
+   "fieldname": "insat_to_scr_isite",
+   "fieldtype": "Float",
+   "label": "INSAT TO SCR ISITE"
+  },
+  {
+   "fieldname": "irs_fg_1__ursc",
+   "fieldtype": "Float",
+   "label": "IRS FG 1  URSC"
+  },
+  {
+   "fieldname": "irs_fg_1__isite",
+   "fieldtype": "Float",
+   "label": "IRS FG 1  ISITE"
+  },
+  {
+   "fieldname": "irs_to_scr_ursc",
+   "fieldtype": "Float",
+   "label": "IRS TO SCR URSC"
+  },
+  {
+   "fieldname": "irs_to_scr_isite",
+   "fieldtype": "Float",
+   "label": "IRS TO SCR ISITE"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 17:00:29.204442",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Components Due For Screening Relifing FIFO Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Designer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

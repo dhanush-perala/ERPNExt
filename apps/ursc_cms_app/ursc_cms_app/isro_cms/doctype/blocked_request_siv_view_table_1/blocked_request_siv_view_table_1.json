@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-10 12:33:05.379592",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "mdb_partno",
+  "request_qty",
+  "issued_qty",
+  "date_code",
+  "exp_date",
+  "manufacturer",
+  "column_break_wkih",
+  "card_no",
+  "card_id",
+  "link_id",
+  "mfr_id",
+  "request_by",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TYPE"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PARTNO"
+  },
+  {
+   "fieldname": "request_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST QTY"
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUED QTY"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXP DATE"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MANUFACTURER"
+  },
+  {
+   "fieldname": "column_break_wkih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD NO"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD ID"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LINK ID"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR ID"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST BY"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-10 12:36:17.157831",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "BLOCKED REQUEST SIV-VIEW TABLE 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

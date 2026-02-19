@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 16:22:03.430063",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jysa",
+  "amended_from",
+  "request_no",
+  "request_date",
+  "user",
+  "column_break_lrsa",
+  "program",
+  "dpa_stage",
+  "submitted_dpa_during_incoming_inspection",
+  "section_break_oppx",
+  "table_zxth"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jysa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "DPA User Request Display",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "dpa_stage",
+   "fieldtype": "Data",
+   "label": "DPA Stage"
+  },
+  {
+   "default": "0",
+   "fieldname": "submitted_dpa_during_incoming_inspection",
+   "fieldtype": "Check",
+   "label": "Submitted DPA During Incoming Inspection"
+  },
+  {
+   "fieldname": "column_break_lrsa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oppx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_zxth",
+   "fieldtype": "Table",
+   "options": "DPA Component Detail"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-04 16:42:30.446991",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "DPA User Request Display",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

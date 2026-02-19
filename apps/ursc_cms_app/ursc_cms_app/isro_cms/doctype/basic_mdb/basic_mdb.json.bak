@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:27.235900",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_id",
+  "select_link_part_number",
+  "basic_mdb",
+  "entry_date",
+  "comp_code",
+  "amended_from",
+  "column_break_xlxz",
+  "column_break_dzyj",
+  "mdb_status",
+  "restrict_opt",
+  "entry_date",
+  "amended_from",
+  "component_code",
+  "component_name",
+  "linkpartno",
+  "column_break_xlxz",
+  "status",
+  "basic_mdb_id",
+  "entry_by",
+  "link_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_mdb_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "BASIC_MDB_ID"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "COMP_ID",
+   "options": "Item",
+   "fieldtype": "Link",
+   "label": "Select Component Code",
+   "options": "Item",
+   "print_hide": 1,
+   "report_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_mdb",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BASIC_MDB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "ENTRY_DATE"
+  },
+  {
+   "fieldname": "mdb_status",
+   "fieldtype": "Select",
+   "label": "MDB_STATUS",
+   "options": "invalid\nvalid",
+   "reqd": 1
+  },
+  {
+   "fieldname": "restrict_opt",
+   "fieldtype": "Select",
+   "label": "RESTRICT_OPT",
+   "options": "RESTRICT\nNot RESTRICT",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dzyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xlxz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "comp_id.item_code",
+   "fieldname": "comp_code",
+   "fieldtype": "Link",
+   "label": "COMP CODE",
+   "options": "Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BASIC MDB",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_dzyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xlxz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "comp_id.item_code",
+   "fieldname": "component_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "COMPONENT CODE"
+  },
+  {
+   "fetch_from": "comp_id.item_name",
+   "fieldname": "component_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "COMPONENT NAME"
+  },
+  {
+   "fieldname": "select_link_part_number",
+   "fieldtype": "Link",
+   "label": "Select Link Part Number",
+   "options": "LinkPartNo"
+  },
+  {
+   "fetch_from": "select_link_part_number.linkpart_no",
+   "fieldname": "linkpartno",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "linkpartno",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-29 12:31:55.440970",
+ "modified": "2025-08-29 16:41:06.410932",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "BASIC MDB",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "basic_mdb"
+}

@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:35.028764",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prog_id",
+  "phy_qty",
+  "qty",
+  "link_id",
+  "card_id",
+  "stock_id",
+  "stores_id",
+  "mfr_id",
+  "mdb_id",
+  "workflow_status",
+  "column_break_kmlc",
+  "datecode",
+  "exp_date",
+  "upd_by",
+  "upd_date",
+  "diff_qty",
+  "vr_date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "phy_qty",
+   "fieldtype": "Int",
+   "label": "PHY_QTY"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "CARD_ID"
+  },
+  {
+   "fieldname": "stock_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "STOCK_ID"
+  },
+  {
+   "fieldname": "stores_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "STORES_ID"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "mdb_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "MDB_ID"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "column_break_kmlc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datecode",
+   "fieldtype": "Data",
+   "label": "DATECODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "EXP_DATE"
+  },
+  {
+   "fieldname": "upd_by",
+   "fieldtype": "Int",
+   "label": "UPD_BY"
+  },
+  {
+   "fieldname": "upd_date",
+   "fieldtype": "Date",
+   "label": "UPD_DATE"
+  },
+  {
+   "fieldname": "diff_qty",
+   "fieldtype": "Int",
+   "label": "DIFF_QTY"
+  },
+  {
+   "fieldname": "vr_date",
+   "fieldtype": "Date",
+   "label": "VR_DATE"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CMS_STOCK_VERIFICATION",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:40:02.406236",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "CMS_STOCK_VERIFICATION",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

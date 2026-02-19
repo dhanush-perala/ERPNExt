@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-10 13:57:03.460033",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_h7mm",
+  "amended_from",
+  "project",
+  "seg_not_received",
+  "pending_since",
+  "section_break_usxj",
+  "table_fcpz"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_h7mm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIVS PENDING TO RECEIVE BY SEG",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "PROJECT"
+  },
+  {
+   "fieldname": "seg_not_received",
+   "fieldtype": "Select",
+   "label": "SEG NOT RECEIVED ",
+   "options": "SELECT\nALL REQUEST\nCARDWISE REQUEST\nOTHER REQUEST"
+  },
+  {
+   "fieldname": "pending_since",
+   "fieldtype": "Data",
+   "label": "PENDING SINCE "
+  },
+  {
+   "fieldname": "section_break_usxj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_fcpz",
+   "fieldtype": "Table",
+   "options": "SIVS PENDING TO RECEIVE BY SEG TABLE"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-10 14:00:16.505317",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIVS PENDING TO RECEIVE BY SEG",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

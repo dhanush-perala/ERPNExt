@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-11-07 16:34:41.819606",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jpyh",
+  "amended_from",
+  "comp_type",
+  "comp_type_copy",
+  "part_no",
+  "alternate_partno"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jpyh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ALTERNATE PARTNO UPDATE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "Comp Type",
+   "options": "Item"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Select",
+   "label": "Part No"
+  },
+  {
+   "fieldname": "alternate_partno",
+   "fieldtype": "Data",
+   "label": "Alternate Partno"
+  },
+  {
+   "fetch_from": "comp_type.item_group",
+   "fieldname": "comp_type_copy",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Comp Type Copy",
+   "options": "Item",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-06 13:37:59.845008",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ALTERNATE PARTNO UPDATE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Planning User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "QA User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Yellow",
+   "title": "Pending for Approval"
+  },
+  {
+   "color": "Green",
+   "title": "Approved"
+  },
+  {
+   "color": "Red",
+   "title": "Rejected"
+  }
+ ]
+}

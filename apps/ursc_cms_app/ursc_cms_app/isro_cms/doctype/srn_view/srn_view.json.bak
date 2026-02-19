@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-06 19:07:49.038484",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gjhk",
+  "project",
+  "comp_type",
+  "start_date",
+  "column_break_ysnz",
+  "end_date",
+  "part_no_to_match",
+  "section_break_rhrm",
+  "table_ciln",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gjhk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "COMP TYPE",
+   "options": "COMP_ID"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "START DATE"
+  },
+  {
+   "fieldname": "column_break_ysnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "END DATE"
+  },
+  {
+   "fieldname": "part_no_to_match",
+   "fieldtype": "Int",
+   "label": "PART NO TO MATCH",
+   "options": "ALL"
+  },
+  {
+   "fieldname": "section_break_rhrm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ciln",
+   "fieldtype": "Table",
+   "options": "SRN VIEW TABLE"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRN VIEW",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-11 12:40:38.008006",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRN VIEW",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

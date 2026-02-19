@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{LOC}-{####}",
+ "creation": "2025-12-17 16:02:32.758049",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enter_location",
+  "block",
+  "rack",
+  "column_break_eqch",
+  "mdb_part_no",
+  "description",
+  "section_break_oapd",
+  "select_warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_warehouse",
+   "fieldtype": "Table",
+   "label": "Stock Details",
+   "options": "Warehouse Location Stock Grade",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enter_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Enter Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_eqch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "label": "Block",
+   "options": "Warehouse Block Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Link",
+   "label": "Rack",
+   "options": "Warehouse Rack Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Data",
+   "label": "MDB Part No"
+  },
+  {
+   "fieldname": "section_break_oapd",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-02 18:48:29.142913",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Warehouse Location Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

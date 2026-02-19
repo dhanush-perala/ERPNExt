@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-26 12:18:00.387841",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_store",
+  "select_program",
+  "select_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "select_program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "select_stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Stock",
+   "options": "Warehouse"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-26 12:24:52.807403",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Warehouse Location Stock Grade",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

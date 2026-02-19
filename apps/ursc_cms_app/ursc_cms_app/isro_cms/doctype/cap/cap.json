@@ -1,0 +1,35 @@
+{
+	"doctype": "DocType",
+	"name": "Cap",
+	"module": "isro_cms",
+	"custom": 1,
+	"istable": 0,
+	"editable_grid": 0,
+	"track_changes": 1,
+	"allow_import": 1,
+	"fields": [
+		{
+			"fieldname": "project",
+			"label": "Project",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"reqd": 0
+		},
+		{
+			"fieldname": "e_card",
+			"label": "E Card",
+			"fieldtype": "Data",
+			"in_list_view": 0,
+			"reqd": 0
+		}
+	],
+	"permissions": [
+		{
+			"role": "System Manager",
+			"create": 1,
+			"read": 1,
+			"write": 1,
+			"delete": 1
+		}
+	]
+}

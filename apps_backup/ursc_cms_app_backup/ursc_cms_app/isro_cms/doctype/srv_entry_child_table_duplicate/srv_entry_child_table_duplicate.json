@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-13 16:49:48.769864",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "srv_part_no",
+  "comp_type",
+  "rec_qty",
+  "odered_qty",
+  "srv_ent_id",
+  "srv_id",
+  "srv_no",
+  "column_break_czru",
+  "ret_qty",
+  "u_cost",
+  "workflow_status",
+  "amended_from",
+  "status",
+  "mirror_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "srv_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER SRV PART NO"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT COMPONENT TYPE",
+   "options": "COMP_ID"
+  },
+  {
+   "fieldname": "rec_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER RECIEVED QTY"
+  },
+  {
+   "fieldname": "odered_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER ODERED QTY"
+  },
+  {
+   "fieldname": "srv_ent_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ENT_ID"
+  },
+  {
+   "fieldname": "srv_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ID"
+  },
+  {
+   "fieldname": "column_break_czru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER RETURN QTY"
+  },
+  {
+   "fieldname": "u_cost",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER UNIT COST"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV ENTRY CHILD TABLE DUPLICATE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV ENTRY CHILD TABLE DUPLICATE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "status"
+  },
+  {
+   "fieldname": "mirror_parent",
+   "fieldtype": "Link",
+   "label": "Mirror Parent",
+   "options": "SRV ENTRY DUPLICATE FOR CHILD TABLE FETCHING",
+   "read_only": 1
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "srv number original",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-14 14:15:12.124698",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV ENTRY CHILD TABLE DUPLICATE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_part_no"
+}

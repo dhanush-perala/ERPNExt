@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SRV ENTRY-{MM}-{DD}-{YYYY}-{####}",
+ "creation": "2025-07-31 17:52:14.339015",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "inward_no",
+  "srv_no",
+  "srv_date",
+  "store",
+  "package",
+  "project_card",
+  "srv_status",
+  "prj_pri_name",
+  "column_break_brrq",
+  "po_no",
+  "po_date",
+  "enter_supplier",
+  "project",
+  "subsystem",
+  "project_priority_id",
+  "status",
+  "section_break_ydvb",
+  "table_vuja",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "inward_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER INWARD NO",
+   "placeholder": "Enter 11 digit In word number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "SRV NO",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "srv_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "SELECT SRV DATE",
+   "placeholder": "Select Srv Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "po_no.custom_project_save",
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "SELECT PROJECT",
+   "placeholder": "Select Project",
+   "report_hide": 1
+  },
+  {
+   "fieldname": "column_break_brrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Link",
+   "label": "ENTER PURCHASE ORDERNO",
+   "options": "Purchase Order",
+   "placeholder": "Enter Purchase Order Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "SELECT PURCHASE ORDER DATE",
+   "placeholder": "Select Purchase Order Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ydvb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_vuja",
+   "fieldtype": "Table",
+   "label": "SRV DATA UPDATE",
+   "options": "SRV ENT TABLE"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV ENTRY",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "po_no.supplier_name",
+   "fieldname": "enter_supplier",
+   "fieldtype": "Data",
+   "label": "SUPPLIER",
+   "options": "Supplier",
+   "placeholder": "Select Supplier",
+   "read_only": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "srv_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "srv_status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_priority_id",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select Project Priority",
+   "options": "PRJ_PRIORITY"
+  },
+  {
+   "fieldname": "prj_pri_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Priority Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "po_no.custom_package_save",
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "PACKAGE",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "po_no.custom_subsytem_save",
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "po_no.custom_card_save",
+   "fieldname": "project_card",
+   "fieldtype": "Data",
+   "label": "PROJECT CARD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "store"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [
+  {
+   "link_doctype": "SRV_POST",
+   "link_fieldname": "srv_no"
+  }
+ ],
+ "modified": "2025-09-19 18:30:26.219634",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV ENTRY",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_no"
+}

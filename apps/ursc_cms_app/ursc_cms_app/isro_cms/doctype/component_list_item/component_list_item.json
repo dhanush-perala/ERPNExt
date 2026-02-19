@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-23 20:06:46.947325",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "link_part",
+  "qty",
+  "position",
+  "symbol",
+  "mount_on",
+  "stack",
+  "functionality",
+  "column_break_vaib",
+  "add_option",
+  "part_no",
+  "part_desc",
+  "package_style_save",
+  "package",
+  "number",
+  "description",
+  "remarks",
+  "mount_on_save",
+  "column_break_crkx",
+  "part_no_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_part",
+   "fieldtype": "Data",
+   "label": "LInk part"
+  },
+  {
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "qty"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "position"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "label": "symbol"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "mount  on",
+   "options": "Mount Surface Master"
+  },
+  {
+   "fieldname": "stack",
+   "fieldtype": "Data",
+   "label": "stack"
+  },
+  {
+   "fieldname": "functionality",
+   "fieldtype": "Data",
+   "label": "functionality"
+  },
+  {
+   "fieldname": "column_break_vaib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_option",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "add_option",
+   "options": "Single\nMultiple"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "label": "part_no"
+  },
+  {
+   "fieldname": "part_desc",
+   "fieldtype": "Data",
+   "label": "part_desc"
+  },
+  {
+   "fetch_from": "package_style.pstyle",
+   "fieldname": "package_style_save",
+   "fieldtype": "Data",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "package"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "number"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "remarks"
+  },
+  {
+   "fetch_from": "mount_on.enter_mount_position",
+   "fieldname": "mount_on_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "mount save"
+  },
+  {
+   "fieldname": "column_break_crkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Shows the item list when \u201cMDB List\u201d is selected",
+   "fieldname": "part_no_details",
+   "fieldtype": "HTML",
+   "label": "part_no_details"
+  }
+ ],
+ "grid_page_length": 1000,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-27 00:47:13.797502",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Component List Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

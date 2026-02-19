@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:29.271335",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prj_priority_id",
+  "prj_priority_name",
+  "column_break_hlxb",
+  "status",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "prj_priority_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "PRJ_PRIORITY_ID "
+  },
+  {
+   "fieldname": "prj_priority_name",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "PRJ_PRIORITY_NAME",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PRJ PRIORITY NAME",
+   "placeholder": "PRJ PRIORITY NAME"
+  },
+  {
+   "fieldname": "column_break_hlxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PRJ_PRIORITY",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1,
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:31:50.926296",
+ "links": [],
+ "modified": "2025-08-29 13:58:41.347619",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PRJ_PRIORITY",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "prj_priority_name"
+}

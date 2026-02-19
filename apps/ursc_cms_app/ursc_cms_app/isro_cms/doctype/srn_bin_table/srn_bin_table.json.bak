@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 16:09:40.732742",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_code",
+  "mdb_part_no",
+  "stock_name",
+  "date_code",
+  "exp_date",
+  "qty",
+  "column_break_piuh",
+  "mfr_name",
+  "card_no",
+  "location",
+  "packet_no",
+  "binned_by"
+ ],
+ "fields": [
+  {
+   "fetch_from": "comp_type.comp_code",
+   "fieldname": "comp_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "COMP CODE",
+   "options": "PRJ_COMP_TMP"
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MDB PART NO",
+   "options": "MDB_ID"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "EXP DATE"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY"
+  },
+  {
+   "fieldname": "mfr_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR NAME"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "CARD NO",
+   "options": "CARD_1C"
+  },
+  {
+   "fetch_from": "card_no.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "PACKET NO"
+  },
+  {
+   "fieldname": "binned_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BINNED BY"
+  },
+  {
+   "fieldname": "column_break_piuh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STOCK",
+   "options": "STOCK_ID"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-22 16:42:09.416227",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRN BIN TABLE",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

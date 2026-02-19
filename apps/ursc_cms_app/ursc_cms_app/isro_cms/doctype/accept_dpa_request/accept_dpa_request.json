@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 10:36:45.597786",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_igep",
+  "selected_dpa",
+  "pending_list",
+  "dpa_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_igep",
+   "fieldtype": "Section Break",
+   "label": "COMPONENT DETAILS"
+  },
+  {
+   "fieldname": "selected_dpa",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "selected_dpa"
+  },
+  {
+   "fieldname": "pending_list",
+   "fieldtype": "HTML",
+   "label": "pending_list"
+  },
+  {
+   "fieldname": "dpa_preview",
+   "fieldtype": "HTML",
+   "label": "dpa_preview"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 18:58:35.786310",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Accept_DPA_Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

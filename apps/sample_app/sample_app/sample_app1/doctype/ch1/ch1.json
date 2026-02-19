@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-16 17:24:20.363101",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fmgk",
+  "mdb",
+  "mdb_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "mdb",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "mdb"
+  },
+  {
+   "fieldname": "mdb_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "mdb_name"
+  },
+  {
+   "fieldname": "section_break_fmgk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 11:00:47.946683",
+ "modified_by": "gouthamkrishna010111@gmail.com",
+ "module": "sample app1",
+ "name": "ch1",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

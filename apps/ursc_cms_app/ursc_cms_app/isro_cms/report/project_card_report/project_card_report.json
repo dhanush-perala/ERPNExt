@@ -1,0 +1,30 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 1,
+ "columns": [],
+ "creation": "2025-10-26 23:41:25.538530",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "deafult letter head",
+ "letterhead": null,
+ "modified": "2025-10-27 00:45:03.534381",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PROJECT CARD REPORT",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    p.proj_name                AS 'PROJECT NAME',\n    s.select_sub_system        AS 'SUBSYSTEM NAME',\n    pkg.pack_name              AS 'PACKAGE NAME',\n    card.ecad_card_name        AS 'CARD NAME',\n    item.link_part             AS 'LINK PART',\n    item.qty                   AS 'QTY',\n    item.position              AS 'POSITION',\n    item.symbol                AS 'SYMBOL',\n    item.stack                 AS 'STACK',\n    item.functionality         AS 'FUNCTIONALITY',\n    item.add_option            AS 'ADD OPTION',\n    item.part_no               AS 'PART NUMBER',\n    item.part_desc             AS 'PART DESCRIPTION',\n    item.package_style_save    AS 'PACKAGE STYLE',\n    item.number                AS 'NUMBER',\n    item.description           AS 'DESCRIPTION',\n    item.remarks               AS 'REMARKS',\n    item.mount_on_save         AS 'MOUNT',\n    cwl.owner                  AS 'CREATED BY',\n    DATE(cwl.creation)         AS 'CREATED DATE'\nFROM `tabCardwise Component List` AS cwl\nLEFT JOIN `tabPROJECT_MASTER` p \n    ON cwl.select_project = p.name\nLEFT JOIN `tabPRJ_SUB` s \n    ON cwl.select_sub_system = s.name\nLEFT JOIN `tabPROJECT_PACKAGE` pkg \n    ON cwl.select_pack_code = pkg.name\nLEFT JOIN `tabPRJ_CARDS` card \n    ON card.pack_code = pkg.pack_code \nLEFT JOIN `tabComponent List Item` item \n    ON item.parent = cwl.name\n    AND item.parenttype = 'Cardwise Component List'\nORDER BY \n    p.proj_name, \n    s.select_sub_system, \n    pkg.pack_name, \n    card.ecad_card_name, \n    item.idx;\n",
+ "ref_doctype": "Cardwise Component List",
+ "report_name": "PROJECT CARD REPORT",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

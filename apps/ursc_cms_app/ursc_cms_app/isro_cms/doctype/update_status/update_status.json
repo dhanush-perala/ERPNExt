@@ -1,0 +1,280 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-02 11:26:16.530538",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ddrb",
+  "fa_request_no",
+  "component_details_section",
+  "comp_type",
+  "mdb_part_no",
+  "package_style",
+  "column_break_bjbc",
+  "date_code",
+  "manufacturer",
+  "quality",
+  "column_break_vosy",
+  "sr_no",
+  "procurement_spec",
+  "failure_details_section",
+  "failed_during",
+  "failure_type",
+  "project_model",
+  "column_break_jbmg",
+  "project",
+  "subsystem",
+  "package",
+  "column_break_oepo",
+  "card",
+  "failed_at",
+  "failure_mode",
+  "column_break_ahmd",
+  "environmental_test_condition",
+  "reported_failure",
+  "section_break_sirt",
+  "fa_ref_no",
+  "fa_report_date",
+  "column_break_twak",
+  "failure_category",
+  "updated_by",
+  "section_break_knls",
+  "failure_conclusion",
+  "section_break_xxfj",
+  "workflow_status",
+  "html_approve_btn",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ddrb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fa_ref_no",
+   "fieldtype": "Data",
+   "label": "Failure Analysis Ref No"
+  },
+  {
+   "fieldname": "fa_report_date",
+   "fieldtype": "Date",
+   "label": "Failure Analysis Report Date"
+  },
+  {
+   "fieldname": "failure_category",
+   "fieldtype": "Data",
+   "label": "Failure Category"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "label": "Updated By"
+  },
+  {
+   "fieldname": "section_break_knls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "failure_conclusion",
+   "fieldtype": "Small Text",
+   "label": "Failure Conclusion"
+  },
+  {
+   "fieldname": "section_break_xxfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_sirt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_twak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fa_request_no",
+   "fieldtype": "Link",
+   "label": "Failure Analysis Request No",
+   "options": "Failure Request"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Data",
+   "label": "MDB Part No"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Data",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Data",
+   "label": "SR No"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Data",
+   "label": "Procurement Spec"
+  },
+  {
+   "fieldname": "failure_details_section",
+   "fieldtype": "Section Break",
+   "label": "FAILURE DETAILS"
+  },
+  {
+   "fieldname": "failed_during",
+   "fieldtype": "Data",
+   "label": "Failed During"
+  },
+  {
+   "fieldname": "failure_type",
+   "fieldtype": "Data",
+   "label": "Failure Type"
+  },
+  {
+   "fieldname": "project_model",
+   "fieldtype": "Data",
+   "label": "Project Model"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "Subsystem"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "Package"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Data",
+   "label": "Card"
+  },
+  {
+   "fieldname": "failed_at",
+   "fieldtype": "Data",
+   "label": "Failed At"
+  },
+  {
+   "fieldname": "failure_mode",
+   "fieldtype": "Data",
+   "label": "Failure Mode"
+  },
+  {
+   "fieldname": "environmental_test_condition",
+   "fieldtype": "Data",
+   "label": "Environmental Test Condition"
+  },
+  {
+   "fieldname": "reported_failure",
+   "fieldtype": "Data",
+   "label": "Reported Failure"
+  },
+  {
+   "fieldname": "component_details_section",
+   "fieldtype": "Section Break",
+   "label": "COMPONENT DETAILS"
+  },
+  {
+   "fieldname": "column_break_vosy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oepo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Update-Status",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_bjbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jbmg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ahmd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Select",
+   "label": "Workflow Status",
+   "options": "Initial\nApprove\nReject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_approve_btn",
+   "fieldtype": "HTML",
+   "label": "Approve",
+   "options": "<button id=\"btn_approve\" style=\"padding: 8px 20px;\n    background-color: #4CAF50;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\">\n    Approve\n</button>\n"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-03 12:18:11.830388",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Update-Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

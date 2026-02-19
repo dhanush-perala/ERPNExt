@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 16:30:31.502599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ztix",
+  "comp_type",
+  "requested_qty",
+  "ursc_stock",
+  "link_id",
+  "card_qty",
+  "column_break_zdmq",
+  "req_partno",
+  "approved_qty",
+  "isite_stock",
+  "pend_req_qty",
+  "issued_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ztix",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COMP TYPE"
+  },
+  {
+   "fieldname": "requested_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUESTED QTY"
+  },
+  {
+   "fieldname": "ursc_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URSC STOCK"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "link_id"
+  },
+  {
+   "fieldname": "isite_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISITE STOCK"
+  },
+  {
+   "fieldname": "column_break_zdmq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "req_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQ PARTNo."
+  },
+  {
+   "fieldname": "approved_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "APPROVED QTY"
+  },
+  {
+   "fieldname": "pend_req_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PEND REQ QTY"
+  },
+  {
+   "fieldname": "card_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD QTY"
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUED QTY"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-07 17:26:52.216615",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "COMPONENT REQUEST SIV - ONLINE APPROVAL TABLE 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

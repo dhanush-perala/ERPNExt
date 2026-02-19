@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:29.778055",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_subsystem",
+  "pack_type_code",
+  "sub_code",
+  "rad_shield_status",
+  "rad_note",
+  "rad_approve_date",
+  "prj_save",
+  "subsystem_save",
+  "column_break_ajpu",
+  "pack_code",
+  "pack_name",
+  "upd_by",
+  "upd_date",
+  "rad_approve_by",
+  "src_pack",
+  "qm_proj_code",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Data",
+   "label": "PACKAGE CODE"
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PACKAGE NAME"
+  },
+  {
+   "fieldname": "pack_type_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PACKAGE TYPE CODE"
+  },
+  {
+   "fieldname": "sub_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SUB_CODE"
+  },
+  {
+   "fieldname": "rad_shield_status",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "RAD_SHIELD_STATUS"
+  },
+  {
+   "fieldname": "rad_note",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "RAD_NOTE"
+  },
+  {
+   "fieldname": "rad_approve_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "RAD_APPROVE_DATE"
+  },
+  {
+   "fieldname": "column_break_ajpu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "upd_by",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "UPD_BY"
+  },
+  {
+   "fieldname": "upd_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "UPD_DATE"
+  },
+  {
+   "fieldname": "rad_approve_by",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "RAD_APPROVE_BY"
+  },
+  {
+   "fieldname": "src_pack",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SRC PACKAGE"
+  },
+  {
+   "fieldname": "qm_proj_code",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "QM_PROJ_CODE"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "SELECT PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fetch_from": "select_project.project_save",
+   "fieldname": "prj_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PRJ SAVE"
+  },
+  {
+   "fetch_from": "select_sub_system.sub_system",
+   "fieldname": "subsystem_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SUBSYSTEM SAVE"
+  },
+  {
+   "fieldname": "select_subsystem",
+   "fieldtype": "Link",
+   "label": "SELECT SUBSYSTEM",
+   "link_filters": "[]",
+   "options": "ADD PROJECT SUBSYSTEM"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-08 12:45:40.556343",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PRJ_PACK",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "pack_name"
+}

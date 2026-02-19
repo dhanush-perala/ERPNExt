@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-28 10:53:51.716219",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "advice_no",
+  "request_type",
+  "warehouse",
+  "request_by",
+  "column_break_lheo",
+  "advice_date",
+  "print_type",
+  "status",
+  "mdb_part_number",
+  "section_break_ufej",
+  "table_ikcz"
+ ],
+ "fields": [
+  {
+   "fieldname": "advice_no",
+   "fieldtype": "Read Only",
+   "label": "Advice No"
+  },
+  {
+   "fieldname": "column_break_lheo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advice_date",
+   "fieldtype": "Date",
+   "label": "Advice Date"
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Select",
+   "label": "Request Type",
+   "options": "Normal\nSpecific"
+  },
+  {
+   "fieldname": "print_type",
+   "fieldtype": "Select",
+   "label": "Print Type",
+   "options": "Advise Print\nItem Sticker\nPacked Packet QR"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nGenerated\nPrinted"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Select",
+   "label": "Request By",
+   "options": "FIFO (Normal)\nMDB Part Number (Specific Request)"
+  },
+  {
+   "fieldname": "mdb_part_number",
+   "fieldtype": "Link",
+   "label": "MDB Part Number",
+   "options": "MDB_ID"
+  },
+  {
+   "fieldname": "section_break_ufej",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ikcz",
+   "fieldtype": "Table",
+   "options": "Advice Print Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-28 11:06:25.829261",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Advice Print",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

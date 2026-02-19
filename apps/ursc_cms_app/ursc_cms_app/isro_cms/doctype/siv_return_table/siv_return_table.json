@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-22 14:01:37.966007",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "mdb_partno",
+  "date_code",
+  "quantity",
+  "return_quantity",
+  "post_quantity",
+  "siv_quantity",
+  "expiry_date",
+  "manufacturer",
+  "manufature_id",
+  "column_break_eomv",
+  "card_id",
+  "card_number",
+  "cardx_number",
+  "location",
+  "quality",
+  "siv_return_id",
+  "packet_number",
+  "function",
+  "entry_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "return_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Return Quantity"
+  },
+  {
+   "fieldname": "post_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Post Quantity"
+  },
+  {
+   "fieldname": "siv_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SIV Quantity"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "manufature_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manufature ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card ID"
+  },
+  {
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Number"
+  },
+  {
+   "fieldname": "cardx_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cardx Number"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quality"
+  },
+  {
+   "fieldname": "siv_return_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SIV Return ID"
+  },
+  {
+   "fieldname": "packet_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Packet Number"
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Function"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Entry By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_eomv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manufature",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PartNo"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-23 18:05:07.855844",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Return Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

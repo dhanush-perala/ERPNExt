@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:34.125532",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fa_fail_type_id",
+  "fa_fail_during_id",
+  "fa_fail_type_name",
+  "status",
+  "workflow_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "fa_fail_type_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "FA_FAIL_TYPE_ID"
+  },
+  {
+   "fieldname": "fa_fail_during_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "FA_FAIL_DURING_ID"
+  },
+  {
+   "fieldname": "fa_fail_type_name",
+   "fieldtype": "Data",
+   "label": "FA_FAIL_TYPE_NAME"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FA_FAIL_TYPE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:38:34.879444",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "FA_FAIL_TYPE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,100 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-11 09:31:05.362654",
+  "name": "test",
+  "workflow_action_name": "test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.442962",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.444358",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:15:43.308127",
+  "name": "submit",
+  "workflow_action_name": "submit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:22:20.050969",
+  "name": "Return",
+  "workflow_action_name": "Return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:23:19.885490",
+  "name": "Verify Return",
+  "workflow_action_name": "Verify Return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:19:52.897579",
+  "name": "dispatch",
+  "workflow_action_name": "dispatch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:24:26.861352",
+  "name": "clear at Gate",
+  "workflow_action_name": "clear at Gate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:19:00.780233",
+  "name": "Log dispatch",
+  "workflow_action_name": "Log dispatch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.441026",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:15:53.599385",
+  "name": "SUBMIT TO STOCK ENTRY",
+  "workflow_action_name": "SUBMIT TO STOCK ENTRY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:19:07.578434",
+  "name": "SUBMIT TO STOCK POSTING",
+  "workflow_action_name": "SUBMIT TO STOCK POSTING"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:18:05.759230",
+  "name": "SUBMIT TO STOCK BINNING",
+  "workflow_action_name": "SUBMIT TO STOCK BINNING"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-25 10:34:09.346107",
+  "name": "SEND TO APPROVAL",
+  "workflow_action_name": "SEND TO APPROVAL"
+ }
+]

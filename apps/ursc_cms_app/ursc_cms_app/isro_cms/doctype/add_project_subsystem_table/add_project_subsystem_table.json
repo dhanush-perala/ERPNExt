@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-26 18:02:57.000817",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bvwl",
+  "project_save",
+  "column_break_kvnp",
+  "select_sub_system",
+  "column_break_uffq",
+  "center_save"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bvwl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_save",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kvnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Enter SubSystem",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uffq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "center_save",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Center",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-10 11:37:54.882176",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ADD PROJECT SUBSYSTEM Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

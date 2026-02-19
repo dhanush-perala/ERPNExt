@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:QUALITY -{###}",
+ "creation": "2025-07-31 17:12:26.276283",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_id",
+  "select_component",
+  "qual_id",
+  "comp_name",
+  "comp_code",
+  "column_break_hqss",
+  "qual_name",
+  "column_break_hnel",
+  "qual_code",
+  "amended_from",
+  "status",
+  "item_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "qual_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "QUAL_ID",
+   "report_hide": 1
+  },
+  {
+   "fieldname": "qual_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QUALITY NAME"
+  },
+  {
+   "fieldname": "qual_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " QUALITY CODE"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Component Type",
+   "options": "Item Group"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "Active\nInactive",
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "QUALITY_ISRO",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_hqss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "comp_id.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ITEM NAME",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_component",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select Component",
+   "link_filters": "[[\"Item\",\"custom_status\",\"=\",\"Active\"]]",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "comp_id.item_group_name",
+   "fieldname": "comp_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "comptypesave",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "comp_id.item_code",
+   "fieldname": "comp_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "comp code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hnel",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-25 20:09:04.878156",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "QUALITY_ISRO",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "qual_name"
+}

@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-08 12:48:57.481528",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "column_break_gdij",
+  "comp_type",
+  "column_break_yclh",
+  "partno_to_match",
+  "section_break_qziy",
+  "html_pzpb",
+  "column_break_holn",
+  "html_lwuu",
+  "column_break_qull",
+  "html_mbon",
+  "request_numbers_section",
+  "insat_fg1_ursc",
+  "data_rnnj",
+  "column_break_jxoo",
+  "data_ltqj",
+  "data_wnae",
+  "column_break_bzvz",
+  "data_esko",
+  "data_udjk",
+  "column_break_iotx",
+  "data_zjjx",
+  "data_iyjc",
+  "scr_relifing_table",
+  "table_ybjf"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "Comp Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "partno_to_match",
+   "fieldtype": "Link",
+   "label": "Link Part Number To Match",
+   "options": "Item"
+  },
+  {
+   "fieldname": "section_break_qziy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_pzpb",
+   "fieldtype": "HTML",
+   "options": "<!-- Get Data Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Get Data\n</button>"
+  },
+  {
+   "fieldname": "html_lwuu",
+   "fieldtype": "HTML",
+   "options": "<!-- Submit for Approval Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Submit for Approval\n</button>"
+  },
+  {
+   "fieldname": "html_mbon",
+   "fieldtype": "HTML",
+   "options": "<!-- Reset Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    cursor: pointer;\">\n    Reset\n</button>"
+  },
+  {
+   "fieldname": "column_break_holn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qull",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_numbers_section",
+   "fieldtype": "Section Break",
+   "label": "REQUEST NUMBERS"
+  },
+  {
+   "fieldname": "insat_fg1_ursc",
+   "fieldtype": "Float",
+   "label": "INSAT FG-1 : URSC "
+  },
+  {
+   "fieldname": "data_rnnj",
+   "fieldtype": "Float",
+   "label": "INSAT FG-1 : ISITE "
+  },
+  {
+   "fieldname": "data_ltqj",
+   "fieldtype": "Float",
+   "label": "INSAT TO-SCR : URSC"
+  },
+  {
+   "fieldname": "data_wnae",
+   "fieldtype": "Float",
+   "label": "INSAT TO-SCR : ISITE"
+  },
+  {
+   "fieldname": "data_esko",
+   "fieldtype": "Float",
+   "label": "IRS FG-1 : URSC"
+  },
+  {
+   "fieldname": "data_udjk",
+   "fieldtype": "Float",
+   "label": "IRS FG-1 : ISITE"
+  },
+  {
+   "fieldname": "data_zjjx",
+   "fieldtype": "Float",
+   "label": "IRS TO-SCR : URSC"
+  },
+  {
+   "fieldname": "data_iyjc",
+   "fieldtype": "Float",
+   "label": "IRS TO-SCR : ISITE"
+  },
+  {
+   "fieldname": "column_break_jxoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bzvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_iotx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scr_relifing_table",
+   "fieldtype": "Section Break",
+   "label": "CLICK ON A ROW TO ENTER QUANTITY AND GENERATE REQUEST FOR RELIFING AND SCREENING"
+  },
+  {
+   "fieldname": "table_ybjf",
+   "fieldtype": "Table",
+   "options": "Comp Screening Req Wrt Project Cards and Req Generation table"
+  },
+  {
+   "fieldname": "column_break_gdij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yclh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 16:59:50.480009",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Component Screening Req Wrt Project Cards and Req Generation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Designer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

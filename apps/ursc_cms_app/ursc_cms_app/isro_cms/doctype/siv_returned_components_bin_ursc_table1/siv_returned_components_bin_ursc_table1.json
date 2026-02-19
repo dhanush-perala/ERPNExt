@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 16:36:09.781239",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yfwh",
+  "type",
+  "mdb_partno",
+  "return_qty",
+  "date_code",
+  "exp_date",
+  "mfr",
+  "card_id",
+  "card_no",
+  "quality",
+  "packet_no",
+  "column_break_sgad",
+  "siv_ret_id",
+  "srn_post_id",
+  "post_card_id",
+  "update1",
+  "iss_qty",
+  "entry_by",
+  "location",
+  "binned_by",
+  "mfr_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yfwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB partno"
+  },
+  {
+   "fieldname": "return_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RETURN QTY"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date code"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exp_date"
+  },
+  {
+   "fieldname": "mfr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD ID"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD No"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QUALITY"
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PACKET NO"
+  },
+  {
+   "fieldname": "column_break_sgad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "siv_ret_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "siv_ret_id\t"
+  },
+  {
+   "fieldname": "srn_post_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "srn_post_id"
+  },
+  {
+   "fieldname": "post_card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "POST CARD ID"
+  },
+  {
+   "fieldname": "update1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "update"
+  },
+  {
+   "fieldname": "iss_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISS. QTY"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTRY BY"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "binned_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BINNED By"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV RETURNED COMPONENTS BIN URSC table1",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 12:59:18.661991",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV RETURNED COMPONENTS BIN URSC table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

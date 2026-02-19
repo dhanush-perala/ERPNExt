@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-29 13:02:05.783003",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "alternate_link_part_number",
+  "is_active",
+  "column_break_qirt"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_qirt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternate_link_part_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Alternate Link Part Number",
+   "options": "Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-30 16:02:56.231460",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ALTERNATE PART NO UPDATE Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

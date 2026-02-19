@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-18 13:22:12.392023",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "component_type",
+  "category",
+  "link_part_number",
+  "stock_grade",
+  "available_qty",
+  "requested_qty",
+  "package_style",
+  "functionality",
+  "column_break_rwzw",
+  "fabricated_part_no_ceef",
+  "mdb_part_number",
+  "date_code",
+  "expiry_date",
+  "manufacture",
+  "serial_number",
+  "rdc_reference_no",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Select\nMDB List\nNew\nSelectable"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Link Part Number",
+   "options": "Item"
+  },
+  {
+   "fieldname": "stock_grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock Grade",
+   "options": "Stock Grade"
+  },
+  {
+   "fieldname": "available_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Available Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Requested Qty"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package Style",
+   "options": "PSTYLE"
+  },
+  {
+   "fieldname": "functionality",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Functionality"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "fabricated_part_no_ceef",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fabricated Part No (CEEF)"
+  },
+  {
+   "fieldname": "mdb_part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB Part Number"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "column_break_rwzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "manufacture",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manufacture"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "rdc_reference_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "RDC Reference No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-18 15:28:57.526290",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "On System Component Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

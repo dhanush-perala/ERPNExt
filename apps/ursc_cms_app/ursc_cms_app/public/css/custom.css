@@ -1,0 +1,25 @@
+/* Example style */
+.page-head {
+  background-color: #67edffff;
+  color: white;
+}
+/* Change login button background */
+.login-content .btn-primary {
+  background-color: #67edffff !important; /* Replace with your color */
+  border-color: #004080 !important;
+}
+
+.login-content .btn-primary:hover {
+  background-color: #003366 !important;
+}
+/* Change login background */
+.login-wrapper {
+    background: url("/assets/my_custom_app/images/logo1.png") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Optional: semi-transparent login box */
+.login-content.page-card {
+    background-color: rgba(201, 14, 14, 0.9) !important;
+    border-radius: 10px;
+}

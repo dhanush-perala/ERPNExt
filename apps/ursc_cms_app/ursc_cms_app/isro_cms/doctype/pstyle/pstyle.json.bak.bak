@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:PACKAGE STYLE-{####}",
+ "creation": "2025-08-20 13:06:34.397814",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "package_style_name",
+  "select_component",
+  "smt_status",
+  "column_break_yvwk",
+  "component_code",
+  "component_name",
+  "status",
+  "amended_from",
+  "pstyle_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_component",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Select Component",
+   "options": "Item",
+   "placeholder": "Select Component"
+  },
+  {
+   "fieldname": "smt_status",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SMT_STATUS"
+  },
+  {
+   "fieldname": "column_break_yvwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "select_component.item_code",
+   "fieldname": "component_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "component code"
+  },
+  {
+   "fetch_from": "select_component.item_name",
+   "fieldname": "component_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Component name"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PSTYLE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pstyle_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "PSTYLE_ID"
+  },
+  {
+   "fieldname": "package_style_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Style Name",
+   "placeholder": "Package Style Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-17 18:51:50.509245",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PSTYLE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "package_style_name"
+}

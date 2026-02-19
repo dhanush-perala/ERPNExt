@@ -1,0 +1,311 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-01 15:14:28.362672",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bawd",
+  "status",
+  "srv_part_no",
+  "recieved_quantity",
+  "posted_quantity",
+  "type",
+  "quality",
+  "q_name",
+  "q_code",
+  "mdb_part_no",
+  "manufacturer",
+  "basic_part_no",
+  "basic_mdb",
+  "stock",
+  "comp_cat_name",
+  "column_break_knde",
+  "project",
+  "o_project_name",
+  "mfr_part_no",
+  "lot_code",
+  "card_no",
+  "location",
+  "entry_by",
+  "screening_level",
+  "packet_no",
+  "date_code",
+  "expiry",
+  "functions",
+  "og_scr",
+  "org_manufacturer",
+  "section_break_ktgj",
+  "remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bawd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "STATUS",
+   "options": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "srv_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRV PART NO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "srv_part_no.comp_type",
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT COMPONENT TYPE",
+   "link_filters": "[[\"Item Group\",\"custom_i_status\",\"=\",\"Active\"]]",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PART NO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT PROJECT",
+   "link_filters": "[[\"PROJECT_MASTER\",\"status\",\"=\",\"Active\"]]",
+   "options": "PROJECT_MASTER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT STOCK",
+   "link_filters": "[[\"STOCK_ID\",\"status\",\"=\",\"Active\"]]",
+   "options": "STOCK_ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER DATE CODE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "ENTER EXPIRY DATE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT MANUFACTURER",
+   "link_filters": "[[\"Manufacturer\",\"custom_status\",\"=\",\"Active\"]]",
+   "options": "Manufacturer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mfr_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER MFR PART NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "SELECT  CARD NO",
+   "link_filters": "[[\"CARD_1C\",\"status\",\"=\",\"Active\"]]",
+   "options": "CARD_1C"
+  },
+  {
+   "fetch_from": "card_no.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ENTRY BY",
+   "read_only": 1
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER PACKET NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SELECT QUALITY",
+   "link_filters": "[[\"QUALITY_ISRO\",\"status\",\"=\",\"Active\"]]",
+   "options": "QUALITY_ISRO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "REMARKS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "functions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER FUNCTIONS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "screening_level",
+   "fieldtype": "Link",
+   "label": "SELECT SCREENING LEVEL",
+   "link_filters": "[[\"SCR_ LEVEL\",\"status\",\"=\",\"Active\"]]",
+   "options": "SCR_ LEVEL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_knde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lot_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER LOTCODE",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "srv_part_no.rec_qty",
+   "fieldname": "recieved_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RECIEVED QUANTITY",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "posted_quantity",
+   "fieldtype": "Data",
+   "label": "ENTER POSTED QUANTITY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_part_no",
+   "fieldtype": "Link",
+   "label": "SELECT BASIC MDB",
+   "link_filters": "[[\"BASIC MDB\",\"status\",\"=\",\"Active\"]]",
+   "options": "BASIC MDB",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_ktgj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV POST RE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "project.enter_project",
+   "fieldname": "o_project_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "original project name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "screening_level.scr_level",
+   "fieldname": "og_scr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "original screening level",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "quality.qual_name",
+   "fieldname": "q_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QUALITY NAME",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "quality.qual_code",
+   "fieldname": "q_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "QUALITY CODE",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "type.item_group_name",
+   "fieldname": "comp_cat_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "componet type"
+  },
+  {
+   "fetch_from": "basic_part_no.basic_mdb",
+   "fieldname": "basic_mdb",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BASIC MDB",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "manufacturer.full_name",
+   "fieldname": "org_manufacturer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MANUFACTURER",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 200,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-29 12:17:26.911069",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV POST RE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,89 @@
+{
+    "frappe": {
+        "is_repo": true,
+        "resolution": {
+            "branch": "version-16"
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.0.0-dev"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "16.0.0-dev"
+    },
+    "ursc_cms_app": {
+        "is_repo": true,
+        "resolution": {
+            "branch": "feat/goutham_local"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "sample_git_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ffc7a3e48975ccec5df9f8bf678b9471efd913de",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    },
+    "sample_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "729a94ccbfcc68b730fe7929b84fd2fe3e8397a0",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "client_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "9ac3a0378ef13c5093768acc18f049e1840756b0",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    },
+    "healthcare": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "a5221a88730ad3d7179de8629c33826da3e3c0c0",
+            "branch": "version-15"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "15.1.3"
+    },
+    "isro": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "4c2bf1f1a9df96dded4f32422ef56e12acff5918",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 8,
+        "version": "0.0.1"
+    },
+    "chat_assistant": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "94bf8045107098e804811f1d998ba8c4c1044aaf",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 9,
+        "version": "0.0.1"
+    }
+}

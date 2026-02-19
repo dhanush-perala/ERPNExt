@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-07-28 17:08:06.320779",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rad_sheild_master",
+  "rad_sheild_name",
+  "rad_entry_by",
+  "workflow_status",
+  "column_break_obgk",
+  "rad_entry_date",
+  "rad_approved_by",
+  "rad_approved_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "rad_sheild_master",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "RAD_SHEILD_MASTER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rad_sheild_name",
+   "fieldtype": "Data",
+   "label": "RAD_SHEILD_NAME"
+  },
+  {
+   "fieldname": "rad_entry_by",
+   "fieldtype": "Data",
+   "label": "RAD_ENTRY_BY"
+  },
+  {
+   "fieldname": "rad_entry_date",
+   "fieldtype": "Date",
+   "label": "RAD_ENTRY_DATE"
+  },
+  {
+   "fieldname": "rad_approved_by",
+   "fieldtype": "Data",
+   "label": "RAD_APPROVED_BY"
+  },
+  {
+   "fieldname": "rad_approved_date",
+   "fieldtype": "Date",
+   "label": "RAD_APPROVED_DATE"
+  },
+  {
+   "fieldname": "column_break_obgk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "RAD_SHEILD_MASTER",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-10 11:21:54.810573",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "RAD_SHEILD_MASTER",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

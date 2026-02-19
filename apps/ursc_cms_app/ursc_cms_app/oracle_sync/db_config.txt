@@ -1,0 +1,6 @@
+DB_USER=sample_oracle_db
+DB_PASS=N33mu$123
+DB_HOST=localhost
+DB_PORT=1521
+DB_SERVICE=XEPDB1
+

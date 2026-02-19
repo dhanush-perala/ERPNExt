@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 12:39:11.850280",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rad_test_id",
+  "project",
+  "subsystem",
+  "column_break_elnq",
+  "package",
+  "card",
+  "section_break_jqpg",
+  "table_amll",
+  "section_break_hfgd",
+  "table_syji",
+  "section_break_bkfw",
+  "table_trle"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "column_break_elnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Add Project Card"
+  },
+  {
+   "fieldname": "section_break_jqpg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_amll",
+   "fieldtype": "Table",
+   "options": "RAD_HIS_Table1"
+  },
+  {
+   "fieldname": "section_break_hfgd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_syji",
+   "fieldtype": "Table",
+   "options": "RAD_HIS-Table2"
+  },
+  {
+   "fieldname": "section_break_bkfw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_trle",
+   "fieldtype": "Table",
+   "options": "RAD_HIS_Table3"
+  },
+  {
+   "fieldname": "rad_test_id",
+   "fieldtype": "Link",
+   "label": "RAD Test ID",
+   "options": "Radiation_Shield_Approve"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 17:30:25.683433",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation_shield_history",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SCCG Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

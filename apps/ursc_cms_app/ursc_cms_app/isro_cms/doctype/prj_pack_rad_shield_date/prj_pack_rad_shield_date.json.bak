@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-10 11:14:29.566396",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pack_code",
+  "card_code",
+  "link_id",
+  "tid",
+  "rad_shield",
+  "dose",
+  "rdm",
+  "upd_by",
+  "upd_date",
+  "mount_on",
+  "rad_hardness",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "pack_code",
+   "fieldtype": "Int",
+   "label": "PACK_CODE"
+  },
+  {
+   "fieldname": "card_code",
+   "fieldtype": "Int",
+   "label": "CARD_CODE"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "tid",
+   "fieldtype": "Int",
+   "label": "TID"
+  },
+  {
+   "fieldname": "rad_shield",
+   "fieldtype": "Int",
+   "label": "RAD_SHIELD"
+  },
+  {
+   "fieldname": "dose",
+   "fieldtype": "Int",
+   "label": "DOSE"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Int",
+   "label": "RDM"
+  },
+  {
+   "fieldname": "upd_by",
+   "fieldtype": "Int",
+   "label": "UPD_BY"
+  },
+  {
+   "fieldname": "upd_date",
+   "fieldtype": "Date",
+   "label": "UPD_DATE"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "label": "MOUNT_ON"
+  },
+  {
+   "fieldname": "rad_hardness",
+   "fieldtype": "Data",
+   "label": "RAD_HARDNESS"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-10 11:22:41.486940",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "PRJ_PACK_RAD_SHIELD_DATE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

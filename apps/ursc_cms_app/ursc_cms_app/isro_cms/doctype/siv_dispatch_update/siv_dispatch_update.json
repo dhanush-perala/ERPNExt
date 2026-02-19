@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 14:05:23.184629",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bdoa",
+  "collecting_staff",
+  "irs",
+  "html_bxyu",
+  "column_break_bnym",
+  "insat",
+  "gaganyaan",
+  "section_break_pmag",
+  "dispatch_date",
+  "section_break_qlfk",
+  "html_btmj",
+  "column_break_awea",
+  "html_senx",
+  "section_break_gplv",
+  "table_ksrz",
+  "section_break_dqxh",
+  "staff_no",
+  "column_break_mrdl",
+  "staff_name",
+  "column_break_olht",
+  "phone_no",
+  "amended_from",
+  "section_break_mijd",
+  "html_riby",
+  "column_break_ponu",
+  "html_zoyt"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bdoa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collecting_staff",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "COLLECTING STAFF",
+   "reqd": 1
+  },
+  {
+   "fieldname": "irs",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "IRS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insat",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "INSAT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gaganyaan",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "GAGANYAAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "DISPATCH DATE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gplv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_ksrz",
+   "fieldtype": "Table",
+   "options": "SIV DISPATCH UPDATE TABLE"
+  },
+  {
+   "fieldname": "section_break_dqxh",
+   "fieldtype": "Section Break",
+   "label": "STAFF DETAILS"
+  },
+  {
+   "fieldname": "staff_no",
+   "fieldtype": "Data",
+   "label": "STAFF NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "STAFF NAME",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "PHONE NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV DISPATCH UPDATE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_bnym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pmag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_bxyu",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Submit\n</button>"
+  },
+  {
+   "fieldname": "section_break_qlfk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_btmj",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Update to Dispatch\n</button>"
+  },
+  {
+   "fieldname": "html_senx",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Delete\n</button>"
+  },
+  {
+   "fieldname": "column_break_mrdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_olht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mijd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_riby",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n   Update Details\n</button>"
+  },
+  {
+   "fieldname": "html_zoyt",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Cancel\n</button>"
+  },
+  {
+   "fieldname": "column_break_ponu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_awea",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-15 15:51:21.800548",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV DISPATCH UPDATE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

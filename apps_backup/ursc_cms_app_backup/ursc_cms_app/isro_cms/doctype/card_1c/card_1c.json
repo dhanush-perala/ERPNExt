@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:31.196122",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "card_id",
+  "qty",
+  "location",
+  "ban",
+  "cr_date",
+  "unit_cost",
+  "prog_id",
+  "stores_id",
+  "stock_id",
+  "mdb_id",
+  "column_break_zxzn",
+  "cardno",
+  "comp_id",
+  "link_id",
+  "qty_is",
+  "qty_f",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "CARD_ID"
+  },
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "stock_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "STOCK_ID"
+  },
+  {
+   "fieldname": "mdb_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "MDB_ID"
+  },
+  {
+   "fieldname": "cardno",
+   "fieldtype": "Data",
+   "label": "CARDNO"
+  },
+  {
+   "fieldname": "comp_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "COMP_ID"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "ban",
+   "fieldtype": "Select",
+   "label": "BAN",
+   "options": "ACTIVE\nINACTIVE"
+  },
+  {
+   "fieldname": "cr_date",
+   "fieldtype": "Date",
+   "label": "CR_DATE"
+  },
+  {
+   "fieldname": "stores_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Stores_id"
+  },
+  {
+   "fieldname": "qty_is",
+   "fieldtype": "Int",
+   "label": "QTY_IS"
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Int",
+   "label": "UNIT_COST"
+  },
+  {
+   "fieldname": "qty_f",
+   "fieldtype": "Int",
+   "label": "QTY_F"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CARD_1C",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_zxzn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-18 13:34:57.948790",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "CARD_1C",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "cardno"
+}

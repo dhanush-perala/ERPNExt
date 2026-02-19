@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-18 13:07:45.935146",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "manufacturer",
+  "procurement_spec",
+  "column_break_ndsy",
+  "mdb_number",
+  "quality",
+  "specify_procurement_spec",
+  "column_break_nmod",
+  "package_style",
+  "specify_quality",
+  "column_break_xggf",
+  "date_code",
+  "sr_no",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package Style",
+   "options": "PSTYLE"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manufacturer",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Quality",
+   "options": "QUALITY_ISRO"
+  },
+  {
+   "fieldname": "specify_quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specify Quality"
+  },
+  {
+   "fieldname": "column_break_ndsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SR No"
+  },
+  {
+   "depends_on": "eval:doc.procurement_spec == \"Others\"",
+   "fieldname": "specify_procurement_spec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specify Procurement Specification",
+   "mandatory_depends_on": "eval:doc.procurement_spec == \"Others\""
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending Analysis\nApproved\nIn Progress\nClosed"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Procurement Specification",
+   "options": "Select\nESA\nMIL\nOthers"
+  },
+  {
+   "fieldname": "column_break_nmod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xggf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mdb_number",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "MDB Part Number"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-03 13:03:03.145311",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "FA Component Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

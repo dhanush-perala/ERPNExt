@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-12-23 15:23:31.586690",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_group",
+  "column_break_tmac",
+  "target_warehouse",
+  "transfer_stock",
+  "section_break_wsjx",
+  "scan_expired",
+  "section_break_xrhi",
+  "expired_items",
+  "is_active",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Select Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "scan_expired",
+   "fieldtype": "Button",
+   "label": "Search Expired Components"
+  },
+  {
+   "fieldname": "transfer_stock",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "transfer_stock"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Select Rejected Warehouse",
+   "link_filters": "[[\"Warehouse\",\"is_rejected_warehouse\",\"=\",1]]",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_tmac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "please select the inner check box so that selected components can be transfered to that 'Rejected warehouse'",
+   "fieldname": "section_break_xrhi",
+   "fieldtype": "Section Break",
+   "label": "Date code expired components details"
+  },
+  {
+   "fieldname": "expired_items",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Components",
+   "options": "Old Date Code Stock Transfer Item"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "is_active",
+   "options": "0\n1"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "old date code stock transfer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_wsjx",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-23 18:09:21.651679",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "old date code stock transfer",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "old date code stock transfer user",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Old DC Stock Transfer Approver",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

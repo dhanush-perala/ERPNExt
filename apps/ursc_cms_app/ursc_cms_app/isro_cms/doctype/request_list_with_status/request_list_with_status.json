@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-15 16:26:03.245831",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "column_break_gatt",
+  "stock",
+  "column_break_jiha",
+  "to_process",
+  "column_break_bbyx",
+  "processed",
+  "section_break_cbei",
+  "html_gvso",
+  "section_break_tgvm",
+  "table_itkd"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_gatt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "label": "Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_jiha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_process",
+   "fieldtype": "Data",
+   "label": "To Process"
+  },
+  {
+   "fieldname": "column_break_bbyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "processed",
+   "fieldtype": "Data",
+   "label": "Processed"
+  },
+  {
+   "fieldname": "section_break_cbei",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_gvso",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Print List\n</button>"
+  },
+  {
+   "fieldname": "section_break_tgvm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_itkd",
+   "fieldtype": "Table",
+   "options": "Request List With Status Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-15 16:34:29.521225",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Request List With Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

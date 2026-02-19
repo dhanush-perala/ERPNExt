@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 12:41:04.177654",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_section",
+  "sourceproject",
+  "sourcesubsystem",
+  "sourcepackage",
+  "destination_section",
+  "destinationproject",
+  "destinationsubsystem",
+  "destinationpackage",
+  "section_break_fgwt",
+  "table_swdm"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "sourceproject",
+   "fieldtype": "Data",
+   "label": "Sourceproject"
+  },
+  {
+   "fieldname": "sourcesubsystem",
+   "fieldtype": "Data",
+   "label": "Sourcesubsystem"
+  },
+  {
+   "fieldname": "sourcepackage",
+   "fieldtype": "Data",
+   "label": "Sourcepackage"
+  },
+  {
+   "fieldname": "destination_section",
+   "fieldtype": "Section Break",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "destinationproject",
+   "fieldtype": "Data",
+   "label": "Destinationproject"
+  },
+  {
+   "fieldname": "destinationsubsystem",
+   "fieldtype": "Data",
+   "label": "Destinationsubsystem"
+  },
+  {
+   "fieldname": "destinationpackage",
+   "fieldtype": "Data",
+   "label": "Destinationpackage"
+  },
+  {
+   "fieldname": "section_break_fgwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_swdm",
+   "fieldtype": "Table",
+   "options": "RAD_SHIELD_COPY_TABLE"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-11 12:54:20.526551",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "Radiation_shield_copy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-27 11:29:42.713452",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "select_package",
+  "column_break_rrcx",
+  "select_subsystem",
+  "select_card_type",
+  "select_card",
+  "add",
+  "section_break_bjly",
+  "table_wgyx"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "Select Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_rrcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_subsystem",
+   "fieldtype": "Link",
+   "label": "Select Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "label": "Select Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "select_card_type",
+   "fieldtype": "Select",
+   "label": "Select Card Type",
+   "options": "On Box\nOn System\nProject Card Wise"
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "add",
+   "fieldtype": "HTML",
+   "label": "Add",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>"
+  },
+  {
+   "fieldname": "section_break_bjly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_wgyx",
+   "fieldtype": "Table",
+   "options": "SIV Specific Approval item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-27 17:26:56.157435",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Specific Approval",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

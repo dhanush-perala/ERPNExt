@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 17:36:10.701939",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "mdb_partno",
+  "qty",
+  "date_code",
+  "exp_date",
+  "column_break_hfnd",
+  "mfr",
+  "issue_type",
+  "mfr_id",
+  "card_id",
+  "staff",
+  "card_no",
+  "function"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB partno"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date code"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exp_date"
+  },
+  {
+   "fieldname": "column_break_hfnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mfr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR"
+  },
+  {
+   "fieldname": "issue_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUE TYPE"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD ID"
+  },
+  {
+   "fieldname": "staff",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Staff"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD No"
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Function"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 13:00:18.721195",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Manual Siv table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

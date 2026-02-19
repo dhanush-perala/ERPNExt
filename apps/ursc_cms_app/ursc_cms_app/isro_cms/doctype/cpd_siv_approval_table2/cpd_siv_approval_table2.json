@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 11:48:07.617403",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "req_partno",
+  "required_qty",
+  "changed_qty",
+  "date_code",
+  "exp_date",
+  "mfr",
+  "column_break_ostp",
+  "dc_old",
+  "exp_code",
+  "r_opt",
+  "card_id",
+  "mfr_id",
+  "isac_stock",
+  "isite_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "TYPE",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "req_partno",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "REQ PARTNO",
+   "options": "Item"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUIRED QTY"
+  },
+  {
+   "fieldname": "changed_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CHANGED QTY"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "EXP DATE"
+  },
+  {
+   "fieldname": "mfr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR"
+  },
+  {
+   "fieldname": "column_break_ostp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dc_old",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DC OLD"
+  },
+  {
+   "fieldname": "exp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXP CODE"
+  },
+  {
+   "fieldname": "r_opt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "R OPT"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD ID"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR ID"
+  },
+  {
+   "fieldname": "isac_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISAC STOCK"
+  },
+  {
+   "fieldname": "isite_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISITE STOCK"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-23 15:36:32.390512",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "CPD-SIV approval table2",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-08 13:12:49.667909",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "link_part",
+  "r_qty",
+  "issued",
+  "issual_in_progress",
+  "valid_stock",
+  "scr_lab",
+  "column_break_cjon",
+  "balance_req",
+  "to_relife",
+  "to_screen",
+  "srcrel_qty_in_pipeline",
+  "request_qty",
+  "link_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_part",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Link Part",
+   "options": "Item"
+  },
+  {
+   "fieldname": "r_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Qty"
+  },
+  {
+   "fieldname": "issued",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issued"
+  },
+  {
+   "fieldname": "issual_in_progress",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issual In Progress"
+  },
+  {
+   "fieldname": "valid_stock",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Valid Stock"
+  },
+  {
+   "fieldname": "balance_req",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Balance Req"
+  },
+  {
+   "fieldname": "scr_lab",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "@SCR Lab"
+  },
+  {
+   "fieldname": "to_relife",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Relife"
+  },
+  {
+   "fieldname": "to_screen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Screen"
+  },
+  {
+   "fieldname": "srcrel_qty_in_pipeline",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRC/REL Qty In Pipeline"
+  },
+  {
+   "fieldname": "request_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request Qty"
+  },
+  {
+   "fetch_from": "link_part.item_code",
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Link ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cjon",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-10 11:08:53.690455",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Comp Screening Req Wrt Project Cards and Req Generation table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

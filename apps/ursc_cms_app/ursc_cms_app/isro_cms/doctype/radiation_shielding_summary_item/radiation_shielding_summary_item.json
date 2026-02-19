@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 12:53:47.523050",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "subsystem",
+  "package",
+  "crad",
+  "pcb_component_part_no",
+  "mount",
+  "column_break_vhdh",
+  "radiation_shielding",
+  "rad_shield_id",
+  "tid_hardness_krad",
+  "tid_level_krad",
+  "rdm"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "ADD PROJECT_CARD11"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package",
+   "options": "Package"
+  },
+  {
+   "fieldname": "crad",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crad",
+   "options": "Card"
+  },
+  {
+   "fieldname": "pcb_component_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PCB Component Part No"
+  },
+  {
+   "fieldname": "mount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mount"
+  },
+  {
+   "fieldname": "radiation_shielding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Radiation Shielding"
+  },
+  {
+   "fieldname": "rad_shield_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rad Shield ID"
+  },
+  {
+   "fieldname": "tid_hardness_krad",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TID Hardness (krad)"
+  },
+  {
+   "fieldname": "tid_level_krad",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TID Level (krad)"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RDM"
+  },
+  {
+   "fieldname": "column_break_vhdh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-04 12:59:23.258947",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation Shielding Summary Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

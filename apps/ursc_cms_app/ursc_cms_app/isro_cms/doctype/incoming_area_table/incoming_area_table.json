@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-23 11:50:11.486016",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "component_type",
+  "link_part_number",
+  "date_code",
+  "quantity",
+  "column_break_fvrw",
+  "mdb_part_number",
+  "quality",
+  "incoming_quantity",
+  "pending_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link Part Number",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quality"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_fvrw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mdb_part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB Part Number"
+  },
+  {
+   "fieldname": "incoming_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Incoming Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "pending_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pending Quantity",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-25 15:37:23.994492",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Incoming Area Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

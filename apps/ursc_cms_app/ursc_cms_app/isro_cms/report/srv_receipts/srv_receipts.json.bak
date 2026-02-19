@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-08-07 17:02:12.911477",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "SRV ENTRY FORM",
+ "letterhead": null,
+ "modified": "2025-08-07 18:01:55.052217",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRV RECEIPTS",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\nname as 'ID',\n    inward_no AS 'Inword number',\n    srv_no as 'srv number',\n    srv_date,\n    project,\n    po_no,\n    po_date,\n    supplier,\n    created_by,\n    created_on,\n    docstatus,\n    amended_from\nFROM\n    `tabSRV RECEIPTS`\n",
+ "ref_doctype": "SRV RECEIPTS",
+ "report_name": "SRV RECEIPTS",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

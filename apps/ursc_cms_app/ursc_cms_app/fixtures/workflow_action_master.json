@@ -1,0 +1,156 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-05 18:33:48.661895",
+  "name": "Approved",
+  "workflow_action_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-25 10:34:09.346107",
+  "name": "SEND TO APPROVAL",
+  "workflow_action_name": "SEND TO APPROVAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:15:53.599385",
+  "name": "SUBMIT TO STOCK ENTRY",
+  "workflow_action_name": "SUBMIT TO STOCK ENTRY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-11 09:31:05.362654",
+  "name": "test",
+  "workflow_action_name": "test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.444358",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:15:43.308127",
+  "name": "submit",
+  "workflow_action_name": "submit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:23:19.885490",
+  "name": "Verify Return",
+  "workflow_action_name": "Verify Return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:19:52.897579",
+  "name": "dispatch",
+  "workflow_action_name": "dispatch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:24:26.861352",
+  "name": "clear at Gate",
+  "workflow_action_name": "clear at Gate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:19:00.780233",
+  "name": "Log dispatch",
+  "workflow_action_name": "Log dispatch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-01-22 13:55:14.707830",
+  "name": "Pending",
+  "workflow_action_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-04 13:53:48.573638",
+  "name": "Request Delection",
+  "workflow_action_name": "Request Delection"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-04 13:55:14.195330",
+  "name": "Approve Deletion",
+  "workflow_action_name": "Approve Deletion"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:19:07.578434",
+  "name": "SUBMIT TO STOCK POSTING",
+  "workflow_action_name": "SUBMIT TO STOCK POSTING"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-09-22 11:18:05.759230",
+  "name": "SUBMIT TO STOCK BINNING",
+  "workflow_action_name": "SUBMIT TO STOCK BINNING"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-04 13:55:49.814126",
+  "name": "Request Deletion",
+  "workflow_action_name": "Request Deletion"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-05 16:28:31.529685",
+  "name": "Send for Approval",
+  "workflow_action_name": "Send for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-02 16:53:30.544034",
+  "name": "Send for PP Approval",
+  "workflow_action_name": "Send for PP Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-02-02 16:53:21.888303",
+  "name": "Send for GD Approval",
+  "workflow_action_name": "Send for GD Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-28 18:22:20.050969",
+  "name": "Return",
+  "workflow_action_name": "Return"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.441026",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-14 11:25:49.442962",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ }
+]

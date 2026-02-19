@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-29 11:56:52.670231",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_store",
+  "component_type",
+  "column_break_gqhe",
+  "select_program",
+  "link_part_number",
+  "column_break_kfjp",
+  "select_stock",
+  "mdb_part_number",
+  "section_break_jpct",
+  "html_sfqg",
+  "section_break_evor",
+  "expiry_date",
+  "date_code",
+  "package_style",
+  "column_break_jfsr",
+  "foot_print",
+  "quantity",
+  "section_break_kmtw",
+  "target_store",
+  "target_program",
+  "target_stock",
+  "location",
+  "column_break_wwaq",
+  "quantity1",
+  "block",
+  "rack",
+  "section_break_hpto",
+  "html_wluy",
+  "section_break_wfas",
+  "table_stio"
+ ],
+ "fields": [
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "column_break_gqhe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "label": "Link Part Number",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_kfjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wfas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_stio",
+   "fieldtype": "Table",
+   "options": "Stock Transfer Table"
+  },
+  {
+   "fieldname": "section_break_jpct",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_sfqg",
+   "fieldtype": "HTML",
+   "options": "<button style=\"background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px;\">\n  Get Data\n</button>\n"
+  },
+  {
+   "fieldname": "mdb_part_number",
+   "fieldtype": "Data",
+   "label": "MDB Part Number"
+  },
+  {
+   "fieldname": "section_break_evor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Data",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Data",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "column_break_jfsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "foot_print",
+   "fieldtype": "Data",
+   "label": "Foot Print"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "section_break_kmtw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_store",
+   "fieldtype": "Data",
+   "label": "Target Store"
+  },
+  {
+   "fieldname": "target_program",
+   "fieldtype": "Data",
+   "label": "Target Program"
+  },
+  {
+   "fieldname": "target_stock",
+   "fieldtype": "Data",
+   "label": "Target Stock"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "quantity1",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Data",
+   "label": "Rack"
+  },
+  {
+   "fieldname": "column_break_wwaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "select_program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "select_stock",
+   "fieldtype": "Link",
+   "label": "Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_hpto",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_wluy",
+   "fieldtype": "HTML",
+   "options": "<button style=\"background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px;\">\n  Add Data\n</button>\n"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-30 11:37:01.893551",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Stock Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

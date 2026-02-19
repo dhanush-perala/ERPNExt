@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 15:56:32.559018",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "mdb_partno",
+  "request_qty",
+  "issued_qty",
+  "date_code",
+  "expdate",
+  "manufacturer",
+  "card_no",
+  "card_id",
+  "link_id",
+  "mfr_id",
+  "request_by",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TYPE"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PARTNO"
+  },
+  {
+   "fieldname": "request_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST QTY"
+  },
+  {
+   "fieldname": "issued_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISSUED QTY"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE"
+  },
+  {
+   "fieldname": "expdate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXP.DATE"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MANUFACTURER"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD NO."
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARD ID"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LINK_ID"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "REQUEST BY"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 16:07:31.061303",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "REQUEST SIV-VIEW table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 11:37:29.474230",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stock",
+  "subsystem",
+  "req_type_id",
+  "req_no",
+  "req_date",
+  "req_type",
+  "destination",
+  "used_for",
+  "column_break_orrd",
+  "card_name",
+  "stores",
+  "request_by",
+  "transfer_destination",
+  "dest_id",
+  "stock_id",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "req_type_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Type id"
+  },
+  {
+   "fieldname": "req_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req No"
+  },
+  {
+   "fieldname": "req_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Req Date"
+  },
+  {
+   "fieldname": "req_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Type"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Destination"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SubSystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "used_for",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Used For"
+  },
+  {
+   "fieldname": "column_break_orrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Card Name",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "stores",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stores",
+   "options": "Store_master"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request By"
+  },
+  {
+   "fieldname": "transfer_destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Transfer Destination"
+  },
+  {
+   "fieldname": "dest_id",
+   "fieldtype": "Data",
+   "label": "Dest ID"
+  },
+  {
+   "fieldname": "stock_id",
+   "fieldtype": "Data",
+   "label": "stock_id"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-23 15:27:22.151096",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "CPD-SIV approval table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

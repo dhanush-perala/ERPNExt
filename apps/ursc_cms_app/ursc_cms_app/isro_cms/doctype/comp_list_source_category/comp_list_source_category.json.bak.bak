@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:33.364751",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_list_source_category_id",
+  "comp_list_source_category_name",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_list_source_category_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "COMP_LIST_SOURCE_CATEGORY_ID"
+  },
+  {
+   "fieldname": "comp_list_source_category_name",
+   "fieldtype": "Data",
+   "label": "COMP_LIST_SOURCE_CATEGORY_NAME"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Small Text",
+   "label": "status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "COMP_LIST_SOURCE_CATEGORY",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:35:41.141230",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "COMP_LIST_SOURCE_CATEGORY",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

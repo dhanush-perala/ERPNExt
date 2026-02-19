@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-05 14:01:51.011282",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_ban_request_id",
+  "project",
+  "project_copy",
+  "store",
+  "store_copy",
+  "stock",
+  "stock_grade_copy",
+  "link_part_number_copy",
+  "quality__copy",
+  "column_break_sstq",
+  "component_type",
+  "component_type_copy",
+  "program",
+  "program_copy",
+  "ban_type",
+  "date_code",
+  "link_part_number",
+  "quality",
+  "status",
+  "manufacturer",
+  "datecode",
+  "mfr",
+  "section_break_dxjv",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "label": "Stock Grade",
+   "options": "Warehouse"
+  },
+  {
+   "depends_on": "eval:doc.ban_type == \"Part Number BAN\"",
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "label": "Link Part Number",
+   "options": "Item"
+  },
+  {
+   "depends_on": "eval:doc.ban_type=='Date Code BAN'\n",
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "label": "Date Code",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ban_type == 'Quality BAN'\n",
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "label": " Quality ",
+   "options": "QUALITY_ISRO"
+  },
+  {
+   "fieldname": "column_break_sstq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "ban_type",
+   "fieldtype": "Select",
+   "label": "BAN Type",
+   "options": "Select\nDate Code BAN\nPart Number BAN\nManufacturer BAN\nMFR + Date Code BAN\nQuality BAN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nReleased",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ban_type=='Manufacturer BAN'",
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "label": "Manufacturer",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "section_break_dxjv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "select_ban_request_id",
+   "fieldtype": "Link",
+   "label": "Select Ban Request ID",
+   "link_filters": "[]",
+   "options": "Add BAN"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "store.warehouse_name",
+   "fieldname": "store_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Store Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "stock.warehouse_name",
+   "fieldname": "stock_grade_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Stock Grade Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ban_type == \"Part Number BAN\"",
+   "fetch_from": "link_part_number.item_code",
+   "fieldname": "link_part_number_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Link Part Number Copy",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ban_type == 'Quality BAN'\n",
+   "fetch_from": "quality.qual_name",
+   "fieldname": "quality__copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": " Quality  Copy",
+   "options": "QUALITY_ISRO"
+  },
+  {
+   "fetch_from": "component_type.item_group_name",
+   "fieldname": "component_type_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Component Type Copy",
+   "options": "Item Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "program.warehouse_name",
+   "fieldname": "program_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Program Copy",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Release BAN",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.ban_type=='MFR + Date Code BAN'",
+   "fieldname": "datecode",
+   "fieldtype": "Data",
+   "label": "datecode"
+  },
+  {
+   "depends_on": "eval:doc.ban_type=='MFR + Date Code BAN'",
+   "fieldname": "mfr",
+   "fieldtype": "Data",
+   "label": "mfr"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-18 13:14:41.353882",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Release BAN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

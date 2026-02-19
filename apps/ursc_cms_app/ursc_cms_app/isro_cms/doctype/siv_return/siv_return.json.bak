@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:31.749978",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "siv_ret_id",
+  "siv_ret_ref",
+  "siv_id",
+  "card_id",
+  "datecode",
+  "exp_date",
+  "mfr_id",
+  "ret_qty",
+  "ret_from_dest_id",
+  "entry_by",
+  "entry_date",
+  "iss_qty",
+  "workflow_status",
+  "column_break_asgq",
+  "srn_date",
+  "packet_no",
+  "siv_expt_date",
+  "ret_stories_id",
+  "post_stock_id",
+  "status",
+  "binned_by",
+  "srn_no",
+  "srn_post_id",
+  "siv_card_id",
+  "prog_id",
+  "status_del",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "siv_ret_id",
+   "fieldtype": "Int",
+   "label": "SIV_RET_ID"
+  },
+  {
+   "fieldname": "siv_ret_ref",
+   "fieldtype": "Int",
+   "label": "SIV_RET_REF"
+  },
+  {
+   "fieldname": "siv_id",
+   "fieldtype": "Int",
+   "label": "SIV_ID"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Int",
+   "label": "CARD_ID"
+  },
+  {
+   "fieldname": "datecode",
+   "fieldtype": "Data",
+   "label": "DATECODE"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "EXP_DATE"
+  },
+  {
+   "fieldname": "mfr_id",
+   "fieldtype": "Int",
+   "label": "MFR_ID"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "label": "RET_QTY"
+  },
+  {
+   "fieldname": "ret_from_dest_id",
+   "fieldtype": "Int",
+   "label": "RET_FROM_DEST_ID"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Int",
+   "label": "ENTRY_BY"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "ENTRY_DATE"
+  },
+  {
+   "fieldname": "iss_qty",
+   "fieldtype": "Int",
+   "label": "ISS_QTY"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "column_break_asgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "srn_date",
+   "fieldtype": "Date",
+   "label": "SRN_DATE"
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Int",
+   "label": "PACKET_NO"
+  },
+  {
+   "fieldname": "siv_expt_date",
+   "fieldtype": "Date",
+   "label": "SIV_EXPT_DATE"
+  },
+  {
+   "fieldname": "ret_stories_id",
+   "fieldtype": "Int",
+   "label": "RET_STORIES_ID"
+  },
+  {
+   "fieldname": "post_stock_id",
+   "fieldtype": "Int",
+   "label": "POST_STOCK_ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "STATUS",
+   "options": "POSTED\nBINNED"
+  },
+  {
+   "fieldname": "binned_by",
+   "fieldtype": "Int",
+   "label": "BINNED_BY"
+  },
+  {
+   "fieldname": "srn_no",
+   "fieldtype": "Int",
+   "label": "SRN_NO"
+  },
+  {
+   "fieldname": "srn_post_id",
+   "fieldtype": "Int",
+   "label": "SRN_POST_ID"
+  },
+  {
+   "fieldname": "siv_card_id",
+   "fieldtype": "Int",
+   "label": "SIV_CARD_ID"
+  },
+  {
+   "fieldname": "prog_id",
+   "fieldtype": "Int",
+   "label": "PROG_ID"
+  },
+  {
+   "fieldname": "status_del",
+   "fieldtype": "Small Text",
+   "label": "status_del"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV_RETURN",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-31 17:25:52.567308",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SIV_RETURN",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

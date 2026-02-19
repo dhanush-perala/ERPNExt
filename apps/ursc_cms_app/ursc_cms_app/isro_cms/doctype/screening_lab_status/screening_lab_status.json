@@ -1,0 +1,325 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-09 15:33:12.925970",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "option",
+  "activity",
+  "program",
+  "column_break_ttwy",
+  "comp_type",
+  "mdb_part_no_to_match",
+  "section_break_bgus",
+  "html_dxpr",
+  "section_break_iclg",
+  "srv",
+  "srn",
+  "from_date",
+  "column_break_hctk",
+  "to_date",
+  "srn_ref_no",
+  "srv_no",
+  "column_break_euwt",
+  "srv_date",
+  "siv_no",
+  "siv_date",
+  "section_break_rcwk",
+  "html_lgrz",
+  "section_break_zlqz",
+  "summary_option",
+  "column_break_npup",
+  "from_date1",
+  "column_break_fqyn",
+  "to_date1",
+  "section_break_arfp",
+  "html_cgbs",
+  "screening_lab_status_section",
+  "project",
+  "mdb_to_match",
+  "column_break_lbcj",
+  "from_date2",
+  "to_date2",
+  "screening_lab_status_details_section",
+  "srv_no1",
+  "srv_date1",
+  "siv_no1",
+  "siv_date1",
+  "column_break_dohn",
+  "po_no",
+  "po_date",
+  "supplier",
+  "batch_no",
+  "column_break_muxj",
+  "srv_partno",
+  "siv_part_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "option",
+   "fieldtype": "Select",
+   "label": "Option",
+   "options": "Select\nReceived\nPosted\nTo be Posted\nTo be Binned\nSummary"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Select",
+   "label": "Activity",
+   "options": "Select\nIncoming Inspection(SRV)\nScreening and Relifing(SRN)"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "Comp Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "mdb_part_no_to_match",
+   "fieldtype": "Data",
+   "label": "MDB Part No To Match"
+  },
+  {
+   "fieldname": "section_break_bgus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_dxpr",
+   "fieldtype": "HTML",
+   "options": "<!-- Show PartNo Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    cursor: pointer;\">\n    Show PartNo\n</button>"
+  },
+  {
+   "fieldname": "column_break_ttwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iclg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "srv",
+   "fieldtype": "Select",
+   "label": "SRV"
+  },
+  {
+   "fieldname": "srn",
+   "fieldtype": "Link",
+   "label": "SRN",
+   "options": "Bin"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "srn_ref_no",
+   "fieldtype": "Data",
+   "label": "SRN Ref No"
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Data",
+   "label": "SRV No"
+  },
+  {
+   "fieldname": "srv_date",
+   "fieldtype": "Date",
+   "label": "SRV Date"
+  },
+  {
+   "fieldname": "siv_no",
+   "fieldtype": "Data",
+   "label": "SIV No"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV Date"
+  },
+  {
+   "fieldname": "column_break_hctk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_euwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rcwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_lgrz",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n    transition: all 0.3s;\">\n    Get Data\n</button>"
+  },
+  {
+   "fieldname": "section_break_zlqz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary_option",
+   "fieldtype": "Select",
+   "label": "Summary Option",
+   "options": "Select\nReceived Components(SRV-SIV)\nPosted Components(SRV-SRN)\nSIV-SRN Report"
+  },
+  {
+   "fieldname": "column_break_npup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date1",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_fqyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date1",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_arfp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_cgbs",
+   "fieldtype": "HTML",
+   "options": "<!-- Submit Button -->\n<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    cursor: pointer;\">\n    Submit\n</button>"
+  },
+  {
+   "fieldname": "screening_lab_status_section",
+   "fieldtype": "Section Break",
+   "label": "SCREENING LAB STATUS"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "mdb_to_match",
+   "fieldtype": "Data",
+   "label": "MDB To Match"
+  },
+  {
+   "fieldname": "from_date2",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date2",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_lbcj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "screening_lab_status_details_section",
+   "fieldtype": "Section Break",
+   "label": "SCREENING LAB STATUS DETAILS"
+  },
+  {
+   "fieldname": "srv_no1",
+   "fieldtype": "Data",
+   "label": "SRV No"
+  },
+  {
+   "fieldname": "srv_date1",
+   "fieldtype": "Data",
+   "label": "SRV Date"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "PO No"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Data",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "srv_partno",
+   "fieldtype": "Data",
+   "label": "SRV PartNo"
+  },
+  {
+   "fieldname": "column_break_dohn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_muxj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "siv_no1",
+   "fieldtype": "Data",
+   "label": "SIV No"
+  },
+  {
+   "fieldname": "siv_date1",
+   "fieldtype": "Date",
+   "label": "SIV Date"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "siv_part_no",
+   "fieldtype": "Data",
+   "label": "SIV Part No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 17:42:39.922031",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Screening Lab Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

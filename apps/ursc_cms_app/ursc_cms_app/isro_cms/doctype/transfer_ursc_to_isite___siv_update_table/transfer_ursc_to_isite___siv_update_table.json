@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 18:04:21.237570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "sel",
+  "comp_code",
+  "mdb_partno",
+  "qty",
+  "datecode",
+  "expiry_date",
+  "manufacturer",
+  "cardno",
+  "c",
+  "m"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "STATUS"
+  },
+  {
+   "fieldname": "sel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SEL"
+  },
+  {
+   "fieldname": "comp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COMP CODE"
+  },
+  {
+   "fieldname": "mdb_partno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MDB PARTNO"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY"
+  },
+  {
+   "fieldname": "datecode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATECODE"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EXPIRY DATE"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MANUFACTURER"
+  },
+  {
+   "fieldname": "cardno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CARDNO"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C"
+  },
+  {
+   "fieldname": "m",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 13:01:27.394395",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "TRANSFER URSC TO ISITE - SIV UPDATE table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

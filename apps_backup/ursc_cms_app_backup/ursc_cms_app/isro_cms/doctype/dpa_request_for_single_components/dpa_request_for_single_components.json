@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-12 11:28:22.087038",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "requested_by_column",
+  "request_id",
+  "projectname",
+  "subsystem",
+  "packagename",
+  "componentname",
+  "requested_by",
+  "quantityrequired",
+  "requireddate",
+  "approvalstatus",
+  "date_of_request",
+  "component_type",
+  "attach_document",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "requested_by_column",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Int",
+   "label": "Request Id"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "Subsystem"
+  },
+  {
+   "fieldname": "packagename",
+   "fieldtype": "Data",
+   "label": "PackageName"
+  },
+  {
+   "fieldname": "componentname",
+   "fieldtype": "Data",
+   "label": "ComponentName"
+  },
+  {
+   "fieldname": "projectname",
+   "fieldtype": "Data",
+   "label": "ProjectName"
+  },
+  {
+   "fieldname": "quantityrequired",
+   "fieldtype": "Data",
+   "label": "QuantityRequired"
+  },
+  {
+   "fieldname": "requireddate",
+   "fieldtype": "Date",
+   "label": "RequiredDate"
+  },
+  {
+   "fieldname": "approvalstatus",
+   "fieldtype": "Select",
+   "label": "ApprovalStatus"
+  },
+  {
+   "fieldname": "date_of_request",
+   "fieldtype": "Date",
+   "label": "Date of Request"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "attach_document",
+   "fieldtype": "Attach",
+   "label": "Attach Document"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-12 15:46:18.852454",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "DPA Request For Single Components",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

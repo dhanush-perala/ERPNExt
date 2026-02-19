@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-11 13:29:21.106093",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_name",
+  "column_break_bchd",
+  "status",
+  "column_break_ucnp",
+  "action"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Name"
+  },
+  {
+   "fieldname": "column_break_bchd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Initial\nApprove\nReject"
+  },
+  {
+   "fieldname": "column_break_ucnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "HTML",
+   "label": "Action"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-11 13:30:24.472060",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "APPROVED PROJECT CARD Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:29.126260",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "proj_type_id",
+  "proj_type_name",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "proj_type_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PROJ_TYPE_ID"
+  },
+  {
+   "fieldname": "proj_type_name",
+   "fieldtype": "Data",
+   "label": "PROJECT TYPE NAME",
+   "placeholder": "PROJECT TYPE NAME"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-29 16:29:03.162966",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "PROJECT_TYPE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

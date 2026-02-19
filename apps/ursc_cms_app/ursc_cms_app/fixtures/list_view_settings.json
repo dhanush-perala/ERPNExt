@@ -1,0 +1,44 @@
+[
+ {
+  "allow_edit": 0,
+  "disable_auto_refresh": 0,
+  "disable_automatic_recency_filters": 0,
+  "disable_comment_count": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"label\":\"Component Name\",\"fieldname\":\"item_name\"},{\"type\":\"Status\",\"label\":\"Status\",\"fieldname\":\"status_field\"},{\"label\":\"Component Category Name\",\"fieldname\":\"item_group\"},{\"label\":\"Component Code\",\"fieldname\":\"item_code\"}]",
+  "modified": "2025-08-22 11:25:16.832911",
+  "name": "Item",
+  "total_fields": "4"
+ },
+ {
+  "allow_edit": 0,
+  "disable_auto_refresh": 0,
+  "disable_automatic_recency_filters": 0,
+  "disable_comment_count": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"fieldname\":\"srv_no\",\"label\":\"SRV NO\"},{\"fieldname\":\"inward_no\",\"label\":\"ENTER INWARD NO\"},{\"fieldname\":\"srv_date\",\"label\":\"SELECT SRV DATE\"},{\"fieldname\":\"store\",\"label\":\"SELECT STORE\"},{\"fieldname\":\"status\",\"label\":\"status\"},{\"fieldname\":\"enter_supplier\",\"label\":\"SELECT SUPPLIER\"}]",
+  "modified": "2025-09-01 10:33:45.636050",
+  "name": "SRV ENTRY",
+  "total_fields": "6"
+ },
+ {
+  "allow_edit": 0,
+  "disable_auto_refresh": 0,
+  "disable_automatic_recency_filters": 0,
+  "disable_comment_count": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"label\":\"SRV NO\",\"fieldname\":\"srv_original\"},{\"label\":\" INWORD NO\",\"fieldname\":\"inword_no\"},{\"label\":\" SRV DATE\",\"fieldname\":\"srv_date\"},{\"label\":\"status\",\"fieldname\":\"status\"},{\"label\":\"SELECT PROJECT\",\"fieldname\":\"project\"}]",
+  "modified": "2025-09-08 11:23:47.484600",
+  "name": "SRV_POST",
+  "total_fields": "10"
+ }
+]

@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SRV RECEIPT-{DD}-{MM}-{YYYY}-{#####}",
+ "creation": "2025-07-29 15:43:01.241263",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srv_no",
+  "inward_no",
+  "srv_date",
+  "project",
+  "column_break_fwok",
+  "po_no",
+  "supplier",
+  "po_date",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fetch_from": "srv_no.inward_no",
+   "fieldname": "inward_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "INWARD NO"
+  },
+  {
+   "fieldname": "srv_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SRV NO",
+   "options": "SRV ENTRY"
+  },
+  {
+   "fetch_from": "srv_no.srv_date",
+   "fieldname": "srv_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "SRV DATE"
+  },
+  {
+   "fetch_from": "srv_no.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fetch_from": "srv_no.po_no",
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PO NO"
+  },
+  {
+   "fetch_from": "srv_no.po_date",
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "PO DATE"
+  },
+  {
+   "fetch_from": "srv_no.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "SUPPLIER"
+  },
+  {
+   "fieldname": "column_break_fwok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV RECEIPTS",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "columns": 10,
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2025-08-13 09:51:20.992483",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRV RECEIPTS",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_no",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

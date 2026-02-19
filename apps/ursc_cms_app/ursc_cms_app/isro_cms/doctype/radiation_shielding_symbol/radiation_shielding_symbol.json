@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-04 12:14:29.068082",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "symbol",
+  "part_number",
+  "package",
+  "mount_on",
+  "column_break_qhlz",
+  "tid_hardness_krad",
+  "radiation_shielding",
+  "tid_dose_krad",
+  "rdm"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "label": "Symbol"
+  },
+  {
+   "fieldname": "part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Part Number"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mount On",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "tid_hardness_krad",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TID Hardness (krad)"
+  },
+  {
+   "fieldname": "radiation_shielding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Radiation Shielding"
+  },
+  {
+   "fieldname": "tid_dose_krad",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "TID Dose (krad)"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RDM"
+  },
+  {
+   "fieldname": "column_break_qhlz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-04 12:18:54.030128",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation Shielding Symbol",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 15:55:56.986680",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srn_ref_no",
+  "srn_date",
+  "posted_from",
+  "screened_at",
+  "column_break_jnsl",
+  "project",
+  "siv_no",
+  "siv_date",
+  "batch_no",
+  "section_break_fflc",
+  "table_gfgm",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "srn_ref_no",
+   "fieldtype": "Link",
+   "label": "SRN REF NO",
+   "options": "SRN_POST"
+  },
+  {
+   "fieldname": "srn_date",
+   "fieldtype": "Date",
+   "label": "SRN DATE"
+  },
+  {
+   "fetch_from": "srn_ref_no.posted_from",
+   "fieldname": "posted_from",
+   "fieldtype": "Data",
+   "label": "POSTED FROM"
+  },
+  {
+   "fetch_from": "srn_ref_no.screened_at",
+   "fieldname": "screened_at",
+   "fieldtype": "Link",
+   "label": "SCREENED AT",
+   "options": "SCR_AT"
+  },
+  {
+   "fieldname": "column_break_jnsl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "srn_ref_no.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "PROJECT",
+   "options": "PROJECT_MASTER"
+  },
+  {
+   "fetch_from": "srn_ref_no.siv_no",
+   "fieldname": "siv_no",
+   "fieldtype": "Int",
+   "label": "SIV NO"
+  },
+  {
+   "fetch_from": "srn_ref_no.siv_date",
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV DATE"
+  },
+  {
+   "fetch_from": "srn_ref_no.batch_no",
+   "fieldname": "batch_no",
+   "fieldtype": "Int",
+   "label": "BATCH NO"
+  },
+  {
+   "fieldname": "section_break_fflc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_gfgm",
+   "fieldtype": "Table",
+   "options": "SRN BIN TABLE"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRN BINNING",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-06 18:58:06.840875",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRN BINNING",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

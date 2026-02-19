@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-11 11:27:21.687959",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_u3cs",
+  "card_name",
+  "hold_and_release",
+  "column_break_fdao",
+  "status",
+  "column_break_afqo",
+  "actions_placeholder"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_u3cs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Name",
+   "read_only": 1
+  },
+  {
+   "default": "Initial",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Initial\nApproved\nReject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fdao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_afqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "hold_and_release",
+   "fieldtype": "Check",
+   "label": "Hold & Release"
+  },
+  {
+   "fieldname": "actions_placeholder",
+   "fieldtype": "HTML",
+   "label": "Action"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-13 13:06:38.736756",
+ "modified_by": "goutham.krishna@neemus.com",
+ "module": "ISRO CMS",
+ "name": "PRJ_CARDS Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:rad_test_id",
+ "creation": "2025-11-05 12:39:11.392050",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rad_test_id",
+  "project",
+  "subsystem",
+  "column_break_ojiz",
+  "package",
+  "card",
+  "fetch_html",
+  "section_break_pdui",
+  "table_appr"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "PROJECT_MASTER",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ojiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package",
+   "options": "PRJ_PACK",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Card",
+   "options": "Add Project Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pdui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_appr",
+   "fieldtype": "Table",
+   "options": "Radiation_Shield_Approve_Table"
+  },
+  {
+   "fieldname": "fetch_html",
+   "fieldtype": "HTML",
+   "label": "fetch_html"
+  },
+  {
+   "fetch_from": "radiation_test_reference.rad_test_id",
+   "fieldname": "rad_test_id",
+   "fieldtype": "Link",
+   "label": "RAD Test ID",
+   "options": "Radiation_Test_Data_Entry",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 17:28:45.389064",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Radiation_Shield_Approve",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SCCG Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

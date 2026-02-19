@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-15 16:10:46.667005",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "part_no",
+  "required_qty",
+  "column_break_futu",
+  "insat",
+  "irs",
+  "irnss"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Part No"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Required QTY"
+  },
+  {
+   "fieldname": "column_break_futu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "INSAT"
+  },
+  {
+   "fieldname": "irs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IRS"
+  },
+  {
+   "fieldname": "irnss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IRNSS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-15 16:14:18.892011",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Designer Approved Cards - Approve or Reject By CPD Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

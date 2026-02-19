@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-14 15:46:57.275605",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_details_section",
+  "request_no",
+  "request_date",
+  "status",
+  "requested_by",
+  "column_break_brnu",
+  "fa_reference_no",
+  "failure_category",
+  "failure_conclusion",
+  "section_break_lplc",
+  "component_type",
+  "mdb_part_no",
+  "package_style",
+  "date_code",
+  "column_break_bnis",
+  "manufacturer",
+  "quality",
+  "sr_no",
+  "procurement_spec",
+  "failure_details_section",
+  "data_cmte",
+  "failure_type",
+  "project_model",
+  "project",
+  "subsystem",
+  "package",
+  "column_break_szgs",
+  "card",
+  "failed_at",
+  "failure_mode",
+  "environmental_test_condition",
+  "reported_failure"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Int",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "column_break_brnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fa_reference_no",
+   "fieldtype": "Int",
+   "label": "FA Reference No"
+  },
+  {
+   "fieldname": "failure_category",
+   "fieldtype": "Data",
+   "label": "Failure Category"
+  },
+  {
+   "fieldname": "failure_conclusion",
+   "fieldtype": "Small Text",
+   "label": "Failure Conclusion"
+  },
+  {
+   "fieldname": "request_details_section",
+   "fieldtype": "Section Break",
+   "label": "REQUEST DETAILS"
+  },
+  {
+   "fieldname": "section_break_lplc",
+   "fieldtype": "Section Break",
+   "label": "COMPONENT DETAILS"
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type"
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Int",
+   "label": "MDB Part No"
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Select",
+   "label": "Package Style"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Date",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Int",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Int",
+   "label": "SR No"
+  },
+  {
+   "fieldname": "procurement_spec",
+   "fieldtype": "Data",
+   "label": "Procurement Spec"
+  },
+  {
+   "fieldname": "column_break_bnis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "failure_details_section",
+   "fieldtype": "Section Break",
+   "label": "FAILURE DETAILS"
+  },
+  {
+   "fieldname": "data_cmte",
+   "fieldtype": "Data",
+   "label": "Failed During"
+  },
+  {
+   "fieldname": "failure_type",
+   "fieldtype": "Data",
+   "label": "Failure Type"
+  },
+  {
+   "fieldname": "project_model",
+   "fieldtype": "Data",
+   "label": "Project Model"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Data",
+   "label": "Subsystem"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Data",
+   "label": "Package"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Data",
+   "label": "Card"
+  },
+  {
+   "fieldname": "failed_at",
+   "fieldtype": "Data",
+   "label": "Failed At"
+  },
+  {
+   "fieldname": "failure_mode",
+   "fieldtype": "Data",
+   "label": "Failure Mode"
+  },
+  {
+   "fieldname": "environmental_test_condition",
+   "fieldtype": "Data",
+   "label": "Environmental Test Condition"
+  },
+  {
+   "fieldname": "reported_failure",
+   "fieldtype": "Data",
+   "label": "Reported Failure"
+  },
+  {
+   "fieldname": "column_break_szgs",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-14 15:58:51.194927",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Update_Failure_Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

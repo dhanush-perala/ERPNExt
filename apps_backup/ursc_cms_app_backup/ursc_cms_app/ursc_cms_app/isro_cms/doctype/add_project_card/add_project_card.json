@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-09-25 21:30:51.524902",
+ "default_view": "List",
+ "creation": "2025-07-22 12:00:52.991296",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jcfg",
+  "select_program",
+  "program_save",
+  "column_break_sabk",
+  "project_save",
+  "column_break_uitz",
+  "project_ref_no",
+  "project",
+  "select_package",
+  "enter_card_count_suffix",
+  "subsystem_save",
+  "column_break_ahsx",
+  "pd_staff_nol",
+  "selected_sub_system",
+  "enter_ecad_name",
+  "status",
+  "work_flow_status",
+  "enter_ecad_card_name",
+  "select_sub_system",
+  "enter_card_countsuffix",
+  "column_break_ahsx",
+  "project",
+  "select_package",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jcfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Program",
+   "options": "Program",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_program.enter_program",
+   "fieldname": "program_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "program save"
+  },
+  {
+   "fieldname": "column_break_sabk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_save",
+   "fieldtype": "Data",
+   "label": "Enter Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uitz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_ref_no",
+   "fieldtype": "Data",
+   "label": "Project Ref No:"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "SELECT PROJECT",
+   "options": "PROJECT_MASTER",
+   "placeholder": "SELECT PROJECT"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "SELECT PACKAGE",
+   "options": "PRJ_PACK",
+   "placeholder": "SELECT PACKAGE"
+  },
+  {
+   "fieldname": "enter_card_count_suffix",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ENTER CARD COUNT SUFFIX",
+   "placeholder": "ENTER CARD COUNT:SUFFIX"
+  },
+  {
+   "fetch_from": "selected_sub_system.sub_system",
+   "fieldname": "subsystem_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Subsystem save"
+  },
+  {
+   "fieldname": "column_break_ahsx",
+   "fieldtype": "Column Break",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pd_staff_nol",
+   "fieldtype": "Data",
+   "label": "PD Staff No:"
+  },
+  {
+   "depends_on": "project",
+   "fieldname": "selected_sub_system",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "SELECTED SUB SYSTEM",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "placeholder": "SELECTED SUB SYSTEM"
+  },
+  {
+   "fieldname": "enter_ecad_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ENTER ECAD NAME",
+   "placeholder": "ENTER ECAD NAME"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_flow_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "WORK FLOW STATUS",
+   "options": "Approve\nReject",
+   "fieldname": "column_break_ahsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "SELECT SUB SYSTEM",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "placeholder": "SELECT SUB SYSTEM"
+  },
+  {
+   "fieldname": "enter_ecad_card_name",
+   "fieldtype": "Data",
+   "label": "ENTER ECAD Card Name",
+   "placeholder": "ENTER ECAD Card Name"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "label": "SELECT PACKAGE",
+   "options": "PRJ_PACK",
+   "placeholder": "SELECT PACKAGE"
+  },
+  {
+   "fieldname": "enter_card_countsuffix",
+   "fieldtype": "Data",
+   "label": "ENTER CARD COUNT:SUFFIX",
+   "placeholder": "ENTER CARD COUNT:SUFFIX"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ADD PROJECT CARD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-25 21:47:07.379049",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "add_project_card",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-29 16:39:09.533304",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ADD PROJECT CARD",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_save",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

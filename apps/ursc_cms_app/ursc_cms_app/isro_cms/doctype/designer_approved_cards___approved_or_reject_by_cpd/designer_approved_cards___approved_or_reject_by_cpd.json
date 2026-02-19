@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-15 16:03:47.659311",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "program",
+  "column_break_pwre",
+  "subsystem",
+  "obsolete",
+  "column_break_kvae",
+  "package",
+  "column_break_kmst",
+  "card",
+  "section_break_cruf",
+  "html_dvkr",
+  "column_break_htes",
+  "html_nncb",
+  "column_break_rxue",
+  "html_tpjt",
+  "column_break_kaov",
+  "html_mwhv",
+  "column_break_wtbn",
+  "html_uafo",
+  "section_break_vhsr",
+  "table_minb"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "link_filters": "[[\"Warehouse\",\"is_group\",\"=\",1]]",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_pwre",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Select",
+   "label": "Subsystem"
+  },
+  {
+   "fieldname": "obsolete",
+   "fieldtype": "Data",
+   "label": "Obsolete"
+  },
+  {
+   "fieldname": "column_break_kvae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Select",
+   "label": "Package"
+  },
+  {
+   "fieldname": "column_break_kmst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "card",
+   "fieldtype": "Select",
+   "label": "Card"
+  },
+  {
+   "fieldname": "section_break_cruf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_dvkr",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Submit\n</button>"
+  },
+  {
+   "fieldname": "column_break_htes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_nncb",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Review-Designer\n</button>"
+  },
+  {
+   "fieldname": "column_break_rxue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_tpjt",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Approve\n</button>"
+  },
+  {
+   "fieldname": "column_break_kaov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_mwhv",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    Print\n</button>"
+  },
+  {
+   "fieldname": "column_break_wtbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_uafo",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px;\n    background-color: #000000;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    margin-right: 10px;\n    cursor: pointer;\">\n    View Component Lists\n</button>"
+  },
+  {
+   "fieldname": "section_break_vhsr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_minb",
+   "fieldtype": "Table",
+   "options": "Designer Approved Cards - Approve or Reject By CPD Table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-22 16:42:03.376433",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Designer Approved Cards - Approved or Reject By CPD",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Designer Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

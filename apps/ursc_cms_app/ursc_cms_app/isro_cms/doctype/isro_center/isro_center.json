@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-09-25 18:17:48.522645",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "center"
+ ],
+ "fields": [
+  {
+   "fieldname": "center",
+   "fieldtype": "Data",
+   "label": "Enter Center"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-25 18:18:23.600080",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ISRO CENTER",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "center"
+}

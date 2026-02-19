@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-19 17:52:59.044679",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_project",
+  "project_copy",
+  "pack_name",
+  "select_package_copy",
+  "workflow_status",
+  "auto_issual",
+  "warehouse_priority",
+  "column_break_bovc",
+  "select_sub_system",
+  "card_type",
+  "select_subsytem_copy",
+  "status",
+  "card_name",
+  "add_html",
+  "section_break_upel",
+  "table_yvva",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select SubSytem",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_project.project_name",
+   "fieldname": "project_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Copy",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_sub_system.select_sub_system",
+   "fieldname": "select_subsytem_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select SubSytem Copy",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pack_name.pack_name",
+   "fieldname": "select_package_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Select Package Copy",
+   "options": "PRJ_PACK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bovc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_upel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Select Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "Add Button",
+   "options": "\n\n   <div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Select",
+   "label": "Card Type",
+   "options": "Select\nOn Box\nOn System\nProject Card Wise",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_yvva",
+   "fieldtype": "Table",
+   "options": "On Box Component Item"
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Package",
+   "options": "PRJ_PACK",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_issual",
+   "fieldtype": "Check",
+   "label": "Auto Issual"
+  },
+  {
+   "fieldname": "warehouse_priority",
+   "fieldtype": "Table",
+   "options": "Project Stock Grade Priority"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cardwise Component List Update and Approve - Designer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Select",
+   "label": "Work Flow Status",
+   "options": "Initial\nApprove",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-19 13:14:14.661849",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Cardwise Component List Update and Approve - Designer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECAD Approver",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "card_name"
+}

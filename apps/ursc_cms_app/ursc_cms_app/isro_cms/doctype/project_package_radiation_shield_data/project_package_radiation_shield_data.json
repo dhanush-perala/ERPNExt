@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-13 10:47:17.061436",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_package",
+  "rad_shield_id",
+  "dose",
+  "rdm",
+  "mount_on",
+  "column_break_lwty",
+  "pack_code",
+  "link_id",
+  "radiation_shield_data",
+  "radiation_active"
+ ],
+ "fields": [
+  {
+   "fetch_from": "select_package.pack_code",
+   "fieldname": "pack_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PACK_CODE"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "label": "Select package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Table",
+   "label": "Link part numbers",
+   "options": "RDS link part"
+  },
+  {
+   "fieldname": "column_break_lwty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rad_shield_id",
+   "fieldtype": "Link",
+   "label": "Select Radiation shield",
+   "options": "Radiation Shield Data"
+  },
+  {
+   "fieldname": "dose",
+   "fieldtype": "Data",
+   "label": "DOSE"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Data",
+   "label": "RDM"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "label": "MOUNT ON"
+  },
+  {
+   "fetch_from": "rad_shield_id.rad_shield_data",
+   "fieldname": "radiation_shield_data",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Radiation shield data"
+  },
+  {
+   "default": "0",
+   "fieldname": "radiation_active",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Radiation_active",
+   "options": "0\n1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-13 15:13:51.524667",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Project package radiation shield data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

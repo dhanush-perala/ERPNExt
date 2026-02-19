@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-03 16:23:40.156405",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_type",
+  "column_break_eexy",
+  "part_no_to_match",
+  "section_break_itcz",
+  "basic_part_no",
+  "manufacturer",
+  "tidkrad",
+  "column_break_mnvz",
+  "eldrskrad",
+  "sel",
+  "seu",
+  "section_break_xwvl",
+  "remarks",
+  "section_break_ntvq",
+  "html_qwee",
+  "column_break_mstr",
+  "html_usnt"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Data",
+   "label": "Comp Type"
+  },
+  {
+   "fieldname": "part_no_to_match",
+   "fieldtype": "Data",
+   "label": "Part No To Match"
+  },
+  {
+   "fieldname": "column_break_eexy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_itcz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "basic_part_no",
+   "fieldtype": "Select",
+   "label": "Basic Part No"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Select",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "tidkrad",
+   "fieldtype": "Data",
+   "label": "TID(kRad)"
+  },
+  {
+   "fieldname": "eldrskrad",
+   "fieldtype": "Data",
+   "label": "ELDRS(kRad)"
+  },
+  {
+   "fieldname": "sel",
+   "fieldtype": "Data",
+   "label": "SEL (MeV-cm2/mg)"
+  },
+  {
+   "fieldname": "seu",
+   "fieldtype": "Data",
+   "label": "SEU (MeV-cm2/mg)"
+  },
+  {
+   "fieldname": "column_break_mnvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xwvl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_ntvq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_qwee",
+   "fieldtype": "HTML",
+   "options": "<button style=\"padding: 8px 20px; background: #2196F3; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px;\">\n    Add\n</button>"
+  },
+  {
+   "fieldname": "html_usnt",
+   "fieldtype": "HTML",
+   "options": "<!-- Cancel Button -->\n<button id=\"btn_cancel\" style=\"padding: 8px 20px;\n    background-color: #FF9800;\n    color: white;\n    border: none;\n    border-radius: 4px;\n    font-size: 14px;\n    cursor: pointer;\">\n    Cancel\n</button>"
+  },
+  {
+   "fieldname": "column_break_mstr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-03 16:38:43.918855",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Add Update data for basic part no restricted usage",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,9 @@
+{
+  "module_name": "ISRO CMS",
+  "app_name": "ursc_cms_app",
+  "app_label": "ursc_cms_app",
+  "icon": "octicon octicon-file-directory",
+  "color": "grey",
+  "type": "module",
+  "label": "ISRO CMS"
+}

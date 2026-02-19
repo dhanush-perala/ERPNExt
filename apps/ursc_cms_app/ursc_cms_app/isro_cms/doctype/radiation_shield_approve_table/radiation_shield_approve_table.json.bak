@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 11:50:52.481715",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rdm_column",
+  "type",
+  "symbol",
+  "part_number",
+  "mount_on",
+  "tid_hardness",
+  "radiation_shielding",
+  "column_break_fjky",
+  "tid_level",
+  "rdm",
+  "component_id",
+  "link_id",
+  "pstyle",
+  "count"
+ ],
+ "fields": [
+  {
+   "fieldname": "rdm_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Symbol"
+  },
+  {
+   "fieldname": "part_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Part Number"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mount On"
+  },
+  {
+   "fieldname": "tid_hardness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TID Hardness"
+  },
+  {
+   "fieldname": "radiation_shielding",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Radiation Shielding "
+  },
+  {
+   "fieldname": "tid_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TID Level"
+  },
+  {
+   "fieldname": "rdm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RDM"
+  },
+  {
+   "fieldname": "component_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Component_Id"
+  },
+  {
+   "fieldname": "link_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link_Id"
+  },
+  {
+   "fieldname": "pstyle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pstyle"
+  },
+  {
+   "fieldname": "column_break_fjky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Count"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 12:21:43.328819",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "Radiation_Shield_Approve_Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

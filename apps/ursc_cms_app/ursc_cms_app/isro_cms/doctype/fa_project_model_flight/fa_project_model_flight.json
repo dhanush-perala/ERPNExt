@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-01 16:20:49.392914",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_olre",
+  "amended_from",
+  "project",
+  "subsystem",
+  "package",
+  "column_break_cndx",
+  "cards",
+  "folder",
+  "failure_request"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_olre",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FA Project Model Flight",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "subsystem",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "cards",
+   "fieldtype": "Link",
+   "label": "Cards",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  },
+  {
+   "fieldname": "folder",
+   "fieldtype": "Data",
+   "label": "Folder"
+  },
+  {
+   "fieldname": "column_break_cndx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "failure_request",
+   "fieldtype": "Link",
+   "label": "Failure Request",
+   "options": "Failure Request"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-05 13:08:26.461253",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "FA Project Model Flight",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

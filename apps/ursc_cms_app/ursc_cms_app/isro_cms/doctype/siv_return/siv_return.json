@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-31 17:12:31.749978",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "return_reference_number",
+  "siv_date",
+  "siv_issued_to",
+  "select_project",
+  "pack_name",
+  "stock",
+  "program",
+  "posted_to_stock",
+  "column_break_bsey",
+  "srn_reference_number",
+  "siv_number",
+  "select_sub_system",
+  "select_card",
+  "store",
+  "from",
+  "add_html",
+  "section_break_bhbv",
+  "table_feqz",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "return_reference_number",
+   "fieldtype": "Data",
+   "label": "Return Reference Number",
+   "options": "SIV"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "posted_to_stock",
+   "fieldtype": "Link",
+   "label": "Posted To Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "srn_reference_number",
+   "fieldtype": "Data",
+   "label": "SRN Reference Number"
+  },
+  {
+   "fieldname": "siv_issued_to",
+   "fieldtype": "Data",
+   "label": "SIV Issued To"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Link",
+   "label": "Stock",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From"
+  },
+  {
+   "fieldname": "siv_number",
+   "fieldtype": "Link",
+   "label": "SIV Number",
+   "options": "SIV"
+  },
+  {
+   "fieldname": "siv_date",
+   "fieldtype": "Date",
+   "label": "SIV Date"
+  },
+  {
+   "fieldname": "section_break_bhbv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_feqz",
+   "fieldtype": "Table",
+   "options": "SIV Return Table"
+  },
+  {
+   "fieldname": "select_project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "select_sub_system",
+   "fieldtype": "Link",
+   "label": "Subsystem",
+   "options": "ADD PROJECT SUBSYSTEM"
+  },
+  {
+   "fieldname": "pack_name",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "PRJ_PACK"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_bsey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_html",
+   "fieldtype": "HTML",
+   "label": "ADD Button",
+   "options": "<div>\n  <button class=\"btn btn-primary\" id=\"add_btn\">\n      ADD\n  </button>\n</div>\n"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV RETURN",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "select_card",
+   "fieldtype": "Link",
+   "label": "Select Card",
+   "options": "Cardwise Component List Update and Approve - Designer"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-31 13:58:36.012113",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV RETURN",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

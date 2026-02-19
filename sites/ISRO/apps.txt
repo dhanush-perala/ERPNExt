@@ -1,0 +1,5 @@
+frappe
+erpnext
+ursc_cms_app
+client_app
+healthcare

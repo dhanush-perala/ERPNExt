@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 17:17:02.676978",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1eb7",
+  "amended_from",
+  "program",
+  "stock",
+  "section_break_xdjl",
+  "table_eago",
+  "request_details_section",
+  "request_no",
+  "request_date",
+  "req_program",
+  "req_stock",
+  "stores_at",
+  "issued_to",
+  "remarks",
+  "column_break_atxl",
+  "project",
+  "subystem",
+  "card_name",
+  "request_type",
+  "request_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1eb7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "COMPONENT REQUEST SIV - ONLINE APPROVAL",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "PROGRAM"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Data",
+   "label": "STOCK"
+  },
+  {
+   "fieldname": "request_details_section",
+   "fieldtype": "Section Break",
+   "label": "Request Details"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "REQUEST No"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Data",
+   "label": "REQUEST DATE"
+  },
+  {
+   "fieldname": "req_program",
+   "fieldtype": "Data",
+   "label": "REQ PROGRAM"
+  },
+  {
+   "fieldname": "req_stock",
+   "fieldtype": "Data",
+   "label": "REQ STOCK"
+  },
+  {
+   "fieldname": "stores_at",
+   "fieldtype": "Data",
+   "label": "STORES AT"
+  },
+  {
+   "fieldname": "issued_to",
+   "fieldtype": "Data",
+   "label": "ISSUED TO"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "REMARKS"
+  },
+  {
+   "fieldname": "column_break_atxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "PROJECT"
+  },
+  {
+   "fieldname": "subystem",
+   "fieldtype": "Data",
+   "label": "SUBYSTEM"
+  },
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "label": "CARD NAME "
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Data",
+   "label": "REQUEST TYPE"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Data",
+   "label": "REQUEST BY "
+  },
+  {
+   "fieldname": "section_break_xdjl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_eago",
+   "fieldtype": "Table",
+   "options": "COMPONENT REQUEST SIV - ONLINE APPROVAL table"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-10 12:21:36.259560",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "COMPONENT REQUEST SIV - ONLINE APPROVAL",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

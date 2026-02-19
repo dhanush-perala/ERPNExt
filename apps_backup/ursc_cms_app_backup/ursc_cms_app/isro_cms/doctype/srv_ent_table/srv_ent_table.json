@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-08 18:44:31.837542",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srv_part_no",
+  "comp_type",
+  "rec_qty",
+  "odered_qty",
+  "srv_ent_id",
+  "binqty",
+  "postedqty",
+  "srv_id",
+  "column_break_czru",
+  "ret_qty",
+  "u_cost",
+  "workflow_status",
+  "amended_from",
+  "c_name",
+  "component_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "label": "COMPONENT TYPE",
+   "label": "SELECT COMPONENT TYPE",
+   "options": "Item Group",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "srv_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRV PART NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rec_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTER RECIEVED QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odered_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ODERED QTY",
+   "label": "ENTER ODERED QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "srv_ent_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ENT_ID"
+  },
+  {
+   "fieldname": "srv_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ID"
+  },
+  {
+   "fieldname": "column_break_czru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ENTER RETURN QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "u_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ENTER UNIT COST",
+   "precision": "3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV ENT TABLE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "comp_type.item_group_name",
+   "fieldname": "c_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COMPONENT TYPE NAME",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "comp_type.parent_item_group",
+   "fieldname": "component_group",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COMPONENT GROUP",
+   "read_only": 1
+  },
+  {
+   "fieldname": "binqty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Binned Quantity ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "postedqty",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Posted Quantity",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-25 22:16:02.585100",
+ "modified": "2025-08-26 15:05:30.322253",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SRV ENT TABLE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "srv_part_no"
+}

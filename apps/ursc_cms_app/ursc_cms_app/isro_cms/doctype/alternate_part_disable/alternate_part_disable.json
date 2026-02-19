@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-04 17:52:42.187891",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "component_type",
+  "column_break_rmnk",
+  "link_part_number",
+  "linkpart_number",
+  "section_break_pqbh",
+  "alternate_part_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Link",
+   "label": "Component type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "label": "Link Part Number",
+   "link_filters": "[[\"ALTERNATE PARTNO UPDATE\",\"docstatus\",\"=\",\"1\"]]",
+   "options": "ALTERNATE PARTNO UPDATE"
+  },
+  {
+   "fieldname": "column_break_rmnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "link_part_number.comp_type",
+   "fieldname": "linkpart_number",
+   "fieldtype": "Data",
+   "label": "Linkpart number "
+  },
+  {
+   "fieldname": "section_break_pqbh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "alternate_part_data",
+   "fieldtype": "HTML",
+   "label": "alternate part data"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-04 18:18:03.020380",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "Alternate Part Disable",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

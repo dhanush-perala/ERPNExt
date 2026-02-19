@@ -1,0 +1,290 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-31 10:59:10.114911",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "type_copy",
+  "link_part_number",
+  "link_part_number_copy",
+  "select_issual_type",
+  "warehouse",
+  "projected_qty",
+  "actual_qty",
+  "reserved_qty",
+  "balance_qty",
+  "available_qty",
+  "requested_qty",
+  "stock_grade",
+  "from_source_ref",
+  "fabricated_part_no_ceef",
+  "expiry_date",
+  "serial_number",
+  "functionality",
+  "column_break_aafw",
+  "mdb_part_number",
+  "date_code",
+  "symbol",
+  "symbol_copy",
+  "package_style",
+  "positions",
+  "category",
+  "package_style_copy",
+  "part_number",
+  "add_option",
+  "mount_on",
+  "stack",
+  "entry_by",
+  "position",
+  "stack_reference",
+  "manufacturer",
+  "rdc_reference_no",
+  "section_break_uggr",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component Type",
+   "options": "Item Group"
+  },
+  {
+   "fetch_from": "type.item_group_name",
+   "fieldname": "type_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Type Copy"
+  },
+  {
+   "fieldname": "link_part_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Link Part Number",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "link_part_number.item_code",
+   "fieldname": "link_part_number_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Link Part Number Copy",
+   "options": "Item"
+  },
+  {
+   "fieldname": "select_issual_type",
+   "fieldtype": "Select",
+   "label": "Select Issual Type",
+   "options": "Select\nSMT\nNON-SMT"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "label": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "projected_qty",
+   "fieldtype": "Float",
+   "label": "Projected Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reserved_qty",
+   "fieldtype": "Float",
+   "label": "Reserved Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_qty",
+   "fieldtype": "Float",
+   "label": "Balance Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_qty",
+   "fieldtype": "Float",
+   "label": "Available Qty"
+  },
+  {
+   "fieldname": "requested_qty",
+   "fieldtype": "Float",
+   "label": "Requested Qty"
+  },
+  {
+   "fieldname": "stock_grade",
+   "fieldtype": "Link",
+   "label": "Stock Grade",
+   "options": "Stock Grade"
+  },
+  {
+   "fieldname": "from_source_ref",
+   "fieldtype": "Data",
+   "label": "From (Source Ref)"
+  },
+  {
+   "fieldname": "fabricated_part_no_ceef",
+   "fieldtype": "Data",
+   "label": "Fabricated Part No (CEEF)"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "functionality",
+   "fieldtype": "Data",
+   "label": "Functionality"
+  },
+  {
+   "fieldname": "column_break_aafw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mdb_part_number",
+   "fieldtype": "Data",
+   "label": "MDB Part Number"
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "label": "Date Code"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Symbol",
+   "options": "Symbol"
+  },
+  {
+   "fetch_from": "symbol.symbol",
+   "fieldname": "symbol_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Symbol Copy",
+   "options": "Symbol",
+   "read_only": 1
+  },
+  {
+   "fieldname": "package_style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package Style",
+   "options": "PSTYLE"
+  },
+  {
+   "fieldname": "positions",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Positions"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Select\nMDB\nNew\nNo-Connection\nNo-Provision\nSelectable\nShort"
+  },
+  {
+   "fetch_from": "package_style.package_style_name",
+   "fieldname": "package_style_copy",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Package Style Copy"
+  },
+  {
+   "fieldname": "part_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Part Number"
+  },
+  {
+   "fieldname": "add_option",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Add Option",
+   "options": "Select\nSingle\nMultiple"
+  },
+  {
+   "fieldname": "mount_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mount On",
+   "options": "Select\nTop\nBottom\nOn-Box\nOn-Tray"
+  },
+  {
+   "fieldname": "stack",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stack"
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Entry By",
+   "options": "User"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "stack_reference",
+   "fieldtype": "Data",
+   "label": "Stack Reference"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "label": "Manufacturer",
+   "options": "Manufacturer"
+  },
+  {
+   "fieldname": "rdc_reference_no",
+   "fieldtype": "Int",
+   "label": "RDC Reference No"
+  },
+  {
+   "fieldname": "section_break_uggr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-09 11:53:58.484727",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "SIV Request Process Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

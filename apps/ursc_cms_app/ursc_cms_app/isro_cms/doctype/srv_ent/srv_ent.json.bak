@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "autoname": "format:SRV-{MM}-{DD}-{YYYY}-{####}",
+ "creation": "2025-07-31 17:12:28.318740",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "srv_ent_id",
+  "srv_id",
+  "comp_type",
+  "srv_part_no",
+  "rec_qty",
+  "odered_qty",
+  "workflow_status",
+  "column_break_wmvf",
+  "ret_qty",
+  "u_cost",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "srv_ent_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ENT_ID"
+  },
+  {
+   "fieldname": "srv_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SRV_ID"
+  },
+  {
+   "fieldname": "srv_part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SRV_PART_NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rec_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "REC_QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "odered_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "ODERED_QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "WORKFLOW_STATUS"
+  },
+  {
+   "fieldname": "column_break_wmvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "RET_QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "u_cost",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "U_COST",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SRV_ENT",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "COMP TYPE",
+   "options": "COMP_ID",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [
+  {
+   "link_doctype": "SRV",
+   "link_fieldname": "srv_id"
+  }
+ ],
+ "modified": "2025-08-08 15:10:55.261461",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRV_ENT",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

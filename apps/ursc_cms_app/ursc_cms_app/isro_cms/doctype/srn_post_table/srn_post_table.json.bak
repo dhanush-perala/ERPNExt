@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-04 12:38:31.401832",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "siv_part_no",
+  "comp_type",
+  "mdb_part_no",
+  "qty",
+  "stock_name",
+  "date_code",
+  "dc_code",
+  "function",
+  "column_break_nopd",
+  "exp_date",
+  "mfr_name",
+  "card_no",
+  "location",
+  "pack_no",
+  "entry_by",
+  "packet_no",
+  "quality",
+  "lot_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "STATUS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "siv_part_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "SIV PART NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comp_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "COMP TYPE",
+   "options": "COMP_ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mdb_part_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MDB PART NO",
+   "options": "MDB_ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "STOCK NAME",
+   "options": "STOCK_ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DATE CODE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nopd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "EXP DATE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mfr_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MFR NAME",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DC CODE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FUNCTION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "CARD NO",
+   "options": "CARD_1C",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "card_no.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOCATION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pack_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "PACK NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entry_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ENTRY BY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "packet_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "PACKET NO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QUALITY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lot_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LOT CODE",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 12:40:38.310990",
+ "modified_by": "Administrator",
+ "module": "isro_cms_app",
+ "name": "SRN POST TABLE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

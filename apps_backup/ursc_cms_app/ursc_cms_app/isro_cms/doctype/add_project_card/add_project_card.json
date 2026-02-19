@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-07-22 12:00:52.991296",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jcfg",
+  "project",
+  "select_program",
+  "enter_card_count_suffix",
+  "program_save",
+  "project_save",
+  "select_sub_system",
+  "package",
+  "column_break_sabk",
+  "selected_sub_system",
+  "project_ref_no",
+  "enter_card_countsuffix",
+  "select_package",
+  "enter_ecad_card_name",
+  "enter_ecad_name",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jcfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Program",
+   "options": "Program",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "select_program.enter_program",
+   "fieldname": "program_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "program save"
+  },
+  {
+   "fieldname": "column_break_sabk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.proj_name",
+   "fieldname": "project_save",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Enter Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_ref_no",
+   "fieldtype": "Data",
+   "label": "Project Ref No:"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "SELECT PROJECT",
+   "options": "PROJECT_MASTER",
+   "placeholder": "SELECT PROJECT"
+  },
+  {
+   "fieldname": "select_package",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "SELECT PACKAGE",
+   "options": "PRJ_PACK",
+   "placeholder": "SELECT PACKAGE"
+  },
+  {
+   "fieldname": "enter_card_count_suffix",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ENTER CARD COUNT SUFFIX",
+   "placeholder": "ENTER CARD COUNT:SUFFIX"
+  },
+  {
+   "depends_on": "project",
+   "fieldname": "selected_sub_system",
+   "fieldtype": "Link",
+   "label": "SELECTED SUB SYSTEM",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "placeholder": "SELECTED SUB SYSTEM"
+  },
+  {
+   "fieldname": "enter_ecad_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ENTER ECAD NAME",
+   "placeholder": "ENTER ECAD NAME"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "selected_sub_system.sub_system",
+   "fieldname": "select_sub_system",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SELECT SUB SYSTEM",
+   "options": "ADD PROJECT SUBSYSTEM",
+   "placeholder": "SELECT SUB SYSTEM"
+  },
+  {
+   "fieldname": "enter_card_countsuffix",
+   "fieldtype": "Data",
+   "label": "ENTER CARD COUNT:SUFFIX",
+   "placeholder": "ENTER CARD COUNT:SUFFIX"
+  },
+  {
+   "fieldname": "enter_ecad_card_name",
+   "fieldtype": "Data",
+   "label": "ENTER ECAD Card Name",
+   "placeholder": "ENTER ECAD Card Name"
+  },
+  {
+   "fetch_from": "select_package.pack_name",
+   "fieldname": "package",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "PACKAGE",
+   "options": "PRJ_PACK",
+   "placeholder": "SELECT PACKAGE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ADD PROJECT CARD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-08 12:53:38.446000",
+ "modified_by": "Administrator",
+ "module": "ISRO CMS",
+ "name": "ADD PROJECT CARD",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_save"
+}
